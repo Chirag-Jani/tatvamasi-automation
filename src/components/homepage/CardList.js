@@ -1,12 +1,12 @@
-import AutomationSolution from "../../resources/homepageImages/automationSolution.png";
-import ElectricalSolution from "../../resources/homepageImages/electricalSolution.png";
-import FabricationSolution from "../../resources/homepageImages/fabricationSolution.png";
-import Tenders from "../../resources/homepageImages/tenders.png";
-import UsedMachineBuySell from "../../resources/homepageImages/usedMachine.png";
-import EqStore from "../../resources/homepageImages/eqStore.png";
-import AMC from "../../resources/homepageImages/amc.png";
-import Career from "../../resources/homepageImages/career.png";
-import ContactUs from "../../resources/homepageImages/contactUs.png";
+import AutomationSolution from "../../resources/homepageImages/automationSolution.svg";
+import ElectricalSolution from "../../resources/homepageImages/electricalSolution.svg";
+import FabricationSolution from "../../resources/homepageImages/fabricationSolution.svg";
+import Tenders from "../../resources/homepageImages/tenders.svg";
+import UsedMachineBuySell from "../../resources/homepageImages/usedMachine.svg";
+import EqStore from "../../resources/homepageImages/eqStore.svg";
+import AMC from "../../resources/homepageImages/amc.svg";
+import Career from "../../resources/homepageImages/career.svg";
+import ContactUs from "../../resources/homepageImages/contactUs.svg";
 
 export const CardList = [
   {

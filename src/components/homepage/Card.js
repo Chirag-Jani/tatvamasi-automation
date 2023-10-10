@@ -1,5 +1,4 @@
 import React from "react";
-import AutomationSolution from "../../resources/homepageImages/automationSolution.png";
 import { Box, Typography } from "@mui/material";
 
 const Card = (props) => {

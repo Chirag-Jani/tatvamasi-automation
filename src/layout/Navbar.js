@@ -1,6 +1,7 @@
 import React from "react";
 
-import logoTextWhite from "../resources/logos/logoTextWhite.png";
+import logoTextWhite from "../resources/logos/logoTextWhite.svg";
+import SearchField from "../components/utilities/SearchField";
 
 const Navbar = () => {
   return (
@@ -12,10 +13,13 @@ const Navbar = () => {
         justifyContent: "space-around",
         alignItems: "center",
         width: "100%",
-        padding: "30px 0",
+        padding: "10px 0",
       }}
     >
       <img src={logoTextWhite} alt="" />
+      <div>
+        <SearchField />
+      </div>
     </div>
   );
 };

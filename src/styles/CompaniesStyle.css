@@ -1,0 +1,52 @@
+/* Add this CSS in your stylesheet */
+
+.custom-swiper .swiper-slide img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  max-height: 100%;
+  
+}
+
+.custom-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Extra Large Screens (xl) */
+@media (min-width: 1200px) {
+  .custom-swiper .swiper-slide img {
+    max-width: 50%;
+  }
+}
+
+/* Large Screens (lg) */
+@media (max-width: 1199px) {
+  .custom-swiper .swiper-slide img {
+    max-width: 70%;
+  }
+}
+
+/* Medium Screens (md) */
+@media (max-width: 991px) {
+  .custom-swiper .swiper-slide img {
+    max-width: 70%;
+  }
+}
+
+/* Small Screens (sm) */
+@media (max-width: 767px) {
+  .custom-swiper .swiper-slide img {
+    max-width: 70%;
+  }
+}
+
+/* Extra Small Screens (xs) */
+@media (max-width: 575px) {
+  .custom-swiper .swiper-slide img {
+    max-width: 70%;
+  }
+}

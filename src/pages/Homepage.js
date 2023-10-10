@@ -2,8 +2,9 @@ import React from "react";
 
 import { Stack } from "@mui/material";
 
-import homepageBanner from "../resources/homepageImages/homepageBanner.png";
+import homepageBanner from "../resources/homepageImages/homepageBanner.svg";
 import Menus from "../components/homepage/Menus";
+import Companies from "../components/homepage/Companies";
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
     >
       <img src={homepageBanner} alt="Tatvamasi Automation" />
       <Menus />
+      <Companies />
     </Stack>
   );
 };
