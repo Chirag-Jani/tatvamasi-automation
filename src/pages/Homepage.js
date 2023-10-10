@@ -3,6 +3,7 @@ import React from "react";
 import { Stack } from "@mui/material";
 
 import homepageBanner from "../resources/homepageImages/homepageBanner.png";
+import Menus from "../components/homepage/Menus";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       }}
     >
       <img src={homepageBanner} alt="Tatvamasi Automation" />
+      <Menus />
     </Stack>
   );
 };

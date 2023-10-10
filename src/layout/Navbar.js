@@ -12,23 +12,10 @@ const Navbar = () => {
         justifyContent: "space-around",
         alignItems: "center",
         width: "100%",
+        padding: "30px 0",
       }}
     >
-      <img
-        src={logoTextWhite}
-        alt=""
-        style={{
-          margin: "0 40px",
-        }}
-      />
-      <h1
-        style={{
-          margin: 0,
-          padding: "10px",
-        }}
-      >
-        Tatvamasi Automation
-      </h1>
+      <img src={logoTextWhite} alt="" />
     </div>
   );
 };

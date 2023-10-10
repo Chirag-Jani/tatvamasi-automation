@@ -3,14 +3,14 @@ import "./App.css";
 import theme from "./theme/theme";
 import Navbar from "./layout/Navbar";
 import Homepage from "./pages/Homepage";
+import Footer from "./layout/Footer";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <Navbar />
-        <Homepage />
-      </div>
+      <Navbar />
+      <Homepage />
+      <Footer />
     </ThemeProvider>
   );
 }
