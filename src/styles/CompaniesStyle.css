@@ -1,4 +1,6 @@
-/* Add this CSS in your stylesheet */
+.custom-swiper .swiper-slide {
+  user-select: none;
+}
 
 .custom-swiper .swiper-slide img {
   max-width: 50%;
@@ -40,13 +42,13 @@
 /* Small Screens (sm) */
 @media (max-width: 767px) {
   .custom-swiper .swiper-slide img {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 
 /* Extra Small Screens (xs) */
 @media (max-width: 575px) {
   .custom-swiper .swiper-slide img {
-    max-width: 70%;
+    max-width: 90%;
   }
 }

@@ -13,13 +13,13 @@ const Navbar = () => {
         justifyContent: "space-around",
         alignItems: "center",
         width: "100%",
-        padding: "10px 0",
+        padding: "30px 0",
       }}
     >
       <img src={logoTextWhite} alt="" />
-      <div>
+      {/* <div>
         <SearchField />
-      </div>
+      </div> */}
     </div>
   );
 };

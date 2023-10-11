@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import BHEL from "../../resources/clientLogos/BHEL.svg";
 import MD from "../../resources/clientLogos/MD.svg";
 import NTPC from "../../resources/clientLogos/NTPC.svg";
@@ -44,17 +44,53 @@ const Companies = () => {
       </Typography>
       <Swiper
         spaceBetween={0}
-        slidesPerView={5.2}
+        slidesPerView={3.5}
+        loop={true}
         autoplay={{
-          delay: 1500,
+          delay: 0,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        modules={[Autoplay, Pagination]}
+        effect="slide"
+        speed={7000}
+        modules={[Autoplay]}
         className="custom-swiper"
       >
+        <SwiperSlide>
+          <img src={BHEL} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={NTPC} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={MD} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ONGC} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={BHEL} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={NTPC} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={MD} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ONGC} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={BHEL} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={NTPC} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={MD} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ONGC} alt="" />
+        </SwiperSlide>
         <SwiperSlide>
           <img src={BHEL} alt="" />
         </SwiperSlide>
