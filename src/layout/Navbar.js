@@ -35,11 +35,16 @@ function Navbar() {
         backgroundColor: "rgba(22, 41, 102, 1)",
         color: "white",
         minHeight: "100vh",
-        minWidth: "250px",
-        padding: "20px",
+        minWidth: {
+          xs: "180px",
+          sm: "220px",
+          m: "220px",
+          lg: "250px",
+          xl: "250px",
+        },
       }}
     >
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, p: 2 }}>
         <img src={logoTextWhite} alt="" style={{ width: "170px" }} />
       </Typography>
       <Divider />
@@ -118,7 +123,7 @@ function Navbar() {
                   color: "#fff",
                   textTransform: "capitalize",
                   fontWeight: "700",
-                  margin: "20px",
+                  margin: "2r0px",
                   fontSize: {
                     xl: "22px",
                     m: "22px",
