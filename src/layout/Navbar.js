@@ -117,7 +117,8 @@ function Navbar() {
                 sx={{
                   color: "#fff",
                   textTransform: "capitalize",
-                  fontWeight: "500",
+                  fontWeight: "700",
+                  margin: "20px",
                   fontSize: {
                     xl: "22px",
                     m: "22px",
