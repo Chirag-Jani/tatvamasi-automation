@@ -5,63 +5,95 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
+import SearchField from "../components/utilities/SearchField";
 
-const pages = ["Home", "About Us", "Events", "Appointment"];
+import {
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
+
+const navItems = ["Home", "About Us", "Events", "Appointment"];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  return (
-    <AppBar
-      position="static"
+  const drawer = (
+    <Box
+      onClick={handleDrawerToggle}
       sx={{
-        backgroundColor: "#263467",
+        textAlign: "center",
+        backgroundColor: "rgba(22, 41, 102, 1)",
         color: "white",
+        minHeight: "100vh",
+        minWidth: "250px",
+        padding: "20px",
       }}
     >
-      <Container maxWidth="xl">
+      <Typography variant="h6" sx={{ my: 2 }}>
+        <img src={logoTextWhite} alt="" style={{ width: "170px" }} />
+      </Typography>
+      <Divider />
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item} disablePadding>
+            <ListItemButton sx={{ textAlign: "start" }}>
+              <ListItemText primary={item} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  return (
+    <>
+      <AppBar
+        component="nav"
+        position="static"
+        sx={{
+          backgroundColor: "rgba(22, 41, 102, 1)",
+          height: "100px",
+        }}
+      >
         <Toolbar
-          disableGutters
           sx={{
-            display: "flex",
-            justifyContent: "space-around",
-            width: "100%",
+            height: "100%",
+            justifyContent: "space-evenly",
+            display: "flex", // Make sure it's a flex container
           }}
         >
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              display: {
+                xs: "block",
+                sm: "block",
+                m: "block",
+                lg: "none",
+                xl: "none",
+              },
+            }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Box
+            component="div"
+            sx={{
+              flexGrow: 1,
             }}
           >
             <img
@@ -69,84 +101,63 @@ function Navbar() {
               alt=""
               style={{
                 width: "200px",
+                height: "auto",
               }}
             />
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+          <Box
             sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              flexGrow: 1, // This will distribute space evenly
+              display: { xs: "none", sm: "none", m: "block", lg: "block" },
             }}
           >
-            <img src={logoTextWhite} alt="" />
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {navItems.map((item) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={item}
                 sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  fontWeight: 700,
-                  fontSize: "20px",
+                  color: "#fff",
+                  textTransform: "capitalize",
+                  fontWeight: "500",
+                  fontSize: {
+                    xl: "22px",
+                    m: "22px",
+                    sm: "20px",
+                    xs: "20px",
+                  },
                 }}
               >
-                {page}
+                {item}
               </Button>
             ))}
           </Box>
+          <Box
+            sx={{
+              display: { xs: "none", sm: "block", m: "block", lg: "block" },
+            }}
+          >
+            <SearchField />
+          </Box>
         </Toolbar>
-      </Container>
-    </AppBar>
+      </AppBar>
+      <nav>
+        <Drawer
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: { sm: "block", lg: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+            },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </nav>
+    </>
   );
 }
 export default Navbar;

@@ -44,15 +44,17 @@ const Companies = () => {
       </Typography>
       <Swiper
         spaceBetween={0}
-        slidesPerView={3.5}
         loop={true}
         autoplay={{
-          delay: 0,
+          delay: 5,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
-        effect="slide"
         speed={7000}
         modules={[Autoplay]}
+        slidesPerView="4"
+        watchSlidesProgress={true}
+        grabCursor={true}
         className="custom-swiper"
       >
         <SwiperSlide>

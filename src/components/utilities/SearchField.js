@@ -11,12 +11,12 @@ const SearchField = () => {
           "& .MuiInputBase-input": {
             textAlign: "center", // Center the text
             color: "#FFB800", // Set text color
-            fontSize: "20px",
+            fontSize: "16px",
           },
           "& .MuiInputBase-placeholder": {
             textAlign: "center", // Center the placeholder
             color: "#FFB800", // Set placeholder color
-            fontSize: "20px",
+            fontSize: "16px",
           },
         }}
         InputProps={{
