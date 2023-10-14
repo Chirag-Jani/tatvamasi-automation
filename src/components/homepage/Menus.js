@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 
 import Card from "./Card";
 import { CardList } from "./CardList";
+import { Link } from "react-router-dom";
 
 const Menus = () => {
   return (
@@ -17,7 +18,14 @@ const Menus = () => {
     >
       {CardList.map((card) => {
         return (
-          <Card cardName={card.name} cardImg={card.image} key={card.name} />
+          <Link
+            to={card.path}
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <Card cardName={card.name} cardImg={card.image} key={card.name} />
+          </Link>
         );
       })}
     </Box>

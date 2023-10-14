@@ -84,7 +84,7 @@ const Companies = () => {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        speed={7000}
+        speed={5000}
         modules={[Autoplay]}
         slidesPerView="4"
         watchSlidesProgress={true}

@@ -12,37 +12,46 @@ export const CardList = [
   {
     name: "Automation Solutions",
     image: AutomationSolution,
+    path: "#",
   },
   {
     name: "Electrical Solutions",
     image: ElectricalSolution,
+    path: "electrical-solution",
   },
   {
     name: "Fabrication Solutions",
     image: FabricationSolution,
+    path: "#",
   },
   {
     name: "Tenders",
     image: Tenders,
+    path: "#",
   },
   {
     name: "Used Machine Buy/Sell",
     image: UsedMachineBuySell,
+    path: "#",
   },
   {
     name: "Equipment Store",
     image: EqStore,
+    path: "#",
   },
   {
     name: "AMC",
     image: AMC,
+    path: "#",
   },
   {
     name: "Career",
     image: Career,
+    path: "#",
   },
   {
     name: "Contact Us",
     image: ContactUs,
+    path: "#",
   },
 ];

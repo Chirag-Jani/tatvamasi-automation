@@ -17,6 +17,7 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const navItems = ["Home", "About Us", "Events", "Appointment"];
 
@@ -44,9 +45,16 @@ function Navbar() {
         },
       }}
     >
-      <Typography variant="h6" sx={{ my: 2, p: 2 }}>
-        <img src={logoTextWhite} alt="" style={{ width: "170px" }} />
-      </Typography>
+      <Link
+        to={"/"}
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <Typography variant="h6" sx={{ my: 2, p: 2 }}>
+          <img src={logoTextWhite} alt="" style={{ width: "170px" }} />
+        </Typography>
+      </Link>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -101,14 +109,21 @@ function Navbar() {
               flexGrow: 1,
             }}
           >
-            <img
-              src={logoTextWhite}
-              alt=""
+            <Link
+              to={"/"}
               style={{
-                width: "200px",
-                height: "auto",
+                textDecoration: "none",
               }}
-            />
+            >
+              <img
+                src={logoTextWhite}
+                alt=""
+                style={{
+                  width: "200px",
+                  height: "auto",
+                }}
+              />
+            </Link>
           </Box>
           <Box
             sx={{
