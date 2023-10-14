@@ -3,7 +3,7 @@ import React from "react";
 import { Box } from "@mui/material";
 
 import Card from "./Card";
-import { CardList } from "./CardList";
+import { data } from "../../resources/data/data";
 import { Link } from "react-router-dom";
 
 const Menus = () => {
@@ -16,7 +16,7 @@ const Menus = () => {
         flexWrap: "wrap",
       }}
     >
-      {CardList.map((card) => {
+      {data.map((card) => {
         return (
           <Link
             to={card.path}

@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { ThemeProvider } from "@mui/material";
 
-import "./App.css";
 import theme from "./theme/theme";
 
 import Navbar from "./layout/Navbar";

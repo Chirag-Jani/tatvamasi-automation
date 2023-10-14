@@ -1,5 +1,5 @@
 import * as React from "react";
-import logoTextWhite from "../resources/logos/logoTextWhite.svg";
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -7,7 +7,11 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
+
 import SearchField from "../components/utilities/SearchField";
+import logoTextWhite from "../resources/logos/logoTextWhite.svg";
+import App from "../App.module.css";
+import NavbarStyle from "../styles/NavbarStyle.module.css";
 
 import {
   Divider,
@@ -19,7 +23,24 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const navItems = ["Home", "About Us", "Events", "Appointment"];
+const navItems = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "About Us",
+    path: "/about-us",
+  },
+  {
+    label: "Events",
+    path: "/events",
+  },
+  {
+    label: "Appointment",
+    path: "/appointment",
+  },
+];
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -31,26 +52,9 @@ function Navbar() {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{
-        textAlign: "center",
-        backgroundColor: "rgba(22, 41, 102, 1)",
-        color: "white",
-        minHeight: "100vh",
-        minWidth: {
-          xs: "180px",
-          sm: "220px",
-          m: "220px",
-          lg: "250px",
-          xl: "250px",
-        },
-      }}
+      className={NavbarStyle.drawerMainContainer}
     >
-      <Link
-        to={"/"}
-        style={{
-          textDecoration: "none",
-        }}
-      >
+      <Link to={"/"} className={App.routerLink}>
         <Typography variant="h6" sx={{ my: 2, p: 2 }}>
           <img src={logoTextWhite} alt="" style={{ width: "170px" }} />
         </Typography>
@@ -58,11 +62,13 @@ function Navbar() {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "start" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+          <Link to={item.path} className={App.routerLink}>
+            <ListItem key={item.label} disablePadding>
+              <ListItemButton sx={{ textAlign: "start" }}>
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
@@ -70,36 +76,14 @@ function Navbar() {
 
   return (
     <>
-      <AppBar
-        component="nav"
-        position="static"
-        sx={{
-          backgroundColor: "rgba(22, 41, 102, 1)",
-          height: "100px",
-        }}
-      >
-        <Toolbar
-          sx={{
-            height: "100%",
-            justifyContent: "space-evenly",
-            display: "flex", // Make sure it's a flex container
-          }}
-        >
+      <AppBar component="nav" position="static" className={NavbarStyle.appbar}>
+        <Toolbar className={NavbarStyle.toolbar}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{
-              mr: 2,
-              display: {
-                xs: "block",
-                sm: "block",
-                m: "block",
-                lg: "none",
-                xl: "none",
-              },
-            }}
+            className={NavbarStyle.iconbutton}
           >
             <MenuIcon />
           </IconButton>
@@ -109,53 +93,35 @@ function Navbar() {
               flexGrow: 1,
             }}
           >
-            <Link
-              to={"/"}
-              style={{
-                textDecoration: "none",
-              }}
-            >
+            <Link to={"/"} className={App.routerLink}>
               <img
                 src={logoTextWhite}
                 alt=""
-                style={{
-                  width: "200px",
-                  height: "auto",
-                }}
+                className={NavbarStyle.logoMain}
               />
             </Link>
           </Box>
           <Box
             sx={{
               flexGrow: 1, // This will distribute space evenly
-              display: { xs: "none", sm: "none", m: "block", lg: "block" },
+              display: {
+                xs: "none",
+                sm: "none",
+                m: "block",
+                lg: "block",
+                xl: "block",
+              },
             }}
           >
             {navItems.map((item) => (
-              <Button
-                key={item}
-                sx={{
-                  color: "#fff",
-                  textTransform: "capitalize",
-                  fontWeight: "700",
-                  margin: "2r0px",
-                  fontSize: {
-                    xl: "22px",
-                    m: "22px",
-                    sm: "20px",
-                    xs: "20px",
-                  },
-                }}
-              >
-                {item}
-              </Button>
+              <Link to={item.path} className={App.routerLink}>
+                <Button key={item.label} className={NavbarStyle.navItemMain}>
+                  {item.label}
+                </Button>
+              </Link>
             ))}
           </Box>
-          <Box
-            sx={{
-              display: { xs: "none", sm: "block", m: "block", lg: "block" },
-            }}
-          >
+          <Box className={NavbarStyle.searchField}>
             <SearchField />
           </Box>
         </Toolbar>
