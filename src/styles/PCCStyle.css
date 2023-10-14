@@ -1,0 +1,21 @@
+/* For screens less than 600px wide */
+@media (max-width: 600px) {
+  .panel-image {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/* For screens between 601px and 900px wide */
+@media (min-width: 601px) and (max-width: 900px) {
+  .panel-image {
+    max-width: 48%;
+  }
+}
+
+/* For screens wider than 900px */
+@media (min-width: 901px) {
+  .panel-image {
+    max-width: 48%;
+  }
+}

@@ -2,7 +2,8 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import DemoBanner from "../resources/DemoBanner.svg";
 import PanelCard from "../components/eletricalsolution/PanelCard";
-import { PanelList } from "../components/eletricalsolution/PanelList";
+import PanelList from "../components/eletricalsolution/PanelList";
+import { Link } from "react-router-dom";
 
 const ElectricalSolution = () => {
   return (
@@ -61,7 +62,16 @@ const ElectricalSolution = () => {
           }}
         >
           {PanelList.map((panel) => {
-            return <PanelCard panelName={panel.name} />;
+            return (
+              <Link
+                to={panel.path}
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <PanelCard panelName={panel.name} />
+              </Link>
+            );
           })}
         </Box>
       </Box>
