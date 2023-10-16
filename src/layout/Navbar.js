@@ -19,7 +19,24 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const navItems = ["Home", "About Us", "Events", "Appointment"];
+const navItems = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "About Us",
+    path: "/about-us",
+  },
+  {
+    label: "Events",
+    path: "/events",
+  },
+  {
+    label: "Appointment",
+    path: "/appointment",
+  },
+];
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -58,11 +75,18 @@ function Navbar() {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "start" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+          <Link
+            to={item.path}
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <ListItem key={item.label} disablePadding>
+              <ListItemButton sx={{ textAlign: "start" }}>
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
@@ -132,23 +156,30 @@ function Navbar() {
             }}
           >
             {navItems.map((item) => (
-              <Button
-                key={item}
-                sx={{
-                  color: "#fff",
-                  textTransform: "capitalize",
-                  fontWeight: "700",
-                  margin: "2r0px",
-                  fontSize: {
-                    xl: "22px",
-                    m: "22px",
-                    sm: "20px",
-                    xs: "20px",
-                  },
+              <Link
+                to={item.path}
+                style={{
+                  textDecoration: "none",
                 }}
               >
-                {item}
-              </Button>
+                <Button
+                  key={item.label}
+                  sx={{
+                    color: "#fff",
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    margin: "2r0px",
+                    fontSize: {
+                      xl: "22px",
+                      m: "22px",
+                      sm: "20px",
+                      xs: "20px",
+                    },
+                  }}
+                >
+                  {item.label}
+                </Button>
+              </Link>
             ))}
           </Box>
           <Box

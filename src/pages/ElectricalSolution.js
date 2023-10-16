@@ -2,8 +2,10 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import DemoBanner from "../resources/DemoBanner.svg";
 import PanelCard from "../components/eletricalsolution/PanelCard";
-import PanelList from "../components/eletricalsolution/PanelList";
+import { data } from "../resources/data/data";
 import { Link } from "react-router-dom";
+
+const PanelList = data[1].panels;
 
 const ElectricalSolution = () => {
   return (
