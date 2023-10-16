@@ -8,7 +8,7 @@ import AMC from "../../resources/homepageImages/amc.svg";
 import Career from "../../resources/homepageImages/career.svg";
 import ContactUs from "../../resources/homepageImages/contactUs.svg";
 
-export const data = [
+export const CardList = [
   {
     name: "Automation Solutions",
     image: AutomationSolution,
@@ -18,44 +18,6 @@ export const data = [
     name: "Electrical Solutions",
     image: ElectricalSolution,
     path: "electrical-solution",
-    panels: [
-      {
-        name: "PCC Panel",
-        path: "pcc",
-      },
-      {
-        name: "MCC Panel",
-        path: "mcc",
-      },
-      {
-        name: "APFC Panel",
-        path: "apfc",
-      },
-      {
-        name: "VFD Panel",
-        path: "vfd",
-      },
-      {
-        name: "Soft Starter Panel",
-        path: "soft-starter",
-      },
-      {
-        name: "Draw-out Panel",
-        path: "draw-out",
-      },
-      {
-        name: "Type Tested Panel",
-        path: "type-tested",
-      },
-      {
-        name: "IMCC Panel",
-        path: "imcc",
-      },
-      {
-        name: "Junction Box & PDBC",
-        path: "junction-box-pdbc",
-      },
-    ],
   },
   {
     name: "Fabrication Solutions",

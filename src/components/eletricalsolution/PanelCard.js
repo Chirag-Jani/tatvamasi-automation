@@ -10,9 +10,9 @@ const PanelCard = (props) => {
         margin: {
           xl: "20px 50px",
           lg: "20px 50px",
-          m: "20px 0",
-          sm: "20px 0",
-          xs: "20px 0",
+          m: "20px 0px",
+          sm: "20px 0px",
+          xs: "20px 10px",
         },
       }}
     >

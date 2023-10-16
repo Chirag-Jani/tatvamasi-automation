@@ -1,15 +1,24 @@
-import React from "react";
-
 import { Box } from "@mui/material";
-
+import React from "react";
 import SearchField from "../components/utilities/SearchField";
-
-import FooterStyle from "../styles/FooterStyle.module.css";
 
 const Footer = () => {
   return (
-    <Box className={FooterStyle.footerContainer}>
-      <Box className={FooterStyle.footerSearcfield}>
+    <Box
+      sx={{
+        backgroundColor: "#263467",
+        color: "white",
+        textAlign: "center",
+        padding: "20px",
+        height: "500px",
+      }}
+    >
+      <Box
+        sx={{
+          width: "75%",
+          margin: "20px auto",
+        }}
+      >
         <SearchField />
       </Box>
     </Box>
