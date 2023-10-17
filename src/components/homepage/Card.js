@@ -17,7 +17,7 @@ const Card = (props) => {
           lg: "20px 50px",
           m: "20px 0px",
           sm: "20px 0px",
-          xs: "20px 10px",
+          xs: "20px 0px",
         },
       }}
     >
