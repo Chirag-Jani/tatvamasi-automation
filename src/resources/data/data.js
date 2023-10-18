@@ -22,51 +22,51 @@ export const data = [
       {
         name: "PCC Panel",
         path: "pcc",
-        desc: "Description to be added!",
+        desc: "PCC Description to be added!",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "415V",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "3PH 3/4 WIRE SYSTEM",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Rated Current",
+            info: "UPTO 6300A, 100KA",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
             label: "IP Rating",
-            info: "Dust and water resistance.",
+            info: "IP 20/ IP 44/ IP 65",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "Cement Plant, Chemical ind., Textile, Sugar, etc.",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Automation",
-            info: "Level of automation.",
+            info: "BUS COUPLER & AUTO CHANGE OVER FACILITY",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "MODBUS PROTOCOL, RS485",
           },
           {
             label: null,
@@ -76,52 +76,52 @@ export const data = [
       },
       {
         name: "MCC Panel",
-        desc: "Description to be added!",
+        desc: "MCC Description to be added!",
         path: "mcc",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "240/415V",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "3PH 3/4 WIRE SYSTEM",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Rated Current",
+            info: "UPTO 6300A, 100KA",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
             label: "IP Rating",
-            info: "Dust and water resistance.",
+            info: "IP 20/ IP 44/ IP 65",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "Cement Plant, Chemical ind., Textile, Sugar, etc.",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Automation",
-            info: "Level of automation.",
+            info: "BUS COUPLER & AUTO CHANGE OVER FACILITY",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "MODBUS PROTOCOL, RS485",
           },
           {
             label: null,
@@ -131,52 +131,52 @@ export const data = [
       },
       {
         name: "APFC Panel",
-        desc: "Description to be added!",
+        desc: "APFC Description to be added!",
         path: "apfc",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "200-900V",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "3PH 3/4 WIRE SYSTEM",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Rated Current",
+            info: "50 to 2500KVAr",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
             label: "IP Rating",
-            info: "Dust and water resistance.",
+            info: "IP 20/ IP 44/ IP 65",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "Cement Plant, Chemical ind., Textile, Sugar, etc.",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Automation",
-            info: "Level of automation.",
+            info: "BUS COUPLER & AUTO CHANGE OVER FACILITY",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "MODBUS PROTOCOL, RS485",
           },
           {
             label: null,
@@ -186,162 +186,154 @@ export const data = [
       },
       {
         name: "VFD Panel",
-        desc: "Description to be added!",
+        desc: "VFD Description to be added!",
         path: "vfd",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "Low Voltage (LV)",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "THREE PHASE",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Motor Power Range",
+            info: "UPTO 200KW",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
-            label: "IP Rating",
-            info: "Dust and water resistance.",
+            label: "Standard",
+            info: "IEC 60076-6",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "MOTOR SPEED CONTROL & AUTOMATION",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
-            label: "Automation",
-            info: "Level of automation.",
+            label: "VFD Compatibility",
+            info: "COMPATIBLE WITH VARIOUS VFD BRANDS",
+          },
+          {
+            label: "Device Integration",
+            info: "MOTORS, SENSORS, PLC",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
-          },
-          {
-            label: null,
-            info: null,
+            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
           },
         ],
       },
       {
         name: "Soft Starter Panel",
-        desc: "Description to be added!",
+        desc: "Soft Description to be added!",
         path: "soft-starter",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "Low Voltage (LV)",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "THREE PHASE",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Motor Power Range",
+            info: "0.37kw to 900kw",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
-            label: "IP Rating",
-            info: "Dust and water resistance.",
+            label: "Standard",
+            info: "IEC 60047-4-4",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "MOTOR SPEED CONTROL & AUTOMATION",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
-          },
-          {
-            label: "Automation",
-            info: "Level of automation.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
-          },
-          {
-            label: null,
-            info: null,
+            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
           },
         ],
       },
       {
         name: "Draw-out Panel",
-        desc: "Description to be added!",
+        desc: "Draw Description to be added!",
         path: "draw-out",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "Low Voltage (LV)",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "THREE PHASE",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Motor Power Range",
+            info: "0.37kw to 900kw",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
-            label: "IP Rating",
-            info: "Dust and water resistance.",
+            label: "Standard",
+            info: "IEC 60076-6",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "ELECTRICAL DISTRIBUTION & CONTROL",
           },
           {
-            label: "Dimension",
-            info: "Equipment dimensions.",
-          },
-          {
-            label: "Automation",
-            info: "Level of automation.",
+            label: "Incoming / Outgoing",
+            info: "DRAWOUT DESIGN (INCOMING & OUTGOING)",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+          },
+          {
+            label: "Remote Monitoring",
+            info: "INTUTIVE AND USER-FRIENDLY",
           },
           {
             label: null,
@@ -351,52 +343,52 @@ export const data = [
       },
       {
         name: "Type Tested Panel",
-        desc: "Description to be added!",
+        desc: "Type Description to be added!",
         path: "type-tested",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "Low Voltage (LV)",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "THREE PHASE",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Motor Power Range",
+            info: "0.37kw to 900kw",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
-            label: "IP Rating",
-            info: "Dust and water resistance.",
+            label: "Standard",
+            info: "IEC 60947-4-4",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "MOTOR CONTROL & AUTOMATION",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
-          },
-          {
-            label: "Automation",
-            info: "Level of automation.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+          },
+          {
+            label: "Device Integration",
+            info: "VFD, SOFT STARTERS, PLC, HMI",
           },
           {
             label: null,
@@ -406,52 +398,52 @@ export const data = [
       },
       {
         name: "IMCC Panel",
-        desc: "Description to be added!",
+        desc: "IMCC Description to be added!",
         path: "imcc",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "Low Voltage (LV)",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "THREE PHASE",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Motor Power Range",
+            info: "0.37kw to 900kw",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
-            label: "IP Rating",
-            info: "Dust and water resistance.",
+            label: "Standard",
+            info: "IEC 60947-4-4",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "MOTOR CONTROL & AUTOMATION",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
-          },
-          {
-            label: "Automation",
-            info: "Level of automation.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+          },
+          {
+            label: "Device Integration",
+            info: "VFD, SOFT STARTERS, PLC, HMI",
           },
           {
             label: null,
@@ -461,52 +453,52 @@ export const data = [
       },
       {
         name: "Junction Box & PDBC",
-        desc: "Description to be added!",
+        desc: "Junction Description to be added!",
         path: "junction-box-pdbc",
         specs: [
           {
-            label: "Voltage",
-            info: "Specify rated voltage.",
+            label: "Rated Voltage",
+            info: "Low Voltage (LV)",
           },
           {
             label: "Phase",
-            info: "Single or three phases.",
+            info: "THREE PHASE",
           },
           {
-            label: "Current",
-            info: "Specify rated current.",
+            label: "Motor Power Range",
+            info: "0.37kw to 900kw",
           },
           {
             label: "Frequency",
-            info: "Operating frequency (in Hertz).",
+            info: "50/60HZ AC",
           },
           {
             label: "Bus Bar",
-            info: "Material for bus bars.",
+            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
           },
           {
-            label: "IP Rating",
-            info: "Dust and water resistance.",
+            label: "Standard",
+            info: "IEC 60947-4-4",
           },
           {
-            label: "Mount Type",
-            info: "Type of mounting.",
+            label: "Mountain Type",
+            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
           },
           {
-            label: "Usage",
-            info: "Intended usage or application.",
+            label: "Usage / Application",
+            info: "MOTOR CONTROL & AUTOMATION",
           },
           {
             label: "Dimension",
-            info: "Equipment dimensions.",
-          },
-          {
-            label: "Automation",
-            info: "Level of automation.",
+            info: "CUSTOMIZED MM / INCH",
           },
           {
             label: "Communication",
-            info: "Communication technology used.",
+            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+          },
+          {
+            label: "Device Integration",
+            info: "VFD, SOFT STARTERS, PLC, HMI",
           },
           {
             label: null,

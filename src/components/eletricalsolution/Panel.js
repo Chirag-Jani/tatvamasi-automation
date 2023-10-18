@@ -10,9 +10,6 @@ const Panel = () => {
   let { panel } = useParams();
 
   const Specs = PanelList.find((p) => p.path === panel);
-  console.log(Specs);
-
-  console.log(panel);
 
   return (
     <>
@@ -69,10 +66,9 @@ const Panel = () => {
         <Box
           sx={{
             padding: "20px",
-            paddingBottom: "0",
             borderRadius: "30px",
             backgroundColor: "#D9D9D9",
-            marginBottom: "50px",
+            marginBottom: "30px",
           }}
         >
           <Box>
@@ -119,64 +115,66 @@ const Panel = () => {
                       margin: "auto",
                     }}
                   >
-                    <Grid
-                      item
-                      xs={5}
-                      sx={{
-                        margin: "auto",
-                        marginBottom: "30px",
-                      }}
-                    >
-                      <Typography
-                        sx={{
-                          fontSize: {
-                            xl: "18px",
-                            lg: "18px",
-                            m: "18px",
-                            sm: "18px",
-                            xs: "14px",
-                          },
-                          fontFamily: "Montserrat-bold",
-                        }}
-                      >
-                        {item.label}
-                      </Typography>
-                    </Grid>
                     {item.label !== null && (
-                      <Grid item xs={1}>
-                        <Typography
+                      <>
+                        <Grid
+                          item
+                          xs={6}
                           sx={{
-                            fontSize: {
-                              xl: "18px",
-                              lg: "18px",
-                              m: "18px",
-                              sm: "18px",
-                              xs: "14px",
-                            },
-                            fontFamily: "Montserrat-bold",
+                            marginBottom: "30px",
+                            display: "flex",
+                            justifyContent: "space-between",
                           }}
                         >
-                          :
-                        </Typography>
-                      </Grid>
+                          <Typography
+                            sx={{
+                              fontSize: {
+                                xl: "18px",
+                                lg: "18px",
+                                m: "18px",
+                                sm: "18px",
+                                xs: "12px",
+                              },
+                              fontFamily: "Montserrat-bold",
+                            }}
+                          >
+                            {item.label}
+                          </Typography>
+                          <Typography
+                            sx={{
+                              fontSize: {
+                                xl: "18px",
+                                lg: "18px",
+                                m: "18px",
+                                sm: "18px",
+                                xs: "12px",
+                              },
+                              fontFamily: "Montserrat-bold",
+                            }}
+                          >
+                            :
+                          </Typography>
+                        </Grid>
+                        <Grid item xs={6}>
+                          <Typography
+                            sx={{
+                              fontSize: {
+                                xl: "18px",
+                                lg: "18px",
+                                m: "18px",
+                                sm: "18px",
+                                xs: "12px",
+                              },
+                              fontFamily: "Montserrat",
+                              color: "#414141",
+                              paddingLeft: "20px",
+                            }}
+                          >
+                            {item.info}
+                          </Typography>
+                        </Grid>
+                      </>
                     )}
-                    <Grid item xs={4}>
-                      <Typography
-                        sx={{
-                          fontSize: {
-                            xl: "18px",
-                            lg: "18px",
-                            m: "18px",
-                            sm: "18px",
-                            xs: "14px",
-                          },
-                          fontFamily: "Montserrat",
-                          color: "#414141",
-                        }}
-                      >
-                        {item.info}
-                      </Typography>
-                    </Grid>
                   </Grid>
                 );
               })}
