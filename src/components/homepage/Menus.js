@@ -23,6 +23,7 @@ const Menus = () => {
             style={{
               textDecoration: "none",
             }}
+            key={card.name}
           >
             <Card cardName={card.name} cardImg={card.image} key={card.name} />
           </Link>

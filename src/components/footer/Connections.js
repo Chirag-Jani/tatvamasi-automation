@@ -17,30 +17,30 @@ const Connections = () => {
       "e@tatvamasiautomation.com",
       "f@tatvamasiautomation.com",
     ],
-    contacts: ["+91 1234561234", "+91 1234561234"],
+    contacts: ["+91 1234561234", "+91 9876543210"],
   };
 
   const social = [
     {
       logo: WP,
-      url: "#",
+      url: "#WP",
     },
     {
       logo: LINK,
-      url: "#",
+      url: "#LINK",
     },
     {
       logo: FB,
-      url: "#",
+      url: "#FB",
     },
     {
       logo: INSTA,
-      url: "#",
+      url: "#INSTA",
     },
 
     {
       logo: YT,
-      url: "#",
+      url: "#YT",
     },
   ];
 

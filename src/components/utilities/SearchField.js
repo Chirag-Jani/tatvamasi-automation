@@ -4,7 +4,7 @@ import searchIcon from "../../resources/icons/searchIconYellow.svg";
 
 const SearchField = () => {
   return (
-    <d>
+    <>
       <TextField
         sx={{
           width: "100%",
@@ -42,7 +42,7 @@ const SearchField = () => {
         }}
         placeholder="Magic Search"
       />
-    </d>
+    </>
   );
 };
 

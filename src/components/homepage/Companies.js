@@ -93,7 +93,7 @@ const Companies = () => {
       >
         {clientList.map((client) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={client}>
               <img src={client} alt="" />
             </SwiperSlide>
           );

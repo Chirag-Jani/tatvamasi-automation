@@ -43,10 +43,10 @@ const Address = () => {
           margin: "50px auto", // Center the image
           marginTop: "0",
           display: "block", // Remove any extra space below the image
-          "@media (min-width: 600px)": {
+          "@media (minWidth: 600px)": {
             width: "50%",
           },
-          "@media (min-width: 960px)": {
+          "@media (minWidth: 960px)": {
             width: "50%",
           },
         }}

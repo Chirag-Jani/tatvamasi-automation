@@ -9,7 +9,7 @@ import Navbar from "./layout/Navbar";
 import Homepage from "./pages/Homepage";
 import ElectricalSolution from "./pages/ElectricalSolution";
 import Footer from "./layout/Footer";
-import PCC from "./pages/PCC";
+import Panel from "./components/eletricalsolution/Panel";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/electrical-solution" element={<ElectricalSolution />} />
-          <Route path="/electrical-solution/pcc" element={<PCC />} />
+          <Route path="/electrical-solution/:panel" element={<Panel />} />
         </Routes>
         <Footer />
       </ThemeProvider>

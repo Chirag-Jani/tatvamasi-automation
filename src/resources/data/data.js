@@ -22,38 +22,497 @@ export const data = [
       {
         name: "PCC Panel",
         path: "pcc",
+        desc: "Description to be added!",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "MCC Panel",
+        desc: "Description to be added!",
         path: "mcc",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "APFC Panel",
+        desc: "Description to be added!",
         path: "apfc",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "VFD Panel",
+        desc: "Description to be added!",
         path: "vfd",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "Soft Starter Panel",
+        desc: "Description to be added!",
         path: "soft-starter",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "Draw-out Panel",
+        desc: "Description to be added!",
         path: "draw-out",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "Type Tested Panel",
+        desc: "Description to be added!",
         path: "type-tested",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "IMCC Panel",
+        desc: "Description to be added!",
         path: "imcc",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
       {
         name: "Junction Box & PDBC",
+        desc: "Description to be added!",
         path: "junction-box-pdbc",
+        specs: [
+          {
+            label: "Voltage",
+            info: "Specify rated voltage.",
+          },
+          {
+            label: "Phase",
+            info: "Single or three phases.",
+          },
+          {
+            label: "Current",
+            info: "Specify rated current.",
+          },
+          {
+            label: "Frequency",
+            info: "Operating frequency (in Hertz).",
+          },
+          {
+            label: "Bus Bar",
+            info: "Material for bus bars.",
+          },
+          {
+            label: "IP Rating",
+            info: "Dust and water resistance.",
+          },
+          {
+            label: "Mount Type",
+            info: "Type of mounting.",
+          },
+          {
+            label: "Usage",
+            info: "Intended usage or application.",
+          },
+          {
+            label: "Dimension",
+            info: "Equipment dimensions.",
+          },
+          {
+            label: "Automation",
+            info: "Level of automation.",
+          },
+          {
+            label: "Communication",
+            info: "Communication technology used.",
+          },
+          {
+            label: null,
+            info: null,
+          },
+        ],
       },
     ],
   },

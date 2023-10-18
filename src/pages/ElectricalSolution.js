@@ -70,6 +70,7 @@ const ElectricalSolution = () => {
                 style={{
                   textDecoration: "none",
                 }}
+                key={panel.name}
               >
                 <PanelCard panelName={panel.name} />
               </Link>

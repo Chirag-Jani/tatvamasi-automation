@@ -79,7 +79,9 @@ function Navbar() {
             to={item.path}
             style={{
               textDecoration: "none",
+              color: "white",
             }}
+            key={item.label}
           >
             <ListItem key={item.label} disablePadding>
               <ListItemButton sx={{ textAlign: "start" }}>
@@ -161,6 +163,7 @@ function Navbar() {
                 style={{
                   textDecoration: "none",
                 }}
+                key={item.label}
               >
                 <Button
                   key={item.label}

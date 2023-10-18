@@ -1,22 +1,18 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import DemoPanel from "../resources/Demo Panel.svg";
-import "../styles/PCCStyle.css";
+import DemoPanel from "../../resources/Demo Panel.svg";
+import "../../styles/PCCStyle.css";
+import { data } from "../../resources/data/data";
+import { useParams } from "react-router-dom";
 
-const PCC = () => {
-  const Specs = [
-    "Rated Voltage",
-    "Phase",
-    "Rated Current",
-    "Frequency",
-    "Bus Bar",
-    "IP Rating",
-    "Mountain Type",
-    "Usage / Application",
-    "Dimansion",
-    "Automation Grade",
-    "Communication",
-  ];
+const Panel = () => {
+  const PanelList = data[1].panels;
+  let { panel } = useParams();
+
+  const Specs = PanelList.find((p) => p.path === panel);
+  console.log(Specs);
+
+  console.log(panel);
 
   return (
     <>
@@ -39,7 +35,7 @@ const PCC = () => {
               fontSize: "40px",
             }}
           >
-            PCC Panel
+            {Specs.name}
           </Typography>
         </Box>
         <Box>
@@ -49,12 +45,7 @@ const PCC = () => {
               textAlign: "justify",
             }}
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The standard chunk
-            of Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-            Malorum" by Cicero are also reproduced in their exact original form,
-            accompanied by English versions from the 1914 translation by H.
-            Rackham.
+            {Specs.desc}
           </Typography>
           <Box
             sx={{
@@ -112,7 +103,7 @@ const PCC = () => {
             }}
           >
             <Grid container>
-              {Specs.map((item) => {
+              {Specs.specs?.map((item) => {
                 return (
                   <Grid
                     item
@@ -122,7 +113,7 @@ const PCC = () => {
                     m={12}
                     sm={12}
                     xs={12}
-                    key={item}
+                    key={item.label}
                     sx={{
                       textAlign: "left",
                       margin: "auto",
@@ -148,25 +139,27 @@ const PCC = () => {
                           fontFamily: "Montserrat-bold",
                         }}
                       >
-                        {item}
+                        {item.label}
                       </Typography>
                     </Grid>
-                    <Grid item xs={1}>
-                      <Typography
-                        sx={{
-                          fontSize: {
-                            xl: "18px",
-                            lg: "18px",
-                            m: "18px",
-                            sm: "18px",
-                            xs: "14px",
-                          },
-                          fontFamily: "Montserrat-bold",
-                        }}
-                      >
-                        :
-                      </Typography>
-                    </Grid>
+                    {item.label !== null && (
+                      <Grid item xs={1}>
+                        <Typography
+                          sx={{
+                            fontSize: {
+                              xl: "18px",
+                              lg: "18px",
+                              m: "18px",
+                              sm: "18px",
+                              xs: "14px",
+                            },
+                            fontFamily: "Montserrat-bold",
+                          }}
+                        >
+                          :
+                        </Typography>
+                      </Grid>
+                    )}
                     <Grid item xs={4}>
                       <Typography
                         sx={{
@@ -181,7 +174,7 @@ const PCC = () => {
                           color: "#414141",
                         }}
                       >
-                        Value
+                        {item.info}
                       </Typography>
                     </Grid>
                   </Grid>
@@ -195,4 +188,4 @@ const PCC = () => {
   );
 };
 
-export default PCC;
+export default Panel;
