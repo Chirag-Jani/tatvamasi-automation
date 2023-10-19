@@ -26,47 +26,47 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "415V",
+            info: "415v",
           },
           {
             label: "Phase",
-            info: "3PH 3/4 WIRE SYSTEM",
+            info: "3ph 3/4 wire system",
           },
           {
             label: "Rated Current",
-            info: "UPTO 6300A, 100KA",
+            info: "upto 6300a, 100ka",
           },
           {
             label: "Frequency",
-            info: "50HZ AC",
+            info: "50hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "IP Rating",
-            info: "IP 20/ IP 44/ IP 65",
+            info: "ip 20/ ip 44/ ip 65",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "Cement Plant, Chemical ind., Textile, Sugar, etc.",
+            info: "cement plant, chemical ind., textile, sugar, etc.",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Automation",
-            info: "BUS COUPLER & AUTO CHANGE OVER FACILITY",
+            info: "bus coupler & auto change over facility",
           },
           {
             label: "Communication",
-            info: "MODBUS PROTOCOL, RS485",
+            info: "modbus protocol, rs485",
           },
           {
             label: null,
@@ -81,47 +81,47 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "240/415V",
+            info: "240/415v",
           },
           {
             label: "Phase",
-            info: "3PH 3/4 WIRE SYSTEM",
+            info: "3ph 3/4 wire system",
           },
           {
             label: "Rated Current",
-            info: "UPTO 6300A, 100KA",
+            info: "upto 6300a, 100ka",
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "IP Rating",
-            info: "IP 20/ IP 44/ IP 65",
+            info: "ip 20/ ip 44/ ip 65",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "Cement Plant, Chemical ind., Textile, Sugar, etc.",
+            info: "cement plant, chemical ind., textile, sugar, etc.",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Automation",
-            info: "BUS COUPLER & AUTO CHANGE OVER FACILITY",
+            info: "bus coupler & auto change over facility",
           },
           {
             label: "Communication",
-            info: "MODBUS PROTOCOL, RS485",
+            info: "modbus protocol, rs485",
           },
           {
             label: null,
@@ -136,47 +136,47 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "200-900V",
+            info: "200-900v",
           },
           {
             label: "Phase",
-            info: "3PH 3/4 WIRE SYSTEM",
+            info: "3ph 3/4 wire system",
           },
           {
             label: "Rated Current",
-            info: "50 to 2500KVAr",
+            info: "50 to 2500kvar",
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "IP Rating",
-            info: "IP 20/ IP 44/ IP 65",
+            info: "ip 20/ ip 44/ ip 65",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "Cement Plant, Chemical ind., Textile, Sugar, etc.",
+            info: "cement plant, chemical ind., textile, sugar, etc.",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Automation",
-            info: "BUS COUPLER & AUTO CHANGE OVER FACILITY",
+            info: "bus coupler & auto change over facility",
           },
           {
             label: "Communication",
-            info: "MODBUS PROTOCOL, RS485",
+            info: "modbus protocol, rs485",
           },
           {
             label: null,
@@ -191,51 +191,51 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "Low Voltage (LV)",
+            info: "low voltage (lv)",
           },
           {
             label: "Phase",
-            info: "THREE PHASE",
+            info: "three phase",
           },
           {
             label: "Motor Power Range",
-            info: "UPTO 200KW",
+            info: "upto 200kw",
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "Standard",
-            info: "IEC 60076-6",
+            info: "iec 60076-6",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "MOTOR SPEED CONTROL & AUTOMATION",
+            info: "motor speed control & automation",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "VFD Compatibility",
-            info: "COMPATIBLE WITH VARIOUS VFD BRANDS",
+            info: "compatible with various vfd brands",
           },
           {
             label: "Device Integration",
-            info: "MOTORS, SENSORS, PLC",
+            info: "motors, sensors, plc",
           },
           {
             label: "Communication",
-            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+            info: "ethernet, profibus, mobus, etc.",
           },
         ],
       },
@@ -246,11 +246,11 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "Low Voltage (LV)",
+            info: "low voltage (lv)",
           },
           {
             label: "Phase",
-            info: "THREE PHASE",
+            info: "three phase",
           },
           {
             label: "Motor Power Range",
@@ -258,31 +258,31 @@ export const data = [
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "Standard",
-            info: "IEC 60047-4-4",
+            info: "iec 60047-4-4",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "MOTOR SPEED CONTROL & AUTOMATION",
+            info: "motor speed control & automation",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Communication",
-            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+            info: "ethernet, profibus, mobus, etc.",
           },
         ],
       },
@@ -293,11 +293,11 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "Low Voltage (LV)",
+            info: "low voltage (lv)",
           },
           {
             label: "Phase",
-            info: "THREE PHASE",
+            info: "three phase",
           },
           {
             label: "Motor Power Range",
@@ -305,35 +305,35 @@ export const data = [
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "Standard",
-            info: "IEC 60076-6",
+            info: "iec 60076-6",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "ELECTRICAL DISTRIBUTION & CONTROL",
+            info: "electrical distribution & control",
           },
           {
             label: "Incoming / Outgoing",
-            info: "DRAWOUT DESIGN (INCOMING & OUTGOING)",
+            info: "drawout design (incoming & outgoing)",
           },
           {
             label: "Communication",
-            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+            info: "ethernet, profibus, mobus, etc.",
           },
           {
             label: "Remote Monitoring",
-            info: "INTUTIVE AND USER-FRIENDLY",
+            info: "intuitive and user-friendly",
           },
           {
             label: null,
@@ -348,11 +348,11 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "Low Voltage (LV)",
+            info: "low voltage (lv)",
           },
           {
             label: "Phase",
-            info: "THREE PHASE",
+            info: "three phase",
           },
           {
             label: "Motor Power Range",
@@ -360,35 +360,35 @@ export const data = [
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "Standard",
-            info: "IEC 60947-4-4",
+            info: "iec 60947-4-4",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "MOTOR CONTROL & AUTOMATION",
+            info: "motor control & automation",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Communication",
-            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+            info: "ethernet, profibus, mobus, etc.",
           },
           {
             label: "Device Integration",
-            info: "VFD, SOFT STARTERS, PLC, HMI",
+            info: "vfd, soft starters, plc, hmi",
           },
           {
             label: null,
@@ -403,11 +403,11 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "Low Voltage (LV)",
+            info: "low voltage (lv)",
           },
           {
             label: "Phase",
-            info: "THREE PHASE",
+            info: "three phase",
           },
           {
             label: "Motor Power Range",
@@ -415,35 +415,35 @@ export const data = [
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "Standard",
-            info: "IEC 60947-4-4",
+            info: "iec 60947-4-4",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "MOTOR CONTROL & AUTOMATION",
+            info: "motor control & automation",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Communication",
-            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+            info: "ethernet, profibus, mobus, etc.",
           },
           {
             label: "Device Integration",
-            info: "VFD, SOFT STARTERS, PLC, HMI",
+            info: "vfd, soft starters, plc, hmi",
           },
           {
             label: null,
@@ -458,11 +458,11 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "Low Voltage (LV)",
+            info: "low voltage (lv)",
           },
           {
             label: "Phase",
-            info: "THREE PHASE",
+            info: "three phase",
           },
           {
             label: "Motor Power Range",
@@ -470,35 +470,35 @@ export const data = [
           },
           {
             label: "Frequency",
-            info: "50/60HZ AC",
+            info: "50/60hz ac",
           },
           {
             label: "Bus Bar",
-            info: "AL/CU WITH CERTIFIED PERCENTAGE OF Frequency IACS CONDUCTIVITY",
+            info: "al/cu with certified percentage of frequency iacs conductivity",
           },
           {
             label: "Standard",
-            info: "IEC 60947-4-4",
+            info: "iec 60947-4-4",
           },
           {
             label: "Mountain Type",
-            info: "FIXED & SEMI DRAW OUT TYPE WITH SINGLE OR DOUBLE FRONT DESIGN",
+            info: "fixed & semi draw out type with single or double front design",
           },
           {
             label: "Usage / Application",
-            info: "MOTOR CONTROL & AUTOMATION",
+            info: "motor control & automation",
           },
           {
             label: "Dimension",
-            info: "CUSTOMIZED MM / INCH",
+            info: "customized mm / inch",
           },
           {
             label: "Communication",
-            info: "ETHERNET, PROFIBUS, MOBUS, etc.",
+            info: "ethernet, profibus, mobus, etc.",
           },
           {
             label: "Device Integration",
-            info: "VFD, SOFT STARTERS, PLC, HMI",
+            info: "vfd, soft starters, plc, hmi",
           },
           {
             label: null,

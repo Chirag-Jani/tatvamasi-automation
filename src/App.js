@@ -10,10 +10,12 @@ import Homepage from "./pages/Homepage";
 import ElectricalSolution from "./pages/ElectricalSolution";
 import Footer from "./layout/Footer";
 import Panel from "./components/eletricalsolution/Panel";
+import ScrollToTop from "./components/utilities/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <ThemeProvider theme={theme}>
         <Navbar />
         <Routes>

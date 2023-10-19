@@ -119,11 +119,12 @@ const Panel = () => {
                       <>
                         <Grid
                           item
-                          xs={6}
+                          xs={5}
                           sx={{
                             marginBottom: "30px",
                             display: "flex",
                             justifyContent: "space-between",
+                            textAlign: "justify",
                           }}
                         >
                           <Typography
@@ -168,6 +169,8 @@ const Panel = () => {
                               fontFamily: "Montserrat",
                               color: "#414141",
                               paddingLeft: "20px",
+                              textAlign: "justify",
+                              textTransform: "capitalize",
                             }}
                           >
                             {item.info}
