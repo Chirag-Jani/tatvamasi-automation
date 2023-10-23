@@ -1,16 +1,26 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/public/fonts/Montserrat-Regular.ttf') format('truetype'); 
+  font-family: "Montserrat";
+  src: url("/public/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('/public/fonts/Montserrat-Bold.ttf') format('truetype'); 
+  font-family: "Montserrat-Bold";
+  src: url("/public/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Neuropolitical';
-  src: url('/public/fonts/neuropolitical\ rg.ttf') format('truetype'); 
+  font-family: "Montserrat-BoldItalic";
+  src: url("/public/fonts/Montserrat-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBoldItalic";
+  src: url("/public/fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neuropolitical";
+  src: url("/public/fonts/neuropolitical\ rg.ttf") format("truetype");
 }
 
 body {

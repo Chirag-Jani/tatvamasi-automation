@@ -516,7 +516,7 @@ export const data = [
   {
     name: "Tenders",
     image: Tenders,
-    path: "#",
+    path: "tenders",
   },
   {
     name: "Used Machine Buy/Sell",

@@ -124,7 +124,6 @@ const Panel = () => {
                             marginBottom: "30px",
                             display: "flex",
                             justifyContent: "space-between",
-                            textAlign: "justify",
                           }}
                         >
                           <Typography

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Stack } from "@mui/material";
 
-import homepageBanner from "../resources/homepageImages/homepageBanner.svg";
+import homepageBanner from "../resources/banners/homepageBanner.svg";
 import Menus from "../components/homepage/Menus";
 import Companies from "../components/homepage/Companies";
 
