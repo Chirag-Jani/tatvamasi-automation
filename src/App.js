@@ -12,6 +12,7 @@ import Tenders from "./pages/Tenders";
 import Footer from "./layout/Footer";
 import Panel from "./components/eletricalsolution/Panel";
 import ScrollToTop from "./components/utilities/ScrollToTop";
+import TenderClient from "./components/tenders/TenderClient";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/electrical-solution" element={<ElectricalSolution />} />
           <Route path="/electrical-solution/:panel" element={<Panel />} />
           <Route path="/tenders" element={<Tenders />} />
+          <Route path="/tenders/:client" element={<TenderClient />} />
         </Routes>
         <Footer />
       </ThemeProvider>
