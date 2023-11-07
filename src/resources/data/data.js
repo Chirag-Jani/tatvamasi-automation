@@ -68,10 +68,6 @@ export const data = [
             label: "Communication",
             info: "modbus protocol, rs485",
           },
-          {
-            label: null,
-            info: null,
-          },
         ],
       },
       {
@@ -123,10 +119,6 @@ export const data = [
             label: "Communication",
             info: "modbus protocol, rs485",
           },
-          {
-            label: null,
-            info: null,
-          },
         ],
       },
       {
@@ -177,10 +169,6 @@ export const data = [
           {
             label: "Communication",
             info: "modbus protocol, rs485",
-          },
-          {
-            label: null,
-            info: null,
           },
         ],
       },
@@ -335,10 +323,6 @@ export const data = [
             label: "Remote Monitoring",
             info: "intuitive and user-friendly",
           },
-          {
-            label: null,
-            info: null,
-          },
         ],
       },
       {
@@ -389,10 +373,6 @@ export const data = [
           {
             label: "Device Integration",
             info: "vfd, soft starters, plc, hmi",
-          },
-          {
-            label: null,
-            info: null,
           },
         ],
       },
@@ -445,10 +425,6 @@ export const data = [
             label: "Device Integration",
             info: "vfd, soft starters, plc, hmi",
           },
-          {
-            label: null,
-            info: null,
-          },
         ],
       },
       {
@@ -499,10 +475,6 @@ export const data = [
           {
             label: "Device Integration",
             info: "vfd, soft starters, plc, hmi",
-          },
-          {
-            label: null,
-            info: null,
           },
         ],
       },

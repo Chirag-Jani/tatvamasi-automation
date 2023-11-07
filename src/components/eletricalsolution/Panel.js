@@ -63,33 +63,27 @@ const Panel = () => {
             <img src={DemoPanel} alt="" className="panel-image" />
           </Box>
         </Box>
-        <Box
-          sx={{
-            padding: "20px",
-            borderRadius: "30px",
-            backgroundColor: "#D9D9D9",
-            marginBottom: "30px",
-          }}
-        >
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "Montserrat-Bold",
-                color: "#162866",
-                fontSize: {
-                  xl: "35px",
-                  lg: "35px",
-                  m: "35px",
-                  sm: "35px",
-                  xs: "20px",
-                },
-                textAlign: "center",
-                fontWeight: "700",
-              }}
-            >
-              Specifications
-            </Typography>
-          </Box>
+        <Box>
+          <Typography
+            sx={{
+              fontFamily: "Montserrat-Bold",
+              color: "#162866",
+              fontSize: {
+                xl: "35px",
+                lg: "35px",
+                m: "35px",
+                sm: "35px",
+                xs: "20px",
+              },
+              textAlign: "center",
+              fontWeight: "700",
+              marginBottom: "5px",
+            }}
+          >
+            Specifications
+          </Typography>
+        </Box>
+        <Box>
           <Box
             sx={{
               fontFamily: "Montserrat-Bold",
@@ -104,8 +98,8 @@ const Panel = () => {
                   <Grid
                     item
                     container
-                    xl={6}
-                    lg={6}
+                    xl={12}
+                    lg={12}
                     m={12}
                     sm={12}
                     xs={12}
@@ -113,6 +107,10 @@ const Panel = () => {
                     sx={{
                       textAlign: "left",
                       margin: "auto",
+                      padding: "20px",
+                      borderRadius: "30px",
+                      backgroundColor: "#D9D9D9",
+                      marginBottom: "15px",
                     }}
                   >
                     {item.label !== null && (
