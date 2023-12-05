@@ -1,13 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../../resources/data/data";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
+import DemoPanel from "../../resources/Demo Panel.svg";
+import ReactPlayer from "react-player";
 
 const TenderClient = () => {
   const TenderList = data[3].tenders;
   let { client } = useParams();
   const Specs = TenderList.find((t) => t.path === client);
-  console.log(Specs);
 
   return (
     <Box
@@ -47,6 +48,23 @@ const TenderClient = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {Specs.desc}
         </Typography>
+        <Box>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              {/* Image Component */}
+              <img src={DemoPanel} alt="" style={{ width: "100%" }} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              {/* ReactPlayer Component */}
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                controls={true}
+                width={"100%"}
+                height={"250px"}
+              />
+            </Grid>
+          </Grid>
+        </Box>
       </Box>
     </Box>
   );
