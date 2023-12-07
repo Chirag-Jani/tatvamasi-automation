@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import DemoMap from "../../resources/DemoMap.svg";
+import Map from "./Map";
 
 const Address = () => {
   return (
@@ -35,22 +35,10 @@ const Address = () => {
       >
         Address
       </Typography>
-      <img
-        src={DemoMap}
-        alt=""
-        style={{
-          width: "60%", // Default width for all screen sizes
-          margin: "50px auto", // Center the image
-          marginTop: "0",
-          display: "block", // Remove any extra space below the image
-          "@media (minWidth: 600px)": {
-            width: "50%",
-          },
-          "@media (minWidth: 960px)": {
-            width: "50%",
-          },
-        }}
-      />
+
+      <Box>
+        <Map />
+      </Box>
 
       <Typography
         sx={{
