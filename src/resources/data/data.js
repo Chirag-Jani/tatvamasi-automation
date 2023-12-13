@@ -30,49 +30,58 @@ export const data = [
         specs: [
           {
             label: "Rated Voltage",
-            info: "415v",
+            info: "415V",
           },
           {
             label: "Phase",
-            info: "3ph 3/4 wire system",
+            info: "3 Phase 3/4 Wire System",
           },
           {
             label: "Rated Current",
-            info: "upto 6300a, 100ka",
+            info: "Up to 6300A with a short-circuit withstand capacity of 100kA",
           },
           {
             label: "Frequency",
-            info: "50hz ac",
+            info: "50Hz AC",
           },
           {
             label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
+            info: "We use high-quality aluminum (AL) and copper (CU) bus bars with certified conductivity according to IACS standards.",
           },
           {
             label: "IP Rating",
-            info: "ip 20/ ip 44/ ip 65",
+            info: "Choose from IP 20, IP 44, or IP 65, depending on your specific environmental and safety requirements.",
           },
           {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
+            label: "Mounting Type",
+            info: "Our PCC panels are available in both Fixed and Semi-Draw Out types, with the option of Single or Double Front Design.",
           },
-          {
-            label: "Usage / Application",
-            info: "cement plant, chemical ind., textile, sugar, etc.",
-          },
+
           {
             label: "Dimension",
-            info: "customized mm / inch",
+            info: "We offer customized panel sizes in both millimeters and inches to ensure a perfect fit for your application.",
           },
           {
             label: "Automation",
-            info: "bus coupler & auto change over facility",
+            info: "Enjoy advanced features like Bus Coupler and Auto Change Over Facility for seamless power management.",
           },
           {
             label: "Communication",
-            info: "modbus protocol, rs485",
+            info: "Our PCC panels support Modbus Protocol and RS-485 communication, enabling easy integration with your industrial automation systems.",
           },
         ],
+        application: {
+          description:
+            "Our PCC panels are designed to meet the power control needs of various industries, including",
+          industries: [
+            "Cement Plants",
+            "Chemical & Pharma Industries",
+            "Textile Mills",
+            "Sugar Factories",
+            "Steel industries & heavy engineering Industries",
+            "And more...",
+          ],
+        },
       },
       {
         name: "MCC Panel",

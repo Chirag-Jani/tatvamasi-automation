@@ -10,7 +10,7 @@ const Panel = () => {
   let { panel } = useParams();
 
   const Specs = PanelList.find((p) => p.path === panel);
-
+  console.log(Specs);
   return (
     <>
       <Box
@@ -105,7 +105,6 @@ const Panel = () => {
                     xs={12}
                     key={item.label}
                     sx={{
-                      textAlign: "left",
                       margin: "auto",
                       padding: "20px",
                       borderRadius: "30px",
@@ -119,7 +118,6 @@ const Panel = () => {
                           item
                           xs={5}
                           sx={{
-                            marginBottom: "30px",
                             display: "flex",
                             justifyContent: "space-between",
                           }}
@@ -198,8 +196,24 @@ const Panel = () => {
             >
               Application
             </Typography>
-
-            {[0, 1, 2, 3, 4].map((itm) => {
+            {/* <Typography
+              sx={{
+                color: "rgba(60, 60, 59, 1)",
+                fontFamily: "Montserrat-Bold",
+                fontSize: {
+                  xl: "1.5rem",
+                  lg: "1.5rem",
+                  m: "1.5rem",
+                  sm: "1rem",
+                  xs: ".8rem",
+                },
+                textAlign: "justify",
+                margin: "5px 0",
+              }}
+            >
+              {Specs.application?.description}
+            </Typography> */}
+            {Specs.application.industries?.map((itm) => {
               return (
                 <Typography
                   sx={{
@@ -216,7 +230,7 @@ const Panel = () => {
                     margin: "5px 0",
                   }}
                 >
-                  Steel industries & heavy engineering Industries
+                  {itm}
                 </Typography>
               );
             })}
