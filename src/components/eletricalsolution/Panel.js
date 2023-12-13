@@ -180,6 +180,69 @@ const Panel = () => {
               })}
             </Grid>
           </Box>
+          <Box>
+            <Typography
+              sx={{
+                color: "rgba(22, 40, 102, 1)",
+                fontFamily: "Montserrat-Bold",
+                fontSize: {
+                  xl: "3rem",
+                  lg: "3rem",
+                  m: "3rem",
+                  sm: "2rem",
+                  xs: "1.5rem",
+                },
+                textAlign: "center",
+                margin: "50px 0",
+              }}
+            >
+              Application
+            </Typography>
+
+            {[0, 1, 2, 3, 4].map((itm) => {
+              return (
+                <Typography
+                  sx={{
+                    color: "rgba(60, 60, 59, 1)",
+                    fontFamily: "Montserrat",
+                    fontSize: {
+                      xl: "2rem",
+                      lg: "2rem",
+                      m: "2rem",
+                      sm: "1.5rem",
+                      xs: ".8rem",
+                    },
+                    textAlign: "center",
+                    margin: "5px 0",
+                  }}
+                >
+                  Steel industries & heavy engineering Industries
+                </Typography>
+              );
+            })}
+            <Typography
+              sx={{
+                color: "rgba(0, 0, 0, 1)",
+                fontFamily: "Montserrat-Bold",
+                fontSize: {
+                  xl: "1.1rem",
+                  lg: "1.1rem",
+                  m: "1.1rem",
+                  sm: ".8rem",
+                  xs: ".5rem",
+                },
+                textAlign: "justify",
+                margin: "50px 0",
+                marginBottom: "200px",
+              }}
+            >
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With
+              no limitations on the industries we serve, we are committed to
+              tailoring PCC panels that precisely fit your unique requirements.
+              At TAPL, our mission is to provide you with reliable and efficient
+              power control solutions that enhance your industrial processes.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </>

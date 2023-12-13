@@ -9,8 +9,8 @@ const mapContainerStyle = {
   margin: "0 auto",
 };
 const center = {
-  lat: 21.09383373343936,
-  lng: 72.86015182534064,
+  lat: 21.36282069229223,
+  lng: 72.9873768245914,
 };
 
 const Map = () => {
