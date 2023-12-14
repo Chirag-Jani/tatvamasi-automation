@@ -26,7 +26,7 @@ export const data = [
       {
         name: "PCC Panel",
         path: "pcc",
-        desc: "PCC Description to be added!",
+        desc: "At Tatwamasi Automation Pvt. Ltd.,we are your trusted partner for all your Power Control Center (PCC) panel needs. Our PCC panels are designed and built to meet the highest standards, ensuring efficient power distribution, motor control, and electrical protection. Here's what you can expect from our PCC panels:",
         specs: [
           {
             label: "Rated Voltage",
@@ -82,9 +82,18 @@ export const data = [
             "And more...",
           ],
         },
+        moreInfo: {
+          title: "More Information",
+          content:
+            "With no limitations on the industries we serve, we are committed to tailoring PCC panels that precisely fit your unique requirements. At TAPL, our mission is to provide you with reliable and efficient power control solutions that enhance your industrial processes.",
+        },
+        exp: {
+          title: "Experience the Power of Precision",
+          data: "Contact us today to discuss your specific PCC panel needs. Whether it's a standard solution or a highly customized panel, we have the expertise and flexibility to deliver excellence.",
+        },
       },
       {
-        name: "MCC Panel",
+        name: "MCC & IMCC Panel",
         desc: "MCC Description to be added!",
         path: "mcc",
         specs: [
@@ -507,25 +516,83 @@ export const data = [
         name: "GNFC",
         image: GNFC,
         path: "gnfc",
-        desc: `The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+        data: {
+          overview:
+            "We are  a dedicated automation solution provider with a proven track record of transforming water treatment processes into highly efficient, automated systems. Recently, we undertook a groundbreaking project at the GNFC STP plant in Bharuch, India, where manual operations were replaced with cutting-edge automation to optimize water management and reuse within the vast GNFC plant colony.",
+          conslusion:
+            "Our automation solution at the GNFC STP plant has not only streamlined operations but also significantly contributed to sustainability by enabling efficient water reuse. By optimizing the treatment process and ensuring precise water distribution, we have enhanced the overall performance of this critical facility, setting new benchmarks for water management in large industrial colonies.",
+          highlights: [
+            {
+              label: "Enhanced Automation",
+              value:
+                "Our team implemented a comprehensive automation system at the existing 12 MLD STP plant, replacing manual control with state-of-the-art technology.",
+            },
+            {
+              label: "Main PLC Control Panel",
+              value:
+                "At the heart of the system is a central PLC control panel for the STP area, enabling seamless monitoring and control of critical processes.",
+            },
+            {
+              label: "Remote PLC Control Panels",
+              value:
+                "To ensure efficient distribution of filtered water, we installed five remote PLC control panels at different locations. These panels, spread across a radius of approximately 5 km, communicate with the main panel, ensuring uniform control and distribution of water.",
+            },
+            {
+              label: "Communication Network",
+              value:
+                "The entire system is interconnected via an optical fiber network, utilizing a ring topology. This ensures reliable communication between the main and remote control panels.",
+            },
+            {
+              label: "Instrumentation",
+              value:
+                "We integrated various instruments, including level sensors, flow meters, pressure transmitters, and chlorine gas sensors at strategic points within the STP plant. These instruments facilitate real-time monitoring and automated control of critical parameters.",
+            },
+            {
+              label: "Quality Assurance",
+              value:
+                "The system continuously monitors water quality, generating daily reports that are not only accessible locally but also directly linked to government portals, ensuring adherence to water quality standards.",
+            },
+            {
+              label: "Waste Management",
+              value:
+                "Automatic control valves are utilized to manage waste mud efficiently, reducing manual intervention and optimizing the treatment process.",
+            },
+            {
+              label: "SCADA System",
+              value:
+                "The central SCADA system provides real-time data visualization and control capabilities. It displays critical information, including tank levels, water in/out data, water quality metrics, and distribution statistics.",
+            },
+            {
+              label: "Water Reuse",
+              value:
+                "The treated water from the STP plant is reused in various areas of the GNFC plant colony, including gardens, sports grounds, farming, and golf areas, promoting sustainability.",
+            },
+          ],
+        },
       },
       {
         name: "Mazgaon Dockyard",
         image: MD,
         path: "md",
-        desc: `The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+        data: {
+          overview: "None Yet",
+        },
       },
       {
         name: "Nagda City",
         image: NC,
         path: "nc",
-        desc: `The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+        data: {
+          overview: "None Yet",
+        },
       },
       {
         name: "Ukai Dam",
         image: UD,
         path: "ud",
-        desc: `The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+        data: {
+          overview: "None Yet",
+        },
       },
     ],
   },

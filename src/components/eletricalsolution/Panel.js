@@ -15,7 +15,6 @@ const Panel = () => {
     <>
       <Box
         sx={{
-          // padding: "20px 20px",
           margin: "auto",
           width: "80%",
         }}
@@ -40,8 +39,10 @@ const Panel = () => {
             sx={{
               fontSize: "18px",
               textAlign: "justify",
+              fontFamily: "Montserrat",
             }}
           >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {Specs.desc}
           </Typography>
           <Box
@@ -114,7 +115,31 @@ const Panel = () => {
                   >
                     {item.label !== null && (
                       <>
-                        <Grid
+                        <Typography
+                          sx={{
+                            fontSize: {
+                              xl: "18px",
+                              lg: "18px",
+                              m: "18px",
+                              sm: "18px",
+                              xs: "12px",
+                            },
+                            fontFamily: "Montserrat",
+                            color: "#414141",
+                            textAlign: "justify",
+                            textTransform: "capitalize",
+                          }}
+                        >
+                          <strong
+                            style={{
+                              fontFamily: "Montserrat-Bold",
+                            }}
+                          >
+                            {item.label}&nbsp;:&nbsp;
+                          </strong>
+                          {item.info}
+                        </Typography>
+                        {/* <Grid
                           item
                           xs={5}
                           sx={{
@@ -170,7 +195,7 @@ const Panel = () => {
                           >
                             {item.info}
                           </Typography>
-                        </Grid>
+                        </Grid> */}
                       </>
                     )}
                   </Grid>
@@ -179,41 +204,26 @@ const Panel = () => {
             </Grid>
           </Box>
           <Box>
-            <Typography
-              sx={{
-                color: "rgba(22, 40, 102, 1)",
-                fontFamily: "Montserrat-Bold",
-                fontSize: {
-                  xl: "3rem",
-                  lg: "3rem",
-                  m: "3rem",
-                  sm: "2rem",
-                  xs: "1.5rem",
-                },
-                textAlign: "center",
-                margin: "50px 0",
-              }}
-            >
-              Application
-            </Typography>
-            {/* <Typography
-              sx={{
-                color: "rgba(60, 60, 59, 1)",
-                fontFamily: "Montserrat-Bold",
-                fontSize: {
-                  xl: "1.5rem",
-                  lg: "1.5rem",
-                  m: "1.5rem",
-                  sm: "1rem",
-                  xs: ".8rem",
-                },
-                textAlign: "justify",
-                margin: "5px 0",
-              }}
-            >
-              {Specs.application?.description}
-            </Typography> */}
-            {Specs.application.industries?.map((itm) => {
+            {Specs.application && (
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat-Bold",
+                  fontSize: {
+                    xl: "3rem",
+                    lg: "3rem",
+                    m: "3rem",
+                    sm: "2rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "center",
+                  margin: "50px 0",
+                }}
+              >
+                Application
+              </Typography>
+            )}
+            {Specs.application?.industries?.map((itm) => {
               return (
                 <Typography
                   sx={{
@@ -237,7 +247,7 @@ const Panel = () => {
             <Typography
               sx={{
                 color: "rgba(0, 0, 0, 1)",
-                fontFamily: "Montserrat-Bold",
+                fontFamily: "Montserrat",
                 fontSize: {
                   xl: "1.1rem",
                   lg: "1.1rem",
@@ -247,16 +257,47 @@ const Panel = () => {
                 },
                 textAlign: "justify",
                 margin: "50px 0",
-                marginBottom: "200px",
               }}
             >
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With
-              no limitations on the industries we serve, we are committed to
-              tailoring PCC panels that precisely fit your unique requirements.
-              At TAPL, our mission is to provide you with reliable and efficient
-              power control solutions that enhance your industrial processes.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {Specs.moreInfo?.content}
             </Typography>
           </Box>
+          {Specs.exp && (
+            <Box
+              sx={{
+                margin: "50px 0",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "left",
+                  margin: "25px 0",
+                }}
+              >
+                {Specs.exp.title}
+              </Typography>
+
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  textAlign: "justify",
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {Specs.exp.data}
+              </Typography>
+            </Box>
+          )}
         </Box>
       </Box>
     </>

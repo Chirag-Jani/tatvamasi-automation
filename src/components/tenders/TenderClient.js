@@ -27,6 +27,7 @@ const TenderClient = () => {
             fontFamily: "Montserrat",
             color: "#162866",
             fontSize: "40px",
+            margin: "50px 0",
           }}
         >
           {Specs.name}
@@ -40,14 +41,74 @@ const TenderClient = () => {
       >
         <Typography
           sx={{
+            fontSize: "30px",
+            textAlign: "justify",
+            fontFamily: "Montserrat",
+            color: "rgba(22, 40, 102, 1)",
+            margin: "25px 0",
+          }}
+        >
+          Overview
+        </Typography>
+        <Typography
+          sx={{
             fontSize: "18px",
             textAlign: "justify",
             fontFamily: "Montserrat",
           }}
         >
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {Specs.desc}
+          {Specs.data.overview}
         </Typography>
+      </Box>
+      <Box
+        sx={{
+          margin: "50px 0",
+          marginTop: 0,
+        }}
+      >
+        <Typography
+          sx={{
+            fontSize: "30px",
+            textAlign: "justify",
+            fontFamily: "Montserrat",
+            color: "rgba(22, 40, 102, 1)",
+            margin: "25px 0",
+          }}
+        >
+          Project Highlights
+        </Typography>
+        {Specs.data.highlights?.map((itm) => {
+          return (
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: {
+                    xl: "18px",
+                    lg: "18px",
+                    m: "18px",
+                    sm: "18px",
+                    xs: "12px",
+                  },
+                  fontFamily: "Montserrat",
+                  color: "#414141",
+                  textAlign: "justify",
+                  textTransform: "capitalize",
+                  margin: "40px 0",
+                }}
+              >
+                <strong
+                  style={{
+                    fontFamily: "Montserrat-Bold",
+                  }}
+                >
+                  {itm.label}&nbsp;:&nbsp;
+                </strong>
+                {itm.value}
+              </Typography>
+            </Box>
+          );
+        })}
       </Box>
 
       {/* These things need to be dynamic */}
@@ -85,12 +146,7 @@ const TenderClient = () => {
             }}
           >
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Our automation solution at the GNFC STP plant has not only
-            streamlined operations but also significantly contributed to
-            sustainability by enabling efficient water reuse. By optimizing the
-            treatment process and ensuring precise water distribution, we have
-            enhanced the overall performance of this critical facility, setting
-            new benchmarks for water management in large industrial colonies.
+            {Specs.data.conslusion}
           </Typography>
         </Box>
         <Grid

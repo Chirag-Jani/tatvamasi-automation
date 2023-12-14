@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import DemoBanner from "../resources/DemoBanner.svg";
+import electricalBanner from "../resources/banners/electrical-banner.jpg";
 import PanelCard from "../components/eletricalsolution/PanelCard";
 import { data } from "../resources/data/data";
-import electricalBanner from "../resources/banners/electricalBanner.svg";
+import planAndDesign from "../resources/banners/planAndDesign.svg";
 import { Link } from "react-router-dom";
 
 const PanelList = data[1].panels;
@@ -35,10 +35,10 @@ const ElectricalSolution = () => {
             Electrical Solutions
           </Typography>
           <img
-            src={DemoBanner}
+            src={electricalBanner}
             alt="Tatvamasi Automation"
             style={{
-              maxWidth: "99vw",
+              width: "100%",
             }}
           />
         </Box>
@@ -98,7 +98,7 @@ const ElectricalSolution = () => {
             }}
           >
             <img
-              src={electricalBanner}
+              src={planAndDesign}
               alt=""
               style={{
                 maxWidth: "70%",
@@ -108,7 +108,12 @@ const ElectricalSolution = () => {
               sx={{
                 textAlign: "justify",
                 fontFamily: "Montserrat",
-                width: "60%",
+                width: {
+                  xl: "60%",
+                  lg: "60%",
+                  md: "60%",
+                  xs: "90%",
+                },
               }}
             >
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -153,7 +158,7 @@ const ElectricalSolution = () => {
                   xs: "30px",
                 },
                 textAlign: "center",
-                margin: "20px 0",
+                margin: "10px 0",
                 marginTop: "50px",
               }}
             >
@@ -162,7 +167,7 @@ const ElectricalSolution = () => {
             <Typography
               sx={{
                 width: "80%",
-                margin: "20px",
+                margin: "10px",
                 textAlign: "justify",
                 fontFamily: "Montserrat",
               }}
