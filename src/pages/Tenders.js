@@ -50,7 +50,7 @@ const Tenders = () => {
           src={tendersBanner}
           alt="Tatvamasi Automation"
           style={{
-            maxWidth: "99vw",
+            width: "100%",
           }}
         />
       </Box>
