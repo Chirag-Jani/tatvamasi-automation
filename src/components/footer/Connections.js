@@ -20,29 +20,29 @@ const Connections = () => {
     contacts: ["+91 1234561234", "+91 9876543210"],
   };
 
-  const social = [
-    {
-      logo: WP,
-      url: "#WP",
-    },
-    {
-      logo: LINK,
-      url: "#LINK",
-    },
-    {
-      logo: FB,
-      url: "#FB",
-    },
-    {
-      logo: INSTA,
-      url: "#INSTA",
-    },
+  // const social = [
+  //   {
+  //     logo: WP,
+  //     url: "#WP",
+  //   },
+  //   {
+  //     logo: LINK,
+  //     url: "#LINK",
+  //   },
+  //   {
+  //     logo: FB,
+  //     url: "#FB",
+  //   },
+  //   {
+  //     logo: INSTA,
+  //     url: "#INSTA",
+  //   },
 
-    {
-      logo: YT,
-      url: "#YT",
-    },
-  ];
+  //   {
+  //     logo: YT,
+  //     url: "#YT",
+  //   },
+  // ];
 
   return (
     <Box>
@@ -108,7 +108,7 @@ const Connections = () => {
           );
         })}
       </Box>
-      <Box
+      {/* <Box
         sx={{
           margin: "20px 0",
           display: "flex",
@@ -131,7 +131,7 @@ const Connections = () => {
             />
           );
         })}
-      </Box>
+      </Box> */}
     </Box>
   );
 };

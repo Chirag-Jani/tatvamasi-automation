@@ -18,6 +18,7 @@ const Footer = () => {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
+        marginTop: "100px",
       }}
     >
       <Box

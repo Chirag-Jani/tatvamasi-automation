@@ -24,7 +24,7 @@ export const data = [
     path: "electrical-solution",
     panels: [
       {
-        name: "PCC Panel",
+        name: "PCC Panel", // done rendering
         path: "pcc",
         desc: "At Tatwamasi Automation Pvt. Ltd.,we are your trusted partner for all your Power Control Center (PCC) panel needs. Our PCC panels are designed and built to meet the highest standards, ensuring efficient power distribution, motor control, and electrical protection. Here's what you can expect from our PCC panels:",
         specs: [
@@ -87,13 +87,13 @@ export const data = [
           content:
             "With no limitations on the industries we serve, we are committed to tailoring PCC panels that precisely fit your unique requirements. At TAPL, our mission is to provide you with reliable and efficient power control solutions that enhance your industrial processes.",
         },
-        exp: {
+        experienceThePower: {
           title: "Experience the Power of Precision",
           data: "Contact us today to discuss your specific PCC panel needs. Whether it's a standard solution or a highly customized panel, we have the expertise and flexibility to deliver excellence.",
         },
       },
       {
-        name: "MCC & IMCC Panel",
+        name: "MCC & IMCC Panel", // done rendering
         desc: "At Tatwamasi Automation Pvt. Ltd., we take pride in designing and manufacturing Motor Control Center (MCC) panels that provide a seamless solution for controlling motors and electrical equipment in diverse industrial settings. Our MCC panels are built to meet stringent industry standards, ensuring efficient motor control, protection, and automation. Here's what sets our MCC panels apart:",
         path: "mcc",
         specs: [
@@ -154,19 +154,45 @@ export const data = [
           content:
             "Our expertise knows no bounds, and we are dedicated to crafting MCC panels that meet the unique requirements of your industry.",
         },
-        // exp: {
-        //   title: "Experience the Power of Precision",
-        //   data: "Contact us today to discuss your specific PCC panel needs. Whether it's a standard solution or a highly customized panel, we have the expertise and flexibility to deliver excellence.",
-        // },
+        subPanel: {
+          title: "IMCC Panels - Intelligence Meets Motor Control",
+          desc: "For those seeking advanced motor control solutions, we offer Intelligent Motor Control Center (IMCC) panels that provide the next level of automation and precision. Our IMCC panels include the features of MCC panels with additional intelligent control capabilities.",
+          advFeats: {
+            title: "Advanced Features",
+            feats: [
+              {
+                label: "PLC Integration",
+                info: "Seamlessly integrate programmable logic controllers for enhanced automation and control.",
+              },
+              {
+                label: "Touchscreen HMI",
+                info: "User-friendly human-machine interfaces for real-time monitoring and control.",
+              },
+              {
+                label: "Energy Efficiency",
+                info: "Optimize power consumption with intelligent motor control algorithms.",
+              },
+              {
+                label: "Remote Access",
+                info: "Monitor and control your motors remotely for maximum efficiency and convenience.",
+              },
+            ],
+          },
+        },
+
+        precisionMotorControl: {
+          title: "Experience Precision Motor Control",
+          data: "Whether you choose our MCC or IMCC panels, you're guaranteed reliability and precision. Contact us today to discuss your specific motor control needs, from standard solutions to highly customized panels tailored to your industry.",
+        },
       },
       {
-        name: "APFC Panel",
-        desc: "APFC Description to be added!",
+        name: "APFC Panel", // done rendering
+        desc: "At TAPL, we are your trusted source for high-quality Automatic Power Factor Correction (APFC) Control Panels, including Reactor-Type APFC panels. Our comprehensive APFC solutions are designed to enhance power efficiency, reduce energy wastage, and maintain a near-unity power factor for your electrical system.",
         path: "apfc",
         specs: [
           {
             label: "Rated Voltage",
-            info: "200-900V",
+            info: "415V",
           },
           {
             label: "Phase",
@@ -196,314 +222,349 @@ export const data = [
             label: "Protection",
             info: "Essential protection features are included to safeguard your electrical system and maintain power quality.",
           },
-          {
-            label: "Bus Bar",
-            info: "AL/CU with certified percentage of frequency IACS conductivity.",
-          },
-          {
-            label: "IP Rating",
-            info: "IP 20/ IP 44/ IP 65",
-          },
-          {
-            label: "Mounting Type",
-            info: "Fixed & semi draw out type with single or double front design",
-          },
-          {
-            label: "Usage / Application",
-            info: "Cement plant, chemical ind., textile, sugar, etc.",
-          },
-          {
-            label: "Dimension",
-            info: "Customized mm / inch",
-          },
-          {
-            label: "Automation",
-            info: "Bus coupler & auto change over facility",
-          },
-          {
-            label: "Communication",
-            info: "Modbus protocol, RS485",
-          },
         ],
         application: {
           description:
-            "Our PCC panels are designed to meet the power control needs of various industries, including",
+            "Our APFC Control Panels, including Reactor-Type panels, are the ideal solution for various industries, including:",
           industries: [
-            "Cement Plants",
-            "Chemical & Pharma Industries",
-            "Textile Mills",
-            "Sugar Factories",
-            "Steel industries & heavy engineering Industries",
+            "Manufacturing",
+            "Commercial Buildings",
+            "Hospitals",
+            "Data Centers",
             "And more...",
           ],
         },
-        moreInfo: {
-          title: "More Information",
-          content:
-            "With no limitations on the industries we serve, we are committed to tailoring PCC panels that precisely fit your unique requirements. At TAPL, our mission is to provide you with reliable and efficient power control solutions that enhance your industrial processes.",
-        },
-        exp: {
-          title: "Experience the Power of Precision",
-          data: "Contact us today to discuss your specific PCC panel needs. Whether it's a standard solution or a highly customized panel, we have the expertise and flexibility to deliver excellence.",
+        keyBenefits: [
+          {
+            label: "Energy Savings",
+            info: "APFC panels reduce energy consumption, leading to significant cost savings on electricity bills.",
+          },
+          {
+            label: "Improved Power Quality",
+            info: "Maintain a stable and near-unity power factor, enhancing the lifespan and efficiency of your electrical equipment.",
+          },
+          {
+            label: "Reduced Penalties",
+            info: "Avoid penalties from utilities for low power factor, ultimately saving you money.",
+          },
+          {
+            label: "Mitigated Harmonics",
+            info: "Reactor-Type APFC panels help mitigate harmonics, ensuring power quality and stability.",
+          },
+        ],
+        powerEneSimp: {
+          title: "Power Efficiency, Simplified",
+          data: "At TAPL, we make it easy to optimize power efficiency and mitigate harmonics. Our APFC Control Panels, including Reactor-Type panels, are designed for seamless integration into your electrical system.",
         },
       },
       {
-        name: "VFD Panel",
-        desc: "VFD Description to be added!",
+        name: "VFD Panel", // done rendering
+        desc: "At TAPL, we're your trusted partner for manufacturing high-quality Variable Frequency Drive (VFD) Control Panels, designed to deliver precise motor control for a wide range of industrial applications. Our VFD panels are engineered to provide you with the flexibility and efficiency you need to optimize your motor-driven systems.",
         path: "vfd",
         specs: [
           {
             label: "Rated Voltage",
-            info: "low voltage (lv)",
+            info: "415V",
           },
           {
             label: "Phase",
-            info: "three phase",
+            info: "3 Phase 3/4 Wire System",
           },
           {
-            label: "Motor Power Range",
-            info: "upto 200kw",
+            label: "Rated Current",
+            info: "Customized to your requirements, accommodating a wide spectrum of motor sizes and types.",
           },
           {
             label: "Frequency",
-            info: "50/60hz ac",
+            info: "50Hz AC",
           },
           {
-            label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
+            label: "Control Strategy",
+            info: "Our VFD Control Panels use advanced control strategies, providing you with precise motor speed control and energy savings.",
           },
           {
-            label: "Standard",
-            info: "iec 60076-6",
-          },
-          {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
-          },
-          {
-            label: "Usage / Application",
-            info: "motor speed control & automation",
-          },
-          {
-            label: "Dimension",
-            info: "customized mm / inch",
-          },
-          {
-            label: "VFD Compatibility",
-            info: "compatible with various vfd brands",
-          },
-          {
-            label: "Device Integration",
-            info: "motors, sensors, plc",
-          },
-          {
-            label: "Communication",
-            info: "ethernet, profibus, mobus, etc.",
+            label: "Protection",
+            info: "Comprehensive protection features are integrated to safeguard your motors and equipment against electrical faults and overloads.",
           },
         ],
+
+        application: {
+          description:
+            "Our VFD Control Panels are the ideal solution for a variety of industries, including:",
+          industries: [
+            "Manufacturing",
+            "HVAC (Heating, Ventilation, and Air Conditioning)",
+            "Pumps and Compressors",
+            "Conveyor Systems",
+            "And more...",
+          ],
+        },
+        keyBenefits: [
+          {
+            label: "Energy Efficiency",
+            info: "VFD panels enable you to control motor speed, reducing energy consumption and operating costs.",
+          },
+          {
+            label: "Soft Start and Stop",
+            info: "Soft starting and stopping capabilities reduce mechanical stress on motors and equipment.",
+          },
+          {
+            label: "Improved Motor Life",
+            info: "Reduced wear and tear on motors extends their lifespan and reduces maintenance costs.",
+          },
+          {
+            label: "Versatility",
+            info: "VFD panels are versatile, compatible with various motor types and applications.",
+          },
+          {
+            label: "Enhanced Process Control",
+            info: "VFDs allow for precise speed and torque control, improving process efficiency.",
+          },
+        ],
+        precisionMotorControl: {
+          title: "Precision Motor Control, Simplified",
+          data: "At TAPL, we believe in simplifying motor control. Our VFD Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
+        },
       },
       {
-        name: "Soft Starter Panel",
-        desc: "Soft Description to be added!",
+        name: "Soft Starter Panel", // done rendering
+        desc: "At TAPL, we're at the forefront of manufacturing high-quality Soft Starter Control Panels, designed to provide smooth and efficient motor control for a variety of industrial applications. Our Soft Starter panels are engineered for precision and reliability, ensuring that your equipment operates seamlessly and without unnecessary wear and tear.",
         path: "soft-starter",
         specs: [
           {
             label: "Rated Voltage",
-            info: "low voltage (lv)",
+            info: "415V",
           },
           {
             label: "Phase",
-            info: "three phase",
+            info: "3 Phase 3/4 Wire System",
           },
           {
-            label: "Motor Power Range",
-            info: "0.37kw to 900kw",
+            label: "Rated Current",
+            info: "Customized to your needs, accommodating various motor sizes and types.",
           },
           {
             label: "Frequency",
-            info: "50/60hz ac",
+            info: "50Hz AC",
           },
           {
-            label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
+            label: "Control Strategy",
+            info: "Our Soft Starter panels employ advanced control strategies for precise motor control, reducing mechanical stress during startup and shutdown.",
           },
           {
-            label: "Standard",
-            info: "iec 60047-4-4",
-          },
-          {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
-          },
-          {
-            label: "Usage / Application",
-            info: "motor speed control & automation",
-          },
-          {
-            label: "Dimension",
-            info: "customized mm / inch",
-          },
-          {
-            label: "Communication",
-            info: "ethernet, profibus, mobus, etc.",
+            label: "Protection",
+            info: "Safety features are integrated to protect your motors and equipment from overloads and electrical faults.",
           },
         ],
+
+        application: {
+          description:
+            "Our Soft Starter Control Panels are suitable for a wide range of industries, including:",
+          industries: [
+            "Pumps and Compressors",
+            "Conveyor Systems",
+            "Fans and Blowers",
+            "Manufacturing",
+            "And more...",
+          ],
+        },
+        keyBenefits: [
+          {
+            label: "Smooth Motor Control",
+            info: "Soft Starter panels provide a gradual acceleration and deceleration of motors, reducing mechanical and electrical stress.",
+          },
+          {
+            label: "Energy Savings",
+            info: "By minimizing voltage and current spikes during startup, Soft Starters help reduce energy consumption and extend motor life.",
+          },
+          {
+            label: "Reduced Maintenance",
+            info: "Reduced wear and tear on equipment leads to lower maintenance costs and increased reliability.",
+          },
+          {
+            label: "Improved Power Quality",
+            info: "Soft Starters contribute to a more stable power supply, enhancing the longevity of your electrical system.",
+          },
+        ],
+
+        precisionMotorControl: {
+          title: "Precision Motor Control, Simplified",
+          data: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
+        },
       },
       {
-        name: "Draw-out Panel",
+        name: "Draw-out Panel", // no data yet
         desc: "Draw Description to be added!",
         path: "draw-out",
         specs: [
           {
             label: "Rated Voltage",
-            info: "low voltage (lv)",
-          },
-          {
-            label: "Phase",
-            info: "three phase",
-          },
-          {
-            label: "Motor Power Range",
-            info: "0.37kw to 900kw",
-          },
-          {
-            label: "Frequency",
-            info: "50/60hz ac",
-          },
-          {
-            label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
-          },
-          {
-            label: "Standard",
-            info: "iec 60076-6",
-          },
-          {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
-          },
-          {
-            label: "Usage / Application",
-            info: "electrical distribution & control",
-          },
-          {
-            label: "Incoming / Outgoing",
-            info: "drawout design (incoming & outgoing)",
-          },
-          {
-            label: "Communication",
-            info: "ethernet, profibus, mobus, etc.",
-          },
-          {
-            label: "Remote Monitoring",
-            info: "intuitive and user-friendly",
+            info: "415V",
           },
         ],
+
+        application: {
+          description:
+            "Our Soft Starter Control Panels are suitable for a wide range of industries, including:",
+          industries: [
+            "Pumps and Compressors",
+            "Conveyor Systems",
+            "Fans and Blowers",
+            "Manufacturing",
+            "And more...",
+          ],
+        },
+        keyBenefits: [
+          {
+            label: "Smooth Motor Control",
+            info: "Soft Starter panels provide a gradual acceleration and deceleration of motors, reducing mechanical and electrical stress.",
+          },
+          {
+            label: "Energy Savings",
+            info: "By minimizing voltage and current spikes during startup, Soft Starters help reduce energy consumption and extend motor life.",
+          },
+          {
+            label: "Reduced Maintenance",
+            info: "Reduced wear and tear on equipment leads to lower maintenance costs and increased reliability.",
+          },
+          {
+            label: "Improved Power Quality",
+            info: "Soft Starters contribute to a more stable power supply, enhancing the longevity of your electrical system.",
+          },
+        ],
+
+        precisionMotorControl: {
+          label: "Precision Motor Control, Simplified",
+          info: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
+        },
       },
       {
-        name: "Type Tested Panel",
-        desc: "Type Description to be added!",
+        name: "Type Tested Panel", // done rendering
+        desc: "At TAPL, we take pride in offering Type-Tested Panels, a hallmark of reliability and safety in electrical distribution systems. Our Type-Tested Panels are meticulously designed, rigorously tested, and certified to meet international standards, ensuring peace of mind and uncompromising performance. Here's what you can expect from our Type-Tested Panels:",
         path: "type-tested",
+        whatAre: {
+          title: "What Are Type-Tested Panels?",
+          data: "Type-Tested Panels are electrical distribution panels that have undergone a series of comprehensive tests to verify their performance, safety, and compliance with industry standards. These panels are designed to ensure the highest level of reliability in diverse applications.",
+        },
+        // specs: [
+        //   {
+        //     label: "",
+        //     info: "",
+        //   },
+        // ],
+        keyBenefits: [
+          {
+            label: "Reliability",
+            info: "Our Type-Tested Panels are built with precision to deliver consistent and reliable electrical distribution, minimizing downtime and maximizing operational efficiency.",
+          },
+          {
+            label: "Safety",
+            info: "Rigorous testing ensures that our panels are equipped to handle various electrical faults and contingencies, keeping your personnel and equipment safe.",
+          },
+          {
+            label: "Compliance",
+            info: "Our Type-Tested Panels meet international electrical standards, providing you with confidence in their quality and performance.",
+          },
+          {
+            label: "Customization",
+            info: "We offer flexibility in designing and manufacturing Type-Tested Panels to suit your specific needs and applications.",
+          },
+        ],
+        application: {
+          description:
+            "Our Type-Tested Panels are versatile and can be applied in a wide range of industries, including but not limited to:",
+          industries: [
+            "Petrochemical Plants",
+            "Food Processing Units",
+            "Renewable Energy Projects",
+            "And more...",
+          ],
+        },
+        types: [
+          {
+            title: "Type-Tested MCC Panels",
+            data: "Motor Control Center panels that have undergone stringent testing to guarantee their performance and safety.",
+          },
+          {
+            title: "Type-Tested PCC Panels",
+            data: "Power Control Center panels that are thoroughly tested to meet the highest industry standards.",
+          },
+          {
+            title: "Type-Tested IMCC Panels",
+            data: "Intelligent Motor Control Center panels with advanced automation and compliance with type testing standards.",
+          },
+        ],
+        // precisionMotorControl key is fake, but used to not use another new key and add another render as the visual is same
+        powerEneSimp: {
+          title: "Experience the Reliability",
+          data: "Choosing our Type-Tested Panels means choosing peace of mind. With a commitment to quality and adherence to international standards, we offer you a solution that ensures uninterrupted electrical distribution.",
+        },
+        // precisionMotorControl key is fake, but used to not use another new key and add another render as the visual is same
+        precisionMotorControl: {
+          title: "Certifications",
+          data: "Our Type-Tested Panels come with the necessary certifications and test reports, giving you the assurance of their quality and reliability.",
+        },
+      },
+      {
+        name: "PDP Panels", // done rendering
+        desc: "At TAPL, we specialize in designing and manufacturing Power Distribution Panels (PDP) that serve as the backbone of efficient electrical distribution systems. Our PDP panels are engineered for precision and performance, delivering seamless power distribution to various loads within industrial and commercial settings. Here's what you can expect from our PDP panels:",
+        path: "pdp-panels",
         specs: [
           {
             label: "Rated Voltage",
-            info: "low voltage (lv)",
+            info: "415V",
           },
           {
             label: "Phase",
-            info: "three phase",
+            info: "3 Phase 3/4 Wire System",
           },
           {
-            label: "Motor Power Range",
-            info: "0.37kw to 900kw",
-          },
-          {
-            label: "Frequency",
-            info: "50/60hz ac",
-          },
-          {
-            label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
-          },
-          {
-            label: "Standard",
-            info: "iec 60947-4-4",
-          },
-          {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
-          },
-          {
-            label: "Usage / Application",
-            info: "motor control & automation",
-          },
-          {
-            label: "Dimension",
-            info: "customized mm / inch",
-          },
-          {
-            label: "Communication",
-            info: "ethernet, profibus, mobus, etc.",
-          },
-          {
-            label: "Device Integration",
-            info: "vfd, soft starters, plc, hmi",
-          },
-        ],
-      },
-      {
-        name: "IMCC Panel",
-        desc: "IMCC Description to be added!",
-        path: "imcc",
-        specs: [
-          {
-            label: "Rated Voltage",
-            info: "low voltage (lv)",
-          },
-          {
-            label: "Phase",
-            info: "three phase",
-          },
-          {
-            label: "Motor Power Range",
-            info: "0.37kw to 900kw",
+            label: "Rated Current",
+            info: "Tailored to your requirements, we offer a range of current ratings.",
           },
           {
             label: "Frequency",
-            info: "50/60hz ac",
+            info: "50Hz AC",
           },
           {
             label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
+            info: "Our panels feature high-quality aluminum (AL) and copper (CU) bus bars with certified conductivity.",
           },
           {
-            label: "Standard",
-            info: "iec 60947-4-4",
+            label: "IP Rating",
+            info: "Choose from IP 20, IP 44, or IP 65 to match your environmental and safety needs.",
           },
           {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
+            label: "Mounting Type",
+            info: "We offer fixed and semi-draw out PDP panels, available in single or double front designs.",
           },
           {
-            label: "Usage / Application",
-            info: "motor control & automation",
+            label: "Customized Dimensions",
+            info: "Our PDP panels can be customized to fit your specific space requirements.",
           },
           {
-            label: "Dimension",
-            info: "customized mm / inch",
+            label: "Automation Grade",
+            info: "Select advanced features like auto changeover for precise power management.",
           },
           {
             label: "Communication",
-            info: "ethernet, profibus, mobus, etc.",
-          },
-          {
-            label: "Device Integration",
-            info: "vfd, soft starters, plc, hmi",
+            info: "Our PDP panels support Modbus Protocol and RS-485 communication, enabling integration with your automation systems.",
           },
         ],
+        application: {
+          description:
+            "Our PDP panels are versatile and suitable for a wide range of industries, including but not limited to:",
+          industries: [
+            "Commercial Buildings",
+            "Data Centers",
+            "Shopping Malls",
+            "Hospitals",
+            "And more...",
+          ],
+        },
       },
       {
-        name: "Junction Box & PDBC",
+        name: "Junction Box & PDBC", // no data yet
         desc: "Junction Description to be added!",
         path: "junction-box-pdbc",
         specs: [
@@ -511,47 +572,34 @@ export const data = [
             label: "Rated Voltage",
             info: "low voltage (lv)",
           },
+        ],
+      },
+      {
+        name: "DB Panels", // no data yet
+        desc: "Our Distribution Board (DB) panels offer a compact and efficient solution for localized power distribution within your facility. These panels are designed for easy access and streamlined electrical management, ensuring power reaches its intended destination without interruption. Here's what you can expect from our DB panels:",
+        path: "db-panels",
+        specs: [
           {
-            label: "Phase",
-            info: "three phase",
-          },
-          {
-            label: "Motor Power Range",
-            info: "0.37kw to 900kw",
-          },
-          {
-            label: "Frequency",
-            info: "50/60hz ac",
-          },
-          {
-            label: "Bus Bar",
-            info: "al/cu with certified percentage of frequency iacs conductivity",
-          },
-          {
-            label: "Standard",
-            info: "iec 60947-4-4",
-          },
-          {
-            label: "Mountain Type",
-            info: "fixed & semi draw out type with single or double front design",
-          },
-          {
-            label: "Usage / Application",
-            info: "motor control & automation",
-          },
-          {
-            label: "Dimension",
-            info: "customized mm / inch",
-          },
-          {
-            label: "Communication",
-            info: "ethernet, profibus, mobus, etc.",
-          },
-          {
-            label: "Device Integration",
-            info: "vfd, soft starters, plc, hmi",
+            label: "Customized Dimensions",
+            info: "Our DB panels can be tailored to fit your available space.",
           },
         ],
+        application: {
+          description:
+            "Our DB panels are the ideal choice for a variety of applications, including:",
+          industries: [
+            "Residential Buildings",
+            "Office Spaces",
+            "Retail Outlets",
+            "Educational Institutions",
+            "And more...",
+          ],
+        },
+        // precisionMotorControl key is fake, but used to not use another new key and add another render as the visual is same
+        powerEneSimp: {
+          title: "Experience Streamlined Power Management",
+          data: "Contact us today to discuss your specific PDP and DB panel needs. Whether you require a comprehensive PDP solution or a compact DB panel, we have the expertise to deliver efficient power distribution tailored to your industry.",
+        },
       },
     ],
   },

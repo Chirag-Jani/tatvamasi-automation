@@ -98,6 +98,7 @@ const Tenders = () => {
                   margin: "10px",
                   color: "#162966",
                 }}
+                key={contract}
               >
                 <RadioButtonCheckedTwoToneIcon sx={{ marginRight: "10px" }} />
                 <Typography>{contract}</Typography>

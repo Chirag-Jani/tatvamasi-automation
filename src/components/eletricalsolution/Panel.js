@@ -64,26 +64,58 @@ const Panel = () => {
             <img src={DemoPanel} alt="" className="panel-image" />
           </Box>
         </Box>
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Montserrat-Bold",
-              color: "#162866",
-              fontSize: {
-                xl: "35px",
-                lg: "35px",
-                m: "35px",
-                sm: "35px",
-                xs: "20px",
-              },
-              textAlign: "center",
-              fontWeight: "700",
-              marginBottom: "5px",
-            }}
-          >
-            Specifications
-          </Typography>
-        </Box>
+        {Specs.specs && (
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "Montserrat-Bold",
+                color: "#162866",
+                fontSize: {
+                  xl: "35px",
+                  lg: "35px",
+                  m: "35px",
+                  sm: "35px",
+                  xs: "20px",
+                },
+                textAlign: "center",
+                fontWeight: "700",
+                marginBottom: "5px",
+              }}
+            >
+              Specifications
+            </Typography>
+          </Box>
+        )}
+        {Specs.whatAre && (
+          <Box>
+            <Typography
+              sx={{
+                color: "rgba(22, 40, 102, 1)",
+                fontFamily: "Montserrat",
+                fontSize: {
+                  xl: "2rem",
+                  lg: "2rem",
+                  m: "2rem",
+                  sm: "1.5rem",
+                  xs: "1.5rem",
+                },
+                textAlign: "left",
+                margin: "25px 0",
+              }}
+            >
+              {Specs.whatAre.title}
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Montserrat",
+                textAlign: "justify",
+              }}
+            >
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {Specs.whatAre.data}
+            </Typography>
+          </Box>
+        )}
         <Box>
           <Box
             sx={{
@@ -139,63 +171,6 @@ const Panel = () => {
                           </strong>
                           {item.info}
                         </Typography>
-                        {/* <Grid
-                          item
-                          xs={5}
-                          sx={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: {
-                                xl: "18px",
-                                lg: "18px",
-                                m: "18px",
-                                sm: "18px",
-                                xs: "12px",
-                              },
-                              fontFamily: "Montserrat-bold",
-                            }}
-                          >
-                            {item.label}
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: {
-                                xl: "18px",
-                                lg: "18px",
-                                m: "18px",
-                                sm: "18px",
-                                xs: "12px",
-                              },
-                              fontFamily: "Montserrat-bold",
-                            }}
-                          >
-                            :
-                          </Typography>
-                        </Grid>
-                        <Grid item xs={6}>
-                          <Typography
-                            sx={{
-                              fontSize: {
-                                xl: "18px",
-                                lg: "18px",
-                                m: "18px",
-                                sm: "18px",
-                                xs: "12px",
-                              },
-                              fontFamily: "Montserrat",
-                              color: "#414141",
-                              paddingLeft: "20px",
-                              textAlign: "justify",
-                              textTransform: "capitalize",
-                            }}
-                          >
-                            {item.info}
-                          </Typography>
-                        </Grid> */}
                       </>
                     )}
                   </Grid>
@@ -217,7 +192,7 @@ const Panel = () => {
                     xs: "1.5rem",
                   },
                   textAlign: "center",
-                  margin: "50px 0",
+                  marginBottom: "50px",
                 }}
               >
                 Application
@@ -226,6 +201,7 @@ const Panel = () => {
             {Specs.application?.industries?.map((itm) => {
               return (
                 <Typography
+                  key={itm}
                   sx={{
                     color: "rgba(60, 60, 59, 1)",
                     fontFamily: "Montserrat",
@@ -252,23 +228,18 @@ const Panel = () => {
                   xl: "1.1rem",
                   lg: "1.1rem",
                   m: "1.1rem",
-                  sm: ".8rem",
-                  xs: ".5rem",
+                  sm: "1rem",
+                  xs: "1rem",
                 },
                 textAlign: "justify",
-                margin: "50px 0",
               }}
             >
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               {Specs.moreInfo?.content}
             </Typography>
           </Box>
-          {Specs.exp && (
-            <Box
-              sx={{
-                margin: "50px 0",
-              }}
-            >
+          {Specs.experienceThePower && (
+            <Box>
               <Typography
                 sx={{
                   color: "rgba(22, 40, 102, 1)",
@@ -284,7 +255,7 @@ const Panel = () => {
                   margin: "25px 0",
                 }}
               >
-                {Specs.exp.title}
+                {Specs.experienceThePower.title}
               </Typography>
 
               <Typography
@@ -294,8 +265,309 @@ const Panel = () => {
                 }}
               >
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {Specs.exp.data}
+                {Specs.experienceThePower.data}
               </Typography>
+            </Box>
+          )}
+
+          {Specs.keyBenefits && (
+            <Box>
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "left",
+                  margin: "25px 0",
+                }}
+              >
+                Key Benefits
+              </Typography>
+
+              <Grid container>
+                {Specs.keyBenefits?.map((item) => {
+                  return (
+                    <Grid
+                      item
+                      container
+                      xl={12}
+                      lg={12}
+                      m={12}
+                      sm={12}
+                      xs={12}
+                      key={item.label}
+                      sx={{
+                        margin: "auto",
+                        padding: "20px",
+                        borderRadius: "30px",
+                        backgroundColor: "#D9D9D9",
+                        marginBottom: "15px",
+                      }}
+                    >
+                      {item.label !== null && (
+                        <>
+                          <Typography
+                            sx={{
+                              fontSize: {
+                                xl: "18px",
+                                lg: "18px",
+                                m: "18px",
+                                sm: "18px",
+                                xs: "12px",
+                              },
+                              fontFamily: "Montserrat",
+                              color: "#414141",
+                              textAlign: "justify",
+                              textTransform: "capitalize",
+                            }}
+                          >
+                            <strong
+                              style={{
+                                fontFamily: "Montserrat-Bold",
+                              }}
+                            >
+                              {item.label}&nbsp;:&nbsp;
+                            </strong>
+                            {item.info}
+                          </Typography>
+                        </>
+                      )}
+                    </Grid>
+                  );
+                })}
+              </Grid>
+            </Box>
+          )}
+
+          {Specs.types && (
+            <Typography
+              sx={{
+                color: "rgba(22, 40, 102, 1)",
+                fontFamily: "Montserrat",
+                fontSize: {
+                  xl: "2rem",
+                  lg: "2rem",
+                  m: "2rem",
+                  sm: "1.5rem",
+                  xs: "1.5rem",
+                },
+                textAlign: "left",
+                margin: "25px 0",
+              }}
+            >
+              Types
+            </Typography>
+          )}
+          {Specs.types?.map((item) => {
+            return (
+              <Box
+                sx={{
+                  marginLeft: "30px",
+                }}
+              >
+                <Typography
+                  sx={{
+                    color: "rgba(22, 40, 102, 1)",
+                    fontFamily: "Montserrat",
+                    fontSize: {
+                      xl: "1.5rem",
+                      lg: "1.5rem",
+                      m: "1.5rem",
+                      sm: "1rem",
+                      xs: "1rem",
+                    },
+                    textAlign: "left",
+                    margin: "25px 0",
+                  }}
+                >
+                  {item.title}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                    textAlign: "justify",
+                  }}
+                >
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  {item.data}
+                </Typography>
+              </Box>
+            );
+          })}
+
+          {Specs.powerEneSimp && (
+            <Box>
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "left",
+                  margin: "25px 0",
+                }}
+              >
+                {Specs.powerEneSimp.title}
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  textAlign: "justify",
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {Specs.powerEneSimp.data}
+              </Typography>
+            </Box>
+          )}
+
+          {Specs.precisionMotorControl && (
+            <Box>
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "left",
+                  margin: "25px 0",
+                }}
+              >
+                {Specs.precisionMotorControl.title}
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  textAlign: "justify",
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {Specs.precisionMotorControl.data}
+              </Typography>
+            </Box>
+          )}
+
+          {Specs.subPanel && (
+            <Box>
+              {" "}
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat-Bold",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "center",
+                  margin: "25px 0",
+                }}
+              >
+                {Specs.subPanel.title}
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  textAlign: "justify",
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {Specs.subPanel.desc}
+              </Typography>
+              {Specs.subPanel.advFeats && (
+                <Typography
+                  sx={{
+                    color: "rgba(22, 40, 102, 1)",
+                    fontFamily: "Montserrat",
+                    fontSize: {
+                      xl: "2rem",
+                      lg: "2rem",
+                      m: "2rem",
+                      sm: "1.5rem",
+                      xs: "1.5rem",
+                    },
+                    textAlign: "left",
+                    margin: "25px 0",
+                  }}
+                >
+                  {Specs.subPanel.advFeats.title}
+                </Typography>
+              )}
+              <Grid
+                container
+                sx={{
+                  margin: "50px 0",
+                }}
+              >
+                {Specs.subPanel.advFeats.feats?.map((item) => {
+                  return (
+                    <Grid
+                      item
+                      container
+                      xl={12}
+                      lg={12}
+                      m={12}
+                      sm={12}
+                      xs={12}
+                      key={item.label}
+                      sx={{
+                        margin: "auto",
+                        padding: "20px",
+                        borderRadius: "30px",
+                        backgroundColor: "#D9D9D9",
+                        marginBottom: "15px",
+                      }}
+                    >
+                      {item.label !== null && (
+                        <>
+                          <Typography
+                            sx={{
+                              fontSize: {
+                                xl: "18px",
+                                lg: "18px",
+                                m: "18px",
+                                sm: "18px",
+                                xs: "12px",
+                              },
+                              fontFamily: "Montserrat",
+                              color: "#414141",
+                              textAlign: "justify",
+                              textTransform: "capitalize",
+                            }}
+                          >
+                            <strong
+                              style={{
+                                fontFamily: "Montserrat-Bold",
+                              }}
+                            >
+                              {item.label}&nbsp;:&nbsp;
+                            </strong>
+                            {item.info}
+                          </Typography>
+                        </>
+                      )}
+                    </Grid>
+                  );
+                })}
+              </Grid>
             </Box>
           )}
         </Box>

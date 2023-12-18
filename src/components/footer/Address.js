@@ -55,7 +55,8 @@ const Address = () => {
           },
         }}
       >
-        PLOT NO. 5527 ROAD NO.55, GIDC, Sachin, Surat, Gujarat 394230
+        Tatvamasi Automation Pvt. Ltd. Plot No. F-18 TO F-21, G-22, Satyam
+        Estate, at. Lindiyad, Ta. Mangrol, Dist. Surat - 394110
       </Typography>
     </Box>
   );

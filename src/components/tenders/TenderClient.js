@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../../resources/data/data";
 import { Box, Grid, Typography } from "@mui/material";
-import DemoPanel from "../../resources/Demo Panel.svg";
+import DemoPanel from "../../resources/semp 2.png";
 import ReactPlayer from "react-player";
 
 const TenderClient = () => {
@@ -80,7 +80,7 @@ const TenderClient = () => {
         </Typography>
         {Specs.data.highlights?.map((itm) => {
           return (
-            <Box>
+            <Box key={itm.label}>
               <Typography
                 sx={{
                   fontSize: {
@@ -172,7 +172,11 @@ const TenderClient = () => {
               }}
             >
               {/* Image Component */}
-              <img src={DemoPanel} alt="" style={{ width: "100%" }} />
+              <img
+                src={DemoPanel}
+                alt=""
+                style={{ width: "100%", height: "325px", borderRadius: "10px" }}
+              />
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -193,6 +197,7 @@ const TenderClient = () => {
                 url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 controls={true}
                 width={"100%"}
+                height={"325px"}
                 style={{
                   maxHeight: "325px",
                 }}
