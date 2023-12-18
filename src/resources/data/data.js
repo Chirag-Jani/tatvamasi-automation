@@ -23,6 +23,7 @@ export const data = [
     image: ElectricalSolution,
     path: "electrical-solution",
     panels: [
+      // pcc done
       {
         name: "PCC Panel", // done rendering
         path: "pcc",
@@ -92,6 +93,7 @@ export const data = [
           data: "Contact us today to discuss your specific PCC panel needs. Whether it's a standard solution or a highly customized panel, we have the expertise and flexibility to deliver excellence.",
         },
       },
+      // mcc & imcc done
       {
         name: "MCC & IMCC Panel", // done rendering
         desc: "At Tatwamasi Automation Pvt. Ltd., we take pride in designing and manufacturing Motor Control Center (MCC) panels that provide a seamless solution for controlling motors and electrical equipment in diverse industrial settings. Our MCC panels are built to meet stringent industry standards, ensuring efficient motor control, protection, and automation. Here's what sets our MCC panels apart:",
@@ -185,6 +187,7 @@ export const data = [
           data: "Whether you choose our MCC or IMCC panels, you're guaranteed reliability and precision. Contact us today to discuss your specific motor control needs, from standard solutions to highly customized panels tailored to your industry.",
         },
       },
+      // apfc done
       {
         name: "APFC Panel", // done rendering
         desc: "At TAPL, we are your trusted source for high-quality Automatic Power Factor Correction (APFC) Control Panels, including Reactor-Type APFC panels. Our comprehensive APFC solutions are designed to enhance power efficiency, reduce energy wastage, and maintain a near-unity power factor for your electrical system.",
@@ -257,6 +260,7 @@ export const data = [
           data: "At TAPL, we make it easy to optimize power efficiency and mitigate harmonics. Our APFC Control Panels, including Reactor-Type panels, are designed for seamless integration into your electrical system.",
         },
       },
+      // vfd done
       {
         name: "VFD Panel", // done rendering
         desc: "At TAPL, we're your trusted partner for manufacturing high-quality Variable Frequency Drive (VFD) Control Panels, designed to deliver precise motor control for a wide range of industrial applications. Our VFD panels are engineered to provide you with the flexibility and efficiency you need to optimize your motor-driven systems.",
@@ -326,6 +330,7 @@ export const data = [
           data: "At TAPL, we believe in simplifying motor control. Our VFD Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
         },
       },
+      // soft starter done
       {
         name: "Soft Starter Panel", // done rendering
         desc: "At TAPL, we're at the forefront of manufacturing high-quality Soft Starter Control Panels, designed to provide smooth and efficient motor control for a variety of industrial applications. Our Soft Starter panels are engineered for precision and reliability, ensuring that your equipment operates seamlessly and without unnecessary wear and tear.",
@@ -392,52 +397,7 @@ export const data = [
           data: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
         },
       },
-      {
-        name: "Draw-out Panel", // no data yet
-        desc: "Draw Description to be added!",
-        path: "draw-out",
-        specs: [
-          {
-            label: "Rated Voltage",
-            info: "415V",
-          },
-        ],
-
-        application: {
-          description:
-            "Our Soft Starter Control Panels are suitable for a wide range of industries, including:",
-          industries: [
-            "Pumps and Compressors",
-            "Conveyor Systems",
-            "Fans and Blowers",
-            "Manufacturing",
-            "And more...",
-          ],
-        },
-        keyBenefits: [
-          {
-            label: "Smooth Motor Control",
-            info: "Soft Starter panels provide a gradual acceleration and deceleration of motors, reducing mechanical and electrical stress.",
-          },
-          {
-            label: "Energy Savings",
-            info: "By minimizing voltage and current spikes during startup, Soft Starters help reduce energy consumption and extend motor life.",
-          },
-          {
-            label: "Reduced Maintenance",
-            info: "Reduced wear and tear on equipment leads to lower maintenance costs and increased reliability.",
-          },
-          {
-            label: "Improved Power Quality",
-            info: "Soft Starters contribute to a more stable power supply, enhancing the longevity of your electrical system.",
-          },
-        ],
-
-        precisionMotorControl: {
-          label: "Precision Motor Control, Simplified",
-          info: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
-        },
-      },
+      // type tested done
       {
         name: "Type Tested Panel", // done rendering
         desc: "At TAPL, we take pride in offering Type-Tested Panels, a hallmark of reliability and safety in electrical distribution systems. Our Type-Tested Panels are meticulously designed, rigorously tested, and certified to meet international standards, ensuring peace of mind and uncompromising performance. Here's what you can expect from our Type-Tested Panels:",
@@ -505,6 +465,7 @@ export const data = [
           data: "Our Type-Tested Panels come with the necessary certifications and test reports, giving you the assurance of their quality and reliability.",
         },
       },
+      // pdp done
       {
         name: "PDP Panels", // done rendering
         desc: "At TAPL, we specialize in designing and manufacturing Power Distribution Panels (PDP) that serve as the backbone of efficient electrical distribution systems. Our PDP panels are engineered for precision and performance, delivering seamless power distribution to various loads within industrial and commercial settings. Here's what you can expect from our PDP panels:",
@@ -563,22 +524,36 @@ export const data = [
           ],
         },
       },
+      // db panel done
       {
-        name: "Junction Box & PDBC", // no data yet
-        desc: "Junction Description to be added!",
-        path: "junction-box-pdbc",
-        specs: [
-          {
-            label: "Rated Voltage",
-            info: "low voltage (lv)",
-          },
-        ],
-      },
-      {
-        name: "DB Panels", // no data yet
+        name: "DB Panels", // data rendering
         desc: "Our Distribution Board (DB) panels offer a compact and efficient solution for localized power distribution within your facility. These panels are designed for easy access and streamlined electrical management, ensuring power reaches its intended destination without interruption. Here's what you can expect from our DB panels:",
         path: "db-panels",
         specs: [
+          {
+            label: "Rated Voltage",
+            info: "230V",
+          },
+          {
+            label: "Phase",
+            info: "1 Phase or 3 Phase, depending on your requirements.",
+          },
+          {
+            label: "Rated Current",
+            info: "Customized to match your specific needs.",
+          },
+          {
+            label: "Frequency",
+            info: "50Hz AC",
+          },
+          {
+            label: "Bus Bar",
+            info: "Our panels feature high-quality aluminum (AL) and copper (CU) bus bars for reliable power distribution.",
+          },
+          {
+            label: "IP Rating",
+            info: "We provide IP 20-rated DB panels to safeguard against environmental factors.",
+          },
           {
             label: "Customized Dimensions",
             info: "Our DB panels can be tailored to fit your available space.",
@@ -599,6 +574,65 @@ export const data = [
         powerEneSimp: {
           title: "Experience Streamlined Power Management",
           data: "Contact us today to discuss your specific PDP and DB panel needs. Whether you require a comprehensive PDP solution or a compact DB panel, we have the expertise to deliver efficient power distribution tailored to your industry.",
+        },
+      },
+      // juncrion box remains
+      {
+        name: "Junction Box & PDBC", // no data yet
+        desc: "Junction Description to be added!",
+        path: "junction-box-pdbc",
+        specs: [
+          {
+            label: "Rated Voltage",
+            info: "low voltage (lv)",
+          },
+        ],
+      },
+      // draw out remains
+      {
+        name: "Draw-out Panel", // no data yet
+        desc: "Draw Description to be added!",
+        path: "draw-out",
+        specs: [
+          {
+            label: "Rated Voltage",
+            info: "415V",
+          },
+        ],
+
+        application: {
+          description:
+            "Our Soft Starter Control Panels are suitable for a wide range of industries, including:",
+          industries: [
+            "Pumps and Compressors",
+            "Conveyor Systems",
+            "Fans and Blowers",
+            "Manufacturing",
+            "And more...",
+          ],
+        },
+        keyBenefits: [
+          {
+            label: "Smooth Motor Control",
+            info: "Soft Starter panels provide a gradual acceleration and deceleration of motors, reducing mechanical and electrical stress.",
+          },
+          {
+            label: "Energy Savings",
+            info: "By minimizing voltage and current spikes during startup, Soft Starters help reduce energy consumption and extend motor life.",
+          },
+          {
+            label: "Reduced Maintenance",
+            info: "Reduced wear and tear on equipment leads to lower maintenance costs and increased reliability.",
+          },
+          {
+            label: "Improved Power Quality",
+            info: "Soft Starters contribute to a more stable power supply, enhancing the longevity of your electrical system.",
+          },
+        ],
+
+        precisionMotorControl: {
+          label: "Precision Motor Control, Simplified",
+          info: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
         },
       },
     ],
