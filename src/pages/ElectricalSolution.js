@@ -1,14 +1,19 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import electricalBanner from "../resources/banners/electrical-banner.jpg";
 import PanelCard from "../components/eletricalsolution/PanelCard";
 import { data } from "../resources/data/data";
 import planAndDesign from "../resources/banners/planAndDesign.svg";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "../../node_modules/aos/dist/aos.css";
 
 const PanelList = data[1].panels;
 
 const ElectricalSolution = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <Box
@@ -35,6 +40,7 @@ const ElectricalSolution = () => {
             Electrical Solutions
           </Typography>
           <img
+            data-aos="zoom-in"
             src={electricalBanner}
             alt="Tatvamasi Automation"
             style={{
@@ -98,6 +104,7 @@ const ElectricalSolution = () => {
             }}
           >
             <img
+              data-aos="fade-right"
               src={planAndDesign}
               alt=""
               style={{
@@ -105,6 +112,7 @@ const ElectricalSolution = () => {
               }}
             />
             <Typography
+              data-aos="fade-left"
               sx={{
                 textAlign: "justify",
                 fontFamily: "Montserrat",
@@ -195,6 +203,7 @@ const ElectricalSolution = () => {
             {PanelList.map((panel) => {
               return (
                 <Link
+                  data-aos="flip-up"
                   to={panel.path}
                   style={{
                     textDecoration: "none",
