@@ -1,12 +1,24 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import tendersBanner from "../resources/banners/tendersBanner.svg";
 import RadioButtonCheckedTwoToneIcon from "@mui/icons-material/RadioButtonCheckedTwoTone";
 import { data } from "../resources/data/data";
 import TenderCard from "../components/tenders/TenderCard";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "../../node_modules/aos/dist/aos.css";
 
 const Tenders = () => {
+  useEffect(() => {
+    Aos.init({
+      // Global settings:
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   const tenderContracts = [
     "Electrical Wiring / Maintenance",
     "Water Treatment Plant",
@@ -47,6 +59,7 @@ const Tenders = () => {
           Tenders
         </Typography>
         <img
+          data-aos="zoom-in"
           src={tendersBanner}
           alt="Tatvamasi Automation"
           style={{
@@ -86,6 +99,7 @@ const Tenders = () => {
           {tenderContracts?.map((contract) => {
             return (
               <Box
+                data-aos="zoom-in"
                 sx={{
                   display: "flex",
                   width: {

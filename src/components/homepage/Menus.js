@@ -10,7 +10,12 @@ import { Link } from "react-router-dom";
 
 const Menus = () => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      // Global settings:
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+    });
   }, []);
   return (
     <Box
@@ -24,7 +29,7 @@ const Menus = () => {
       {data.map((card) => {
         return (
           <Link
-            data-aos="flip-left"
+            data-aos="flip-right"
             to={card.path}
             style={{
               textDecoration: "none",

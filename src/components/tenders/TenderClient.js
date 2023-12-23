@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../../resources/data/data";
 import { Box, Grid, Typography } from "@mui/material";
 import DemoPanel from "../../resources/semp 2.png";
 import ReactPlayer from "react-player";
+import Aos from "aos";
+import "../../../node_modules/aos/dist/aos.css";
 
 const TenderClient = () => {
   const TenderList = data[3].tenders;
   let { client } = useParams();
   const Specs = TenderList.find((t) => t.path === client);
-
+  useEffect(() => {
+    Aos.init({
+      // Global settings:
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <Box
       sx={{
@@ -80,7 +90,7 @@ const TenderClient = () => {
         </Typography>
         {Specs.data.highlights?.map((itm) => {
           return (
-            <Box key={itm.label}>
+            <Box key={itm.label} data-aos="flip-up">
               <Typography
                 sx={{
                   fontSize: {
@@ -173,6 +183,7 @@ const TenderClient = () => {
             >
               {/* Image Component */}
               <img
+                data-aos="zoom-out"
                 src={DemoPanel}
                 alt=""
                 style={{ width: "100%", height: "325px", borderRadius: "10px" }}
@@ -191,6 +202,7 @@ const TenderClient = () => {
                 },
                 margin: "auto",
               }}
+              data-aos="zoom-out"
             >
               {/* ReactPlayer Component */}
               <ReactPlayer

@@ -1,9 +1,11 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import DemoPanel from "../../resources/Demo Panel.svg";
 import "../../styles/PCCStyle.css";
 import { data } from "../../resources/data/data";
 import { useParams } from "react-router-dom";
+import Aos from "aos";
+import "../../../node_modules/aos/dist/aos.css";
 
 const Panel = () => {
   const PanelList = data[1].panels;
@@ -11,6 +13,15 @@ const Panel = () => {
 
   const Specs = PanelList.find((p) => p.path === panel);
   console.log(Specs);
+  useEffect(() => {
+    Aos.init({
+      // Global settings:
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <>
       <Box
@@ -60,8 +71,18 @@ const Panel = () => {
               },
             }}
           >
-            <img src={DemoPanel} alt="" className="panel-image" />
-            <img src={DemoPanel} alt="" className="panel-image" />
+            <img
+              src={DemoPanel}
+              alt=""
+              className="panel-image"
+              data-aos="fade-right"
+            />
+            <img
+              src={DemoPanel}
+              alt=""
+              className="panel-image"
+              data-aos="fade-left"
+            />
           </Box>
         </Box>
         {Specs.specs && (
@@ -144,6 +165,7 @@ const Panel = () => {
                       backgroundColor: "#D9D9D9",
                       marginBottom: "15px",
                     }}
+                    data-aos="flip-up"
                   >
                     {item.label !== null && (
                       <>
@@ -201,6 +223,7 @@ const Panel = () => {
             {Specs.application?.industries?.map((itm) => {
               return (
                 <Typography
+                  data-aos="zoom-in"
                   key={itm}
                   sx={{
                     color: "rgba(60, 60, 59, 1)",
@@ -294,6 +317,7 @@ const Panel = () => {
                 {Specs.keyBenefits?.map((item) => {
                   return (
                     <Grid
+                      data-aos="flip-up"
                       item
                       container
                       xl={12}
@@ -360,6 +384,7 @@ const Panel = () => {
                 textAlign: "left",
                 margin: "25px 0",
               }}
+              data-aos="fade-down"
             >
               Types
             </Typography>
@@ -370,6 +395,7 @@ const Panel = () => {
                 sx={{
                   marginLeft: "30px",
                 }}
+                data-aos="zoom-out-left"
               >
                 <Typography
                   sx={{
@@ -400,37 +426,6 @@ const Panel = () => {
               </Box>
             );
           })}
-
-          {Specs.powerEneSimp && (
-            <Box>
-              <Typography
-                sx={{
-                  color: "rgba(22, 40, 102, 1)",
-                  fontFamily: "Montserrat",
-                  fontSize: {
-                    xl: "2rem",
-                    lg: "2rem",
-                    m: "2rem",
-                    sm: "1.5rem",
-                    xs: "1.5rem",
-                  },
-                  textAlign: "left",
-                  margin: "25px 0",
-                }}
-              >
-                {Specs.powerEneSimp.title}
-              </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  textAlign: "justify",
-                }}
-              >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {Specs.powerEneSimp.data}
-              </Typography>
-            </Box>
-          )}
 
           {Specs.precisionMotorControl && (
             <Box>
@@ -520,6 +515,7 @@ const Panel = () => {
                 {Specs.subPanel.advFeats.feats?.map((item) => {
                   return (
                     <Grid
+                      data-aos="flip-up"
                       item
                       container
                       xl={12}
@@ -568,6 +564,80 @@ const Panel = () => {
                   );
                 })}
               </Grid>
+            </Box>
+          )}
+
+          {Specs.subPanel.application && (
+            <Typography
+              sx={{
+                color: "rgba(22, 40, 102, 1)",
+                fontFamily: "Montserrat-Bold",
+                fontSize: {
+                  xl: "3rem",
+                  lg: "3rem",
+                  m: "3rem",
+                  sm: "2rem",
+                  xs: "1.5rem",
+                },
+                textAlign: "center",
+                marginBottom: "50px",
+              }}
+            >
+              Application
+            </Typography>
+          )}
+          {Specs.subPanel.application?.industries?.map((itm) => {
+            return (
+              <Typography
+                data-aos="zoom-in"
+                key={itm}
+                sx={{
+                  color: "rgba(60, 60, 59, 1)",
+                  fontFamily: "Montserrat",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: ".8rem",
+                  },
+                  textAlign: "center",
+                  margin: "5px 0",
+                }}
+              >
+                {itm}
+              </Typography>
+            );
+          })}
+
+          {Specs.powerEneSimp && (
+            <Box>
+              <Typography
+                sx={{
+                  color: "rgba(22, 40, 102, 1)",
+                  fontFamily: "Montserrat",
+                  fontSize: {
+                    xl: "2rem",
+                    lg: "2rem",
+                    m: "2rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
+                  },
+                  textAlign: "left",
+                  margin: "25px 0",
+                }}
+              >
+                {Specs.powerEneSimp.title}
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  textAlign: "justify",
+                }}
+              >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {Specs.powerEneSimp.data}
+              </Typography>
             </Box>
           )}
         </Box>

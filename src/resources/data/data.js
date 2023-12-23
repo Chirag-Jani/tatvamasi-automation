@@ -523,118 +523,119 @@ export const data = [
             "And more...",
           ],
         },
-      },
-      // db panel done
-      {
-        name: "DB Panels", // data rendering
-        desc: "Our Distribution Board (DB) panels offer a compact and efficient solution for localized power distribution within your facility. These panels are designed for easy access and streamlined electrical management, ensuring power reaches its intended destination without interruption. Here's what you can expect from our DB panels:",
-        path: "db-panels",
-        specs: [
-          {
-            label: "Rated Voltage",
-            info: "230V",
+        subPanel: {
+          title: "DB Panels",
+          desc: "Our Distribution Board (DB) panels offer a compact and efficient solution for localized power distribution within your facility. These panels are designed for easy access and streamlined electrical management, ensuring power reaches its intended destination without interruption. Here's what you can expect from our DB panels:",
+          advFeats: {
+            title: "Specifications",
+            feats: [
+              {
+                label: "Rated Voltage",
+                info: "230V",
+              },
+              {
+                label: "Phase",
+                info: "1 Phase or 3 Phase, depending on your requirements.",
+              },
+              {
+                label: "Rated Current",
+                info: "Customized to match your specific needs.",
+              },
+              {
+                label: "Frequency",
+                info: "50Hz AC",
+              },
+              {
+                label: "Bus Bar",
+                info: "Our panels feature high-quality aluminum (AL) and copper (CU) bus bars for reliable power distribution.",
+              },
+              {
+                label: "IP Rating",
+                info: "We provide IP 20-rated DB panels to safeguard against environmental factors.",
+              },
+              {
+                label: "Customized Dimensions",
+                info: "Our DB panels can be tailored to fit your available space.",
+              },
+            ],
           },
-          {
-            label: "Phase",
-            info: "1 Phase or 3 Phase, depending on your requirements.",
+          application: {
+            description:
+              "Our DB panels are the ideal choice for a variety of applications, including:",
+            industries: [
+              "Residential Buildings",
+              "Office Spaces",
+              "Retail Outlets",
+              "Educational Institutions",
+              "And more...",
+            ],
           },
-          {
-            label: "Rated Current",
-            info: "Customized to match your specific needs.",
-          },
-          {
-            label: "Frequency",
-            info: "50Hz AC",
-          },
-          {
-            label: "Bus Bar",
-            info: "Our panels feature high-quality aluminum (AL) and copper (CU) bus bars for reliable power distribution.",
-          },
-          {
-            label: "IP Rating",
-            info: "We provide IP 20-rated DB panels to safeguard against environmental factors.",
-          },
-          {
-            label: "Customized Dimensions",
-            info: "Our DB panels can be tailored to fit your available space.",
-          },
-        ],
-        application: {
-          description:
-            "Our DB panels are the ideal choice for a variety of applications, including:",
-          industries: [
-            "Residential Buildings",
-            "Office Spaces",
-            "Retail Outlets",
-            "Educational Institutions",
-            "And more...",
-          ],
         },
-        // precisionMotorControl key is fake, but used to not use another new key and add another render as the visual is same
+
         powerEneSimp: {
           title: "Experience Streamlined Power Management",
           data: "Contact us today to discuss your specific PDP and DB panel needs. Whether you require a comprehensive PDP solution or a compact DB panel, we have the expertise to deliver efficient power distribution tailored to your industry.",
         },
       },
       // juncrion box remains
-      {
-        name: "Junction Box & PDBC", // no data yet
-        desc: "Junction Description to be added!",
-        path: "junction-box-pdbc",
-        specs: [
-          {
-            label: "Rated Voltage",
-            info: "low voltage (lv)",
-          },
-        ],
-      },
-      // draw out remains
-      {
-        name: "Draw-out Panel", // no data yet
-        desc: "Draw Description to be added!",
-        path: "draw-out",
-        specs: [
-          {
-            label: "Rated Voltage",
-            info: "415V",
-          },
-        ],
+      // {
+      //   name: "Junction Box & PDBC", // no data yet
+      //   desc: "Junction Description to be added!",
+      //   path: "junction-box-pdbc",
+      //   specs: [
+      //     {
+      //       label: "Rated Voltage",
+      //       info: "low voltage (lv)",
+      //     },
+      //   ],
+      // },
+      // // draw out remains
+      // {
+      //   name: "Draw-out Panel", // no data yet
+      //   desc: "Draw Description to be added!",
+      //   path: "draw-out",
+      //   specs: [
+      //     {
+      //       label: "Rated Voltage",
+      //       info: "415V",
+      //     },
+      //   ],
 
-        application: {
-          description:
-            "Our Soft Starter Control Panels are suitable for a wide range of industries, including:",
-          industries: [
-            "Pumps and Compressors",
-            "Conveyor Systems",
-            "Fans and Blowers",
-            "Manufacturing",
-            "And more...",
-          ],
-        },
-        keyBenefits: [
-          {
-            label: "Smooth Motor Control",
-            info: "Soft Starter panels provide a gradual acceleration and deceleration of motors, reducing mechanical and electrical stress.",
-          },
-          {
-            label: "Energy Savings",
-            info: "By minimizing voltage and current spikes during startup, Soft Starters help reduce energy consumption and extend motor life.",
-          },
-          {
-            label: "Reduced Maintenance",
-            info: "Reduced wear and tear on equipment leads to lower maintenance costs and increased reliability.",
-          },
-          {
-            label: "Improved Power Quality",
-            info: "Soft Starters contribute to a more stable power supply, enhancing the longevity of your electrical system.",
-          },
-        ],
+      //   application: {
+      //     description:
+      //       "Our Soft Starter Control Panels are suitable for a wide range of industries, including:",
+      //     industries: [
+      //       "Pumps and Compressors",
+      //       "Conveyor Systems",
+      //       "Fans and Blowers",
+      //       "Manufacturing",
+      //       "And more...",
+      //     ],
+      //   },
+      //   keyBenefits: [
+      //     {
+      //       label: "Smooth Motor Control",
+      //       info: "Soft Starter panels provide a gradual acceleration and deceleration of motors, reducing mechanical and electrical stress.",
+      //     },
+      //     {
+      //       label: "Energy Savings",
+      //       info: "By minimizing voltage and current spikes during startup, Soft Starters help reduce energy consumption and extend motor life.",
+      //     },
+      //     {
+      //       label: "Reduced Maintenance",
+      //       info: "Reduced wear and tear on equipment leads to lower maintenance costs and increased reliability.",
+      //     },
+      //     {
+      //       label: "Improved Power Quality",
+      //       info: "Soft Starters contribute to a more stable power supply, enhancing the longevity of your electrical system.",
+      //     },
+      //   ],
 
-        precisionMotorControl: {
-          label: "Precision Motor Control, Simplified",
-          info: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
-        },
-      },
+      //   precisionMotorControl: {
+      //     label: "Precision Motor Control, Simplified",
+      //     info: "At TAPL, we believe in simplifying motor control. Our Soft Starter Control Panels are designed to provide easy and precise control for your motors, whether it's for industrial automation or process applications.",
+      //   },
+      // },
     ],
   },
   {
