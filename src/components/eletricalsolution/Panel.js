@@ -567,7 +567,7 @@ const Panel = () => {
             </Box>
           )}
 
-          {Specs.subPanel.application && (
+          {Specs.subPanel?.application && (
             <Typography
               sx={{
                 color: "rgba(22, 40, 102, 1)",
@@ -586,7 +586,7 @@ const Panel = () => {
               Application
             </Typography>
           )}
-          {Specs.subPanel.application?.industries?.map((itm) => {
+          {Specs.subPanel?.application?.industries?.map((itm) => {
             return (
               <Typography
                 data-aos="zoom-in"
