@@ -6,6 +6,76 @@ import DemoPanel from "../../resources/semp 2.png";
 import ReactPlayer from "react-player";
 import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
+import Carousel from "react-material-ui-carousel";
+
+import gnfc0 from "../../resources/gnfc/gnfc 0.jpg";
+import gnfc1 from "../../resources/gnfc/gnfc 1.jpg";
+import gnfc2 from "../../resources/gnfc/gnfc 2.jpg";
+import gnfc3 from "../../resources/gnfc/gnfc 3.jpg";
+import gnfc4 from "../../resources/gnfc/gnfc 4.jpg";
+import gnfc5 from "../../resources/gnfc/gnfc 5.jpg";
+import gnfc6 from "../../resources/gnfc/gnfc 6.jpg";
+import gnfc7 from "../../resources/gnfc/gnfc 7.jpg";
+import gnfc8 from "../../resources/gnfc/gnfc 8.jpg";
+import gnfc9 from "../../resources/gnfc/gnfc 9.jpg";
+import gnfc10 from "../../resources/gnfc/gnfc 10.jpg";
+import gnfc11 from "../../resources/gnfc/gnfc 11.jpg";
+import gnfc12 from "../../resources/gnfc/gnfc 12.jpg";
+
+var items = [
+  {
+    name: "GNFC #0",
+    img: gnfc0,
+  },
+  {
+    name: "GNFC #1",
+    img: gnfc1,
+  },
+  {
+    name: "GNFC #2",
+    img: gnfc2,
+  },
+  {
+    name: "GNFC #3",
+    img: gnfc3,
+  },
+  {
+    name: "GNFC #4",
+    img: gnfc4,
+  },
+  {
+    name: "GNFC #5",
+    img: gnfc5,
+  },
+  {
+    name: "GNFC #6",
+    img: gnfc6,
+  },
+  {
+    name: "GNFC #7",
+    img: gnfc7,
+  },
+  {
+    name: "GNFC #8",
+    img: gnfc8,
+  },
+  {
+    name: "GNFC #9",
+    img: gnfc9,
+  },
+  {
+    name: "GNFC #10",
+    img: gnfc10,
+  },
+  {
+    name: "GNFC #11",
+    img: gnfc11,
+  },
+  {
+    name: "GNFC #12",
+    img: gnfc12,
+  },
+];
 
 const TenderClient = () => {
   const TenderList = data[3].tenders;
@@ -182,17 +252,29 @@ const TenderClient = () => {
                   margin: "auto",
                 }}
               >
+                <Carousel animation="slide" duration={"700"}>
+                  {items.map((item, i) => (
+                    <img
+                      key={item.name}
+                      data-aos="zoom-out"
+                      src={item.img}
+                      alt=""
+                      style={{
+                        width: "100%",
+                        height: {
+                          xs: "auto",
+                          sm: "auto",
+                          md: "325px",
+                          lg: "325px",
+                          xl: "325px",
+                        },
+                        borderRadius: "10px",
+                      }}
+                    />
+                  ))}
+                </Carousel>
+
                 {/* Image Component */}
-                <img
-                  data-aos="zoom-out"
-                  src={DemoPanel}
-                  alt=""
-                  style={{
-                    width: "100%",
-                    height: "325px",
-                    borderRadius: "10px",
-                  }}
-                />
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -206,6 +288,13 @@ const TenderClient = () => {
                     xl: "100%",
                   },
                   margin: "auto",
+                  height: {
+                    xs: "325px",
+                    sm: "325px",
+                    md: "325px",
+                    lg: "325px",
+                    xl: "325px",
+                  },
                 }}
                 data-aos="zoom-out"
               >
@@ -214,10 +303,10 @@ const TenderClient = () => {
                   url={Specs.youtube}
                   controls={true}
                   width={"100%"}
-                  height={"325px"}
-                  style={{
-                    maxHeight: "325px",
-                  }}
+                  height={"85%"}
+                  // style={{
+                  //   maxHeight: "325px",
+                  // }}
                 />
               </Box>
             </Grid>
