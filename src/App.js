@@ -24,8 +24,8 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/electrical-solution" element={<ElectricalSolution />} />
           <Route path="/electrical-solution/:panel" element={<Panel />} />
-          <Route path="/tenders" element={<Tenders />} />
-          <Route path="/tenders/:client" element={<TenderClient />} />
+          <Route path="/psu-and-govt" element={<Tenders />} />
+          <Route path="/psu-and-govt/:client" element={<TenderClient />} />
         </Routes>
         <Footer />
       </ThemeProvider>

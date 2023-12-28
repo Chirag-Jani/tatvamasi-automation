@@ -44,10 +44,16 @@ const Address = () => {
         sx={{
           fontWeight: 500,
           textAlign: "center",
-          width: "60%",
+          width: {
+            xs: "90%",
+            sm: "90%",
+            m: "60%",
+            lg: "60%",
+            xl: "60%",
+          },
           margin: "auto",
           fontSize: {
-            xs: "20px",
+            xs: "15px",
             sm: "20px",
             m: "19px",
             lg: "19px",

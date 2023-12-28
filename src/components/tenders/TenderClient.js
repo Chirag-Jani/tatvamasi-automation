@@ -159,64 +159,70 @@ const TenderClient = () => {
             {Specs.data.conslusion}
           </Typography>
         </Box>
-        <Grid
-          container
-          spacing={2}
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "center",
-          }}
-        >
-          <Grid item xs={12} md={6}>
-            <Box
-              sx={{
-                width: {
-                  xs: "100%",
-                  sm: "80%",
-                  md: "100%",
-                  lg: "100%",
-                  xl: "100%",
-                },
-                margin: "auto",
-              }}
-            >
-              {/* Image Component */}
-              <img
-                data-aos="zoom-out"
-                src={DemoPanel}
-                alt=""
-                style={{ width: "100%", height: "325px", borderRadius: "10px" }}
-              />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Box
-              sx={{
-                width: {
-                  xs: "100%",
-                  sm: "80%",
-                  md: "100%",
-                  lg: "100%",
-                  xl: "100%",
-                },
-                margin: "auto",
-              }}
-              data-aos="zoom-out"
-            >
-              {/* ReactPlayer Component */}
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                controls={true}
-                width={"100%"}
-                height={"325px"}
-                style={{
-                  maxHeight: "325px",
+        {Specs?.youtube && (
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "center",
+            }}
+          >
+            <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  width: {
+                    xs: "100%",
+                    sm: "80%",
+                    md: "100%",
+                    lg: "100%",
+                    xl: "100%",
+                  },
+                  margin: "auto",
                 }}
-              />
-            </Box>
+              >
+                {/* Image Component */}
+                <img
+                  data-aos="zoom-out"
+                  src={DemoPanel}
+                  alt=""
+                  style={{
+                    width: "100%",
+                    height: "325px",
+                    borderRadius: "10px",
+                  }}
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  width: {
+                    xs: "100%",
+                    sm: "80%",
+                    md: "100%",
+                    lg: "100%",
+                    xl: "100%",
+                  },
+                  margin: "auto",
+                }}
+                data-aos="zoom-out"
+              >
+                {/* ReactPlayer Component */}
+                <ReactPlayer
+                  url={Specs.youtube}
+                  controls={true}
+                  width={"100%"}
+                  height={"325px"}
+                  style={{
+                    maxHeight: "325px",
+                  }}
+                />
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
+        )}
       </Box>
     </Box>
   );

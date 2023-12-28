@@ -38,7 +38,7 @@ const Copy = () => {
           color: "#A17C1C",
         }}
       >
-        Website Design & Developed By : Creative Vork Company
+        Website Design & Developed By : Creative Work Company
       </Typography>
     </Box>
   );

@@ -17,7 +17,7 @@ const Connections = () => {
       "e@tatvamasiautomation.com",
       "f@tatvamasiautomation.com",
     ],
-    contacts: ["+91 1234561234", "+91 9876543210"],
+    // contacts: ["+91 1234561234", "+91 9876543210"],
   };
 
   // const social = [
@@ -69,7 +69,7 @@ const Connections = () => {
         Connections
       </Typography>
       <Box>
-        {mailAndContact.mails.map((mail) => {
+        {mailAndContact.mails?.map((mail) => {
           return (
             <Typography
               key={mail}
@@ -88,7 +88,7 @@ const Connections = () => {
             </Typography>
           );
         })}
-        {mailAndContact.contacts.map((contact) => {
+        {mailAndContact.contacts?.map((contact) => {
           return (
             <Typography
               key={contact}

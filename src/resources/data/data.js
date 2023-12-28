@@ -523,72 +523,58 @@ export const data = [
             "And more...",
           ],
         },
-        subPanel: {
-          title: "DB Panels",
-          desc: "Our Distribution Board (DB) panels offer a compact and efficient solution for localized power distribution within your facility. These panels are designed for easy access and streamlined electrical management, ensuring power reaches its intended destination without interruption. Here's what you can expect from our DB panels:",
-          advFeats: {
-            title: "Specifications",
-            feats: [
-              {
-                label: "Rated Voltage",
-                info: "230V",
-              },
-              {
-                label: "Phase",
-                info: "1 Phase or 3 Phase, depending on your requirements.",
-              },
-              {
-                label: "Rated Current",
-                info: "Customized to match your specific needs.",
-              },
-              {
-                label: "Frequency",
-                info: "50Hz AC",
-              },
-              {
-                label: "Bus Bar",
-                info: "Our panels feature high-quality aluminum (AL) and copper (CU) bus bars for reliable power distribution.",
-              },
-              {
-                label: "IP Rating",
-                info: "We provide IP 20-rated DB panels to safeguard against environmental factors.",
-              },
-              {
-                label: "Customized Dimensions",
-                info: "Our DB panels can be tailored to fit your available space.",
-              },
-            ],
+      },
+      // juncrion box remains
+      {
+        name: "DB Panel / Junction Box", // no data yet
+        desc: "Our Distribution Board (DB) panels offer a compact and efficient solution for localized power distribution within your facility. These panels are designed for easy access and streamlined electrical management, ensuring power reaches its intended destination without interruption. Here's what you can expect from our DB panels:",
+        path: "junction-box-db-panel",
+        specs: [
+          {
+            label: "Rated Voltage",
+            info: "230V",
           },
-          application: {
-            description:
-              "Our DB panels are the ideal choice for a variety of applications, including:",
-            industries: [
-              "Residential Buildings",
-              "Office Spaces",
-              "Retail Outlets",
-              "Educational Institutions",
-              "And more...",
-            ],
+          {
+            label: "Phase",
+            info: "1 Phase or 3 Phase, depending on your requirements.",
           },
+          {
+            label: "Rated Current",
+            info: "Customized to match your specific needs.",
+          },
+          {
+            label: "Frequency",
+            info: "50Hz AC",
+          },
+          {
+            label: "Bus Bar",
+            info: "Our panels feature high-quality aluminum (AL) and copper (CU) bus bars for reliable power distribution.",
+          },
+          {
+            label: "IP Rating",
+            info: "We provide IP 20-rated DB panels to safeguard against environmental factors.",
+          },
+          {
+            label: "Customized Dimensions",
+            info: "Our DB panels can be tailored to fit your available space.",
+          },
+        ],
+        application: {
+          description:
+            "Our DB panels are the ideal choice for a variety of applications, including:",
+          industries: [
+            "Residential Buildings",
+            "Office Spaces",
+            "Retail Outlets",
+            "Educational Institutions",
+            "And more...",
+          ],
         },
-
         powerEneSimp: {
           title: "Experience Streamlined Power Management",
           data: "Contact us today to discuss your specific PDP and DB panel needs. Whether you require a comprehensive PDP solution or a compact DB panel, we have the expertise to deliver efficient power distribution tailored to your industry.",
         },
       },
-      // juncrion box remains
-      // {
-      //   name: "Junction Box & PDBC", // no data yet
-      //   desc: "Junction Description to be added!",
-      //   path: "junction-box-pdbc",
-      //   specs: [
-      //     {
-      //       label: "Rated Voltage",
-      //       info: "low voltage (lv)",
-      //     },
-      //   ],
-      // },
       // // draw out remains
       // {
       //   name: "Draw-out Panel", // no data yet
@@ -644,9 +630,9 @@ export const data = [
     path: "#",
   },
   {
-    name: "Tenders",
+    name: "PSU & Govt. Sectors",
     image: Tenders,
-    path: "tenders",
+    path: "psu-and-govt",
     tenders: [
       {
         name: "GNFC",
@@ -654,7 +640,7 @@ export const data = [
         path: "gnfc",
         data: {
           overview:
-            "Tatvamasi Automation Private Limited undertook a challenging retrofitting project at Mazgaon Dockyard to address inefficiencies caused by an outdated drive system. The existing setup presented challenges with scarce spare parts and outdated communication protocols, necessitating a comprehensive upgrade to enhance overall system efficiency.",
+            "We are  a dedicated automation solution provider with a proven track record of transforming water treatment processes into highly efficient, automated systems. Recently, we undertook a groundbreaking project at the GNFC STP plant in Bharuch, India, where manual operations were replaced with cutting-edge automation to optimize water management and reuse within the vast GNFC plant colony.",
           conslusion:
             "Our automation solution at the GNFC STP plant has not only streamlined operations but also significantly contributed to sustainability by enabling efficient water reuse. By optimizing the treatment process and ensuring precise water distribution, we have enhanced the overall performance of this critical facility, setting new benchmarks for water management in large industrial colonies.",
           highlights: [
@@ -705,6 +691,8 @@ export const data = [
             },
           ],
         },
+        youtube: "https://youtu.be/cvbFTFJOGCM?si=vXnIxmOlyw4XjPSx",
+        images: [],
       },
       {
         name: "Mazgaon Dockyard",
