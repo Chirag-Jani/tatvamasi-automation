@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.5c53ca84.css",
-    "main.js": "/static/js/main.19b8cbe2.js",
+    "main.js": "/static/js/main.3ed1c6df.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.edbf4667d83197e1bb09d05284c0af8f.svg",
+    "static/media/aboutUsBanner.png": "/static/media/aboutUsBanner.d7e1a0a35a5293c00f5c.png",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.8b8c25cf4b1bafcd9af2ae106de1a143.svg",
     "static/media/INDRAIL.svg": "/static/media/INDRAIL.eae502eda0a15ea34d824eb3c32d9b74.svg",
     "static/media/gnfc 7.jpg": "/static/media/gnfc 7.205652e884fc79134fa4.jpg",
@@ -25,7 +26,6 @@
     "static/media/Montserrat-BoldItalic.ttf": "/static/media/Montserrat-BoldItalic.a169c71c1eb466896fe1.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
-    "static/media/semp 2.png": "/static/media/semp 2.04f057ce3aebac39250b.png",
     "static/media/homepageBanner.svg": "/static/media/homepageBanner.920fd48beda3fb7b8947de48300a19c3.svg",
     "static/media/TAPI.svg": "/static/media/TAPI.efe0d8167db43bee770a1b484622aa98.svg",
     "static/media/SMC.svg": "/static/media/SMC.8f718056933196f0062fb94befa69e89.svg",
@@ -63,10 +63,10 @@
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.eb82ee490f989829765f5f1bb93c06c5.svg",
     "index.html": "/index.html",
     "main.5c53ca84.css.map": "/static/css/main.5c53ca84.css.map",
-    "main.19b8cbe2.js.map": "/static/js/main.19b8cbe2.js.map"
+    "main.3ed1c6df.js.map": "/static/js/main.3ed1c6df.js.map"
   },
   "entrypoints": [
     "static/css/main.5c53ca84.css",
-    "static/js/main.19b8cbe2.js"
+    "static/js/main.3ed1c6df.js"
   ]
 }
