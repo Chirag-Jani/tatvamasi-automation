@@ -41,6 +41,7 @@ const QuickLinks = () => {
             lg: "0 0 100px 0",
             xl: "0 0 100px 0",
           },
+          color: "white",
         }}
       >
         Quick Links
@@ -51,7 +52,7 @@ const QuickLinks = () => {
           key={index}
           style={{
             textDecoration: "none",
-            color: "white",
+            color: "#D9D9D9",
           }}
         >
           <Typography

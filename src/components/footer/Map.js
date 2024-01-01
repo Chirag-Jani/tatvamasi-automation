@@ -8,6 +8,8 @@ const mapContainerStyle = {
   maxWidth: "400px",
   height: "auto",
   margin: "20px auto",
+  display: "flex",
+  flexDirection: "column",
 };
 // const center = {
 //   lat: 21.36282069229223,
@@ -40,7 +42,15 @@ const Map = () => {
       </GoogleMap> */}
       {/* https://maps.app.goo.gl/zkW2FqhVQLWQ8jXNA */}
       <a href="https://maps.app.goo.gl/zkW2FqhVQLWQ8jXNA" target="_blank">
-        <img src={mapImg} alt="Map img here" />
+        <img
+          src={mapImg}
+          alt="Map img here"
+          style={{
+            width: "100px",
+            height: "auto",
+            margin: "50px auto",
+          }}
+        />
       </a>
       "Click here to get Location"
     </div>

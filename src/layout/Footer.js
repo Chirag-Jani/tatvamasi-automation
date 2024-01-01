@@ -11,14 +11,14 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "#162966",
-        color: "white",
+        color: "#D9D9D9",
         textAlign: "center",
         padding: "20px",
         height: "fit-content",
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        marginTop: "100px",
+        // paddingTop: "100px",
       }}
     >
       <Box

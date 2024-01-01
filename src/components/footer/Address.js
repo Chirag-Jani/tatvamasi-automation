@@ -31,6 +31,7 @@ const Address = () => {
             lg: "0 0 100px 0",
             xl: "0 0 100px 0",
           },
+          color: "white",
         }}
       >
         Address

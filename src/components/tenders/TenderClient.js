@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../../resources/data/data";
 import { Box, Grid, Typography } from "@mui/material";
-import DemoPanel from "../../resources/semp 2.png";
 import ReactPlayer from "react-player";
 import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
@@ -21,6 +20,7 @@ import gnfc9 from "../../resources/gnfc/gnfc 9.jpg";
 import gnfc10 from "../../resources/gnfc/gnfc 10.jpg";
 import gnfc11 from "../../resources/gnfc/gnfc 11.jpg";
 import gnfc12 from "../../resources/gnfc/gnfc 12.jpg";
+import ZoomedImage from "./ZoomedImage";
 
 var items = [
   {
@@ -81,6 +81,19 @@ const TenderClient = () => {
   const TenderList = data[3].tenders;
   let { client } = useParams();
   const Specs = TenderList.find((t) => t.path === client);
+
+  const [open, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const handleImageClick = (img) => {
+    setSelectedImage(img);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   useEffect(() => {
     Aos.init({
       // Global settings:
@@ -270,9 +283,15 @@ const TenderClient = () => {
                         },
                         borderRadius: "10px",
                       }}
+                      onClick={() => handleImageClick(item.img)}
                     />
                   ))}
                 </Carousel>
+                <ZoomedImage
+                  open={open}
+                  handleClose={handleClose}
+                  src={selectedImage}
+                />
 
                 {/* Image Component */}
               </Box>
