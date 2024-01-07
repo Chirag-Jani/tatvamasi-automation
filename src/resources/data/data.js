@@ -13,11 +13,13 @@ import NC from "../../resources/tenderLogos/NC.svg";
 import UD from "../../resources/tenderLogos/UD.svg";
 
 export const data = [
+  // automation
   {
     name: "Automation Solutions",
     image: AutomationSolution,
     path: "#",
   },
+  // electrical - done
   {
     name: "Electrical Solutions",
     image: ElectricalSolution,
@@ -624,11 +626,13 @@ export const data = [
       // },
     ],
   },
+  // automation
   {
     name: "Fabrication Solutions",
     image: FabricationSolution,
     path: "#",
   },
+  // psu & govt - done
   {
     name: "PSU & Govt. Sectors",
     image: Tenders,
@@ -800,26 +804,31 @@ export const data = [
       },
     ],
   },
+  // used machine
   {
     name: "Used Machine Buy/Sell",
     image: UsedMachineBuySell,
     path: "#",
   },
+  // eq. store
   {
     name: "Equipment Store",
     image: EqStore,
     path: "#",
   },
+  // amc
   {
     name: "AMC",
     image: AMC,
     path: "#",
   },
+  // career
   {
     name: "Career",
     image: Career,
     path: "#",
   },
+  // contact us
   {
     name: "Contact Us",
     image: ContactUs,
