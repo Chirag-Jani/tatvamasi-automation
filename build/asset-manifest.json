@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.5c53ca84.css",
-    "main.js": "/static/js/main.9c55faae.js",
+    "main.js": "/static/js/main.7bafa9c3.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.edbf4667d83197e1bb09d05284c0af8f.svg",
+    "static/media/aboutUs.png": "/static/media/aboutUs.741254181ae77238b406.png",
     "static/media/aboutUsBanner.png": "/static/media/aboutUsBanner.d7e1a0a35a5293c00f5c.png",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.8b8c25cf4b1bafcd9af2ae106de1a143.svg",
     "static/media/INDRAIL.svg": "/static/media/INDRAIL.eae502eda0a15ea34d824eb3c32d9b74.svg",
@@ -15,23 +16,17 @@
     "static/media/electrical-banner.jpg": "/static/media/electrical-banner.c101ef4f76d61aa08b29.jpg",
     "static/media/gnfc 5.jpg": "/static/media/gnfc 5.ab0a96fb93730f32f04e.jpg",
     "static/media/gnfc 0.jpg": "/static/media/gnfc 0.076ab025d4f89572decd.jpg",
-    "static/media/abt7.png": "/static/media/abt7.3e46670fe4c0c89a2bdf.png",
-    "static/media/abt2.png": "/static/media/abt2.e2bdd70fca33916bfcad.png",
     "static/media/gnfc 4.jpg": "/static/media/gnfc 4.280abf6c412fe3c00959.jpg",
     "static/media/gnfc 9.jpg": "/static/media/gnfc 9.7d9d25a02715f4db3b80.jpg",
-    "static/media/abt5.png": "/static/media/abt5.709d23ab441a492583b3.png",
     "static/media/NC.svg": "/static/media/NC.dac9fe37a01f1ddf870560893a4b065e.svg",
     "static/media/gnfc 2.jpg": "/static/media/gnfc 2.45ab3efcea5948cd3330.jpg",
     "static/media/gnfc 3.jpg": "/static/media/gnfc 3.7b6d9747becabe3e3cbf.jpg",
     "static/media/gnfc 6.jpg": "/static/media/gnfc 6.52d528760c4d4e03b869.jpg",
     "static/media/gnfc 1.jpg": "/static/media/gnfc 1.41888d888917697c0ed8.jpg",
-    "static/media/abt4.png": "/static/media/abt4.2e5b1bd7a5200127859f.png",
     "static/media/Montserrat-ExtraBoldItalic.ttf": "/static/media/Montserrat-ExtraBoldItalic.a22f67090d6cf291405a.ttf",
     "static/media/Montserrat-BoldItalic.ttf": "/static/media/Montserrat-BoldItalic.a169c71c1eb466896fe1.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
-    "static/media/RoadMap.png": "/static/media/RoadMap.4e3146820b9bae818cbd.png",
-    "static/media/abt1.png": "/static/media/abt1.1458e8331e99addc68b6.png",
     "static/media/homepageBanner.svg": "/static/media/homepageBanner.920fd48beda3fb7b8947de48300a19c3.svg",
     "static/media/TAPI.svg": "/static/media/TAPI.efe0d8167db43bee770a1b484622aa98.svg",
     "static/media/SMC.svg": "/static/media/SMC.8f718056933196f0062fb94befa69e89.svg",
@@ -40,7 +35,6 @@
     "static/media/neuropolitical rg.ttf": "/static/media/neuropolitical rg.4eac589d31d567458ea2.ttf",
     "static/media/tenders.svg": "/static/media/tenders.b3c530c1fbf560eca5d948cb6511fe40.svg",
     "static/media/automationSolution.svg": "/static/media/automationSolution.2a43a51d880dd30ab2bc189022845539.svg",
-    "static/media/abt3.png": "/static/media/abt3.b852124963679685fa90.png",
     "static/media/career.svg": "/static/media/career.1ea3b0a987224bb4d82762384f89ca9c.svg",
     "static/media/usedMachine.svg": "/static/media/usedMachine.fb9f9bdfc316ea94e01307bdfb41a02f.svg",
     "static/media/contactUs.svg": "/static/media/contactUs.cc4270aa114ba4884a200a5db5a0d072.svg",
@@ -48,7 +42,6 @@
     "static/media/eqStore.svg": "/static/media/eqStore.e37602a2f18cb8d069a45b5dad74f154.svg",
     "static/media/RELIANCE.svg": "/static/media/RELIANCE.2ffe72cc698d1455cf9d188666ab8041.svg",
     "static/media/GAIL.svg": "/static/media/GAIL.103b324c188ad06c1bf8be3d4fbf314f.svg",
-    "static/media/abt6.png": "/static/media/abt6.d7c043423bd9fe785865.png",
     "static/media/logoTextWhite.svg": "/static/media/logoTextWhite.d065efac1bb41b0a9f20d606cdaa63f7.svg",
     "static/media/MD.svg": "/static/media/MD.880e97da5ca7c5072221ec9b273fda2d.svg",
     "static/media/ONGC.svg": "/static/media/ONGC.45cc536e26ecc5d79dc26e3c08a64e14.svg",
@@ -71,10 +64,10 @@
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.eb82ee490f989829765f5f1bb93c06c5.svg",
     "index.html": "/index.html",
     "main.5c53ca84.css.map": "/static/css/main.5c53ca84.css.map",
-    "main.9c55faae.js.map": "/static/js/main.9c55faae.js.map"
+    "main.7bafa9c3.js.map": "/static/js/main.7bafa9c3.js.map"
   },
   "entrypoints": [
     "static/css/main.5c53ca84.css",
-    "static/js/main.9c55faae.js"
+    "static/js/main.7bafa9c3.js"
   ]
 }
