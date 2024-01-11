@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
 import aboutUs from "../resources/aboutUsPageImages/aboutUs.png";
+import vision from "../resources/aboutUsPageImages/Vision.svg";
+import mission from "../resources/aboutUsPageImages/Mission.svg";
 
 const AboutUs = () => {
   return (
@@ -89,6 +91,41 @@ const AboutUs = () => {
           is devoted to delivering projects on schedule with an unwavering focus
           on quality.
         </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          width: "100%",
+          flexDirection: {
+            xl: "row",
+            lg: "row",
+            md: "column",
+            sm: "column",
+            xs: "column",
+          },
+        }}
+      >
+        <img
+          src={vision}
+          alt=""
+          style={{
+            width: "fit-content",
+            maxWidth: "80%",
+            margin: "10px",
+          }}
+        />
+        <img
+          src={mission}
+          alt=""
+          style={{
+            width: "fit-content",
+            maxWidth: "80%",
+            margin: "10px",
+          }}
+        />
       </Box>
       <Box
         sx={{
