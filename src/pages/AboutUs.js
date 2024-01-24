@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
-import aboutUs from "../resources/aboutUsPageImages/aboutUs.png";
+import aboutUs from "../resources/aboutUsPageImages/aboutUs.svg";
 import vision from "../resources/aboutUsPageImages/Vision.svg";
 import mission from "../resources/aboutUsPageImages/Mission.svg";
 

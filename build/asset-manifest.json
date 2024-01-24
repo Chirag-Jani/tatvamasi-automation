@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.5c53ca84.css",
-    "main.js": "/static/js/main.721cc1ca.js",
+    "main.js": "/static/js/main.fcfba6fc.js",
+    "static/media/aboutUs.svg": "/static/media/aboutUs.e001f3bb38d60178742228b7fef0799a.svg",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.edbf4667d83197e1bb09d05284c0af8f.svg",
-    "static/media/aboutUs.png": "/static/media/aboutUs.741254181ae77238b406.png",
     "static/media/aboutUsBanner.png": "/static/media/aboutUsBanner.d7e1a0a35a5293c00f5c.png",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.8b8c25cf4b1bafcd9af2ae106de1a143.svg",
     "static/media/INDRAIL.svg": "/static/media/INDRAIL.eae502eda0a15ea34d824eb3c32d9b74.svg",
@@ -66,10 +66,10 @@
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.eb82ee490f989829765f5f1bb93c06c5.svg",
     "index.html": "/index.html",
     "main.5c53ca84.css.map": "/static/css/main.5c53ca84.css.map",
-    "main.721cc1ca.js.map": "/static/js/main.721cc1ca.js.map"
+    "main.fcfba6fc.js.map": "/static/js/main.fcfba6fc.js.map"
   },
   "entrypoints": [
     "static/css/main.5c53ca84.css",
-    "static/js/main.721cc1ca.js"
+    "static/js/main.fcfba6fc.js"
   ]
 }

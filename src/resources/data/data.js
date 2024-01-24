@@ -626,11 +626,11 @@ export const data = [
       // },
     ],
   },
-  // automation
+  // fabrication
   {
     name: "Fabrication Solutions",
     image: FabricationSolution,
-    path: "#",
+    path: "fabrication-solution",
   },
   // psu & govt - done
   {
