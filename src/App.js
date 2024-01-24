@@ -15,6 +15,7 @@ import ScrollToTop from "./components/utilities/ScrollToTop";
 import TenderClient from "./components/tenders/TenderClient";
 import AboutUs from "./pages/AboutUs";
 import FabricationSolution from "./pages/FabricationSolution";
+import AutomationSolution from "./pages/AutomationSolution";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
             path="/fabrication-solution"
             element={<FabricationSolution />}
           />
+          <Route path="/psu-and-govt" element={<Tenders />} />
+          <Route path="/automation-solution" element={<AutomationSolution />} />
           <Route path="/psu-and-govt" element={<Tenders />} />
           <Route path="/psu-and-govt/:client" element={<TenderClient />} />
         </Routes>

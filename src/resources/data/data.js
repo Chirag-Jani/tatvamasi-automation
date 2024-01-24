@@ -17,7 +17,176 @@ export const data = [
   {
     name: "Automation Solutions",
     image: AutomationSolution,
-    path: "#",
+    path: "automation-solution",
+    machines: [
+      // rapier : data done, all the images todo
+      {
+        title: "Rapier Machine",
+        mainImg: "",
+        desc: "The rapier loom is a shuttleless weaving loom in which the filling yarn is carried through the shed of warp yarns to the other side of the loom by finger-like carriers called Rapiers.A rapier loom uses a rapier to pull the weft yarn across the loom. It can be single or double rapier.Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: {
+          title: "Why we need retrofitting in Rapier Machine",
+          reasons: [
+            "Machine service-related issue",
+            "Fault in old power card; requirement of PLC based system",
+            "The demand for huge mechanical system upgrade",
+            "Absolute parts",
+            "Unavailability of electronic spares",
+          ],
+        },
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Machine Start-Stop",
+            "Machine slow inching mode",
+            "Machine pick finding mode",
+            "Auto manual pick finding mode selection",
+            "Manually ELO/ETU Servo motor FWD/REV",
+            "Auto pick changing by automatic electronics servo based system",
+            "Improve speed of machine",
+            "Electronic let-off + take-up with cramming",
+            "Achieve different weaving density",
+            "Inbuilt USB 2.0 based programmable weft selector (max.8 weft)",
+            "User friendly 7” touch screen for operation",
+          ],
+        },
+        systCompo: {
+          title: "System Components",
+          comps: [
+            {
+              label: "Servo Driver & Motor",
+              info: [
+                "Fuji electric",
+                "Schneider electric",
+                "Yaskawa electric corporation",
+                "Xinje electric",
+                "AC Inverter Drive",
+              ],
+            },
+            {
+              label: "Power supply and relay card",
+              info: [
+                "Fuji electric",
+                "Schneider electric",
+                "Yaskawa electric corporation",
+              ],
+            },
+            {
+              label: "Loadcell and Encoder",
+              info: ["Phoenix"],
+            },
+            {
+              label: "HMI and Control system",
+              info: ["Kubler group"],
+            },
+            {
+              label: "Cabling",
+              info: ["Xinje electric", "Schneider electric"],
+            },
+            {
+              label: "Terminal & Connector",
+              info: ["Lapp Groupe", "RR Cabel Limited"],
+            },
+          ],
+        },
+        benefits: {
+          title: "Benefits of control system",
+          reasons: [
+            "Auto pick changing so removal of all mechanical work to ensure minimum mechanical breakdown time",
+            "ETU/ELO system effectively removes the problem such as stop mark, latent defect, and bulking due to change of tension force",
+            "Achieve different wave densities without changing gear",
+            "Improve speed of machine 10-30% (Depends on machine condition)",
+            "Specially designed to work under Indian environment",
+            "Electronic let off – take up with cramming",
+          ],
+        },
+        scope: {
+          title: "Our scope of work in various Rapier Machine",
+          videos: [
+            "https://youtu.be/ohCE0dgxDqc?si=zIRQ9OFHJNaKrbF4",
+            "https://youtu.be/gJhF9uuF7bI?si=KTrD2NL1dVyDP07h",
+          ],
+        },
+        types: [
+          {
+            typeName: "Wanli Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Somet Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Orange Weaving Pvt. Ltd.",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "SMIT Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Vamatex Leonardo Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Amar Jacquard Pvt. Ltd.",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Shin Kwang Rapier Machines",
+            imgList: ["", "", ""],
+          },
+        ],
+      },
+      // sectional warping : todo
+      {
+        title: "Sectional Warping Machine",
+        mainImg: "",
+        desc: "",
+        whyWeNeed: ["One", "Two", "Three"],
+        offeredSol: ["One", "Two", "Three"],
+        systCompo: ["One", "Two", "Three"],
+        // benefits: ["One", "Two", "Three"],
+        scope: {
+          title: "Our scope of work in various Rapier Machine",
+          videos: null,
+        },
+        types: [
+          {
+            typeName: "Karl Mayer",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Kakinoki Core",
+            imgList: ["", "", ""],
+          },
+        ],
+      },
+      // Speed frame warping : todo
+      {
+        title: "Speed Frame Machine",
+        mainImg: "",
+        desc: "",
+        whyWeNeed: ["One", "Two", "Three"],
+        offeredSol: ["One", "Two", "Three"],
+        systCompo: ["One", "Two", "Three"],
+        // benefits: ["One", "Two", "Three"],
+        scope: {
+          title: "Our scope of work in various Rapier Machine",
+          videos: null,
+        },
+        types: [
+          {
+            typeName: "Karl Mayer",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Kakinoki Core",
+            imgList: ["", "", ""],
+          },
+        ],
+      },
+    ],
   },
   // electrical - done
   {
