@@ -19,7 +19,7 @@ export const data = [
     image: AutomationSolution,
     path: "automation-solution",
     machines: [
-      // rapier : data done, all the images todo
+      // rapier : data done, img remains
       {
         title: "Rapier Machine",
         mainImg: "",
@@ -138,18 +138,242 @@ export const data = [
           },
         ],
       },
-      // sectional warping : todo
+      // sectional warping : data done, img remains
       {
         title: "Sectional Warping Machine",
         mainImg: "",
-        desc: "",
-        whyWeNeed: ["One", "Two", "Three"],
-        offeredSol: ["One", "Two", "Three"],
-        systCompo: ["One", "Two", "Three"],
-        // benefits: ["One", "Two", "Three"],
+        desc: "A sectional warping machine consists of three basic units, which are the creel, winding drum, and beaming unit. In section warping, warp yarns are organized into yarn bands, each having the same warp density as for the weaver’s beam. Then, the yarn sheet is transferred from the drum onto the weaver’s beams. Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: {
+          title: "Why we need retrofitting in Sectional Warping Machine",
+          reasons: [
+            "Various fault detected in existing panel",
+            "Machine service-related issue",
+            "Fault in old power card; requirement of PLC based system",
+            "Unavailability of electronic spares",
+          ],
+        },
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Auto density calculation system",
+            "Easy operation system",
+            "Accurate length measurement system",
+            "Individual servo set for traverse drum and table",
+            "Material used in our panel is easily available in the market",
+            "Operator can set gap between two sections as per requirement",
+          ],
+        },
+        systCompo: {
+          title: "System Components",
+          comps: [
+            {
+              label: "Servo Driver & Motor",
+              info: ["Schneider electric", "AC Inverter Drive"],
+            },
+            {
+              label: "Fuji electric",
+              info: [
+                "Schneider electric",
+                "Yaskawa electric corporation",
+                "Power supply and relay card",
+              ],
+            },
+            {
+              label: "Phoenix",
+              info: ["Encoder"],
+            },
+            {
+              label: "Fenac encoders and sensors",
+              info: ["MCB"],
+            },
+            {
+              label: "Schneider electric",
+              info: ["HMI and Control system"],
+            },
+            {
+              label: "Schneider electric",
+              info: ["Cabling"],
+            },
+            {
+              label: "Lapp Groupe",
+              info: ["RR Cabel Limited", "Terminal & Connector"],
+            },
+          ],
+        },
         scope: {
           title: "Our scope of work in various Rapier Machine",
           videos: null,
+          images: [
+            {
+              title: "Karl Mayer",
+              imgList: ["", ""],
+            },
+            {
+              title: "Kakinoki Core",
+              imgList: ["", ""],
+            },
+          ],
+        },
+        types: [
+          {
+            typeName: "Wanli Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Somet Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Orange Weaving Pvt. Ltd.",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "SMIT Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Vamatex Leonardo Rapier Machines",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Amar Jacquard Pvt. Ltd.",
+            imgList: ["", "", ""],
+          },
+          {
+            typeName: "Shin Kwang Rapier Machines",
+            imgList: ["", "", ""],
+          },
+        ],
+      },
+      // Speed frame warping : data done, img remains
+      {
+        title: "Speed Frame Machine",
+        mainImg: "",
+        desc: "The Function of the Speed Frame machine is the output from the draw frame is fed into the speed frame (also known as simplex machine or flyer frame) where the linear density of sliver is reduced by drafting and the resultant product is called the roving. Whenever the main machine is not able to fulfill requirements, modification and changes in old or new machinery are the requirements of the current industry.",
+        whyWeNeed: [
+          "Malfunctioning in panel",
+          "Lack of availability of electronic spares",
+          "IPC and drive failure",
+          "AC drive failure",
+        ],
+        offeredSol: [
+          "By use of suitable drive and other necessary material, we do retrofit work.",
+          "Fulfilled the requirement of numbers of drives and did synchronization b/w all of them.",
+          "PLC Programming",
+          "Synchronize b/w numbers of drives and programming in PLC.",
+        ],
+        systCompo: [
+          [
+            "Integrated machine automation – Existing mechanics with the latest automation.",
+            "Engineering documentation",
+            "H/w & S/w Engineering & FAT",
+            "Coordination with the electrical contractor and mechanical team for data exchange & machine calculation.",
+            "Industrial PC Programming",
+            "Energy monitoring system",
+            "Commissioning support",
+            "System training",
+            "AMC for repairing and maintenance",
+          ],
+        ],
+        scope: {
+          title: "Our scope of work in various Rapier Machine",
+          videos: null,
+          images: [
+            {
+              title: "Rieter Speed Frame Machine",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Malfunctioning in the existing panel",
+                  "Display issues in Reel make AC Drive",
+                  "Lack of availability of electronic spares",
+                  "lack of availability of AC drive",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Retrofitting by use of suitable materials for the application",
+                  "Featured Fuji Mega AC Drive",
+                  "Featured Schnieder PLC",
+                  "Featured Schneider HMI",
+                  "Programming in PLC+HMI as per client’s requirement",
+                ],
+              },
+            },
+            {
+              title: "Electrojet Speed Frame Machine",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: {
+                  item: "Malfunctioning in existing panel containing",
+                  sys: [
+                    "Flyer drive (LENZE) : 18.5 kw",
+                    "Spindle drive : 22 kw",
+                    "Drafting drive : 5.5 kw",
+                    "Lifting Servo drive : 5.5 kw",
+                    "PLC : VIPA make",
+                    "Interface : IPC 12”",
+                  ],
+                  info: [
+                    "Drive failure in spindle and flyer section due to same cause of over temperature.",
+                    "IPC failure in spindle and flyer section.",
+                    "Sliver tension sensor damage causes machine breakdown.",
+                    "Lack of availability of electronic spares",
+                  ],
+                },
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  {
+                    item: "Fulfilled the requirement of numbers of drive and did synchronization b/w all of them",
+                    sys: [
+                      "Flyer drive : 22 kw",
+                      "Spindle drive : 30 kw",
+                      "Drafting drive : 11 kw",
+                      "Lifting Servo drive : 9 kw",
+                      "PLC : Schneider make (LMC058)",
+                      "Interface : HMI(IPC) 12”",
+                    ],
+                    info: [
+                      "Programming in Schnieder PLC+HMI as per client’s requirement",
+                      "Kept drive with bigger capacities to prevent overheating.",
+                      "Layer by tension system for better bobbin filling without tension sensors.",
+                      "Removed all drive control wiring make system maintenance easy.",
+                      "All drive has separate remote for parameter changes, monitoring and also for copy, paste.",
+                    ],
+                  },
+                ],
+              },
+            },
+            {
+              title: "Zinser Speed Frame Machine",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Malfunctioning in existing panel containing Vectron AC Drive 22kw & Phoenix PLC",
+                  "AC Drive failure",
+                  "Unavailability of Vectron AC Drive",
+                  "Lack of availability of electronic spares",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Replaced Vectron AC Drive with suitable Schneider Drives.",
+                  "Fulfilled the requirement of numbers of drive and did synchronization b/w all of them",
+                  "Programming in Schnieder PLC+HMI as per client’s requirement",
+                  "Featured Schneider ATV71 ATV340 drives of different capacities",
+                  "Featured Schneider LMC258 PLC",
+                  "Featured Schneider GXU350 HMI",
+                ],
+              },
+            },
+          ],
         },
         types: [
           {
@@ -162,29 +386,684 @@ export const data = [
           },
         ],
       },
-      // Speed frame warping : todo
+      // POY/FDY Winder Machines : data done, img remains
       {
-        title: "Speed Frame Machine",
+        title: "POY/FDY Winder Machines",
         mainImg: "",
-        desc: "",
-        whyWeNeed: ["One", "Two", "Three"],
-        offeredSol: ["One", "Two", "Three"],
-        systCompo: ["One", "Two", "Three"],
-        // benefits: ["One", "Two", "Three"],
+        desc: "Modern age machine offers various function to operate on. As a result, it is compatible for operator.Machine is labeled with different names such as Textile automatic yarn doffing winder machine, POY FDY polyester yarn winder etc.Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: {
+          title: "Why we need Retrofitting in POY/FDY Winder ?",
+          reasons: [
+            "Most common problem is drive failure",
+            "It is not favorable to repair the system in case of failure",
+            "Fault in Motor Driver card (PCB)",
+            "Low availability of suitable drive and other electric components",
+            "High cost for repairing",
+            "Problem during maintaining proper tension",
+            "In case of good machine condition and failure in electric panel; retrofitting panel solution is more convenient.",
+          ],
+        },
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Replacement of older drives with the new suitable drive",
+            "Auto doffing",
+            "Auto change over parameters",
+            "Accurate parameters input for proper threading",
+            "Drop alarm timing",
+            "Goddet , Extrusion synchronization with winder",
+            "Upgrade the older system with new features",
+          ],
+        },
+        systCompo: {
+          title: "Various POY/FDY machines in our scope of work",
+          comps: [
+            {
+              label: "",
+              info: [
+                "Barmag Winder Machines",
+                "Jwell Machinery Winder Machines",
+                "Teijin seiki winder machines",
+                "Toray winding machine",
+                "TMT POY/FDY Winder",
+              ],
+            },
+          ],
+        },
+        scope: {
+          title: "Various Winder make Machine",
+          videos: null,
+          images: [
+            {
+              title: "Barmag Winder Machines",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Failure in old Barmag drive card",
+                  "High cost for repairing",
+                  "Low availability of suitable drive and other electric components",
+                  "Service related issues due to less numbers of service centers.",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Drive card replaced with Yaskawa A1000 drive varying up to 20hp",
+                  "Service issue solved due to good service support form company side",
+                ],
+              },
+            },
+            {
+              title: "Jwell Machinery Winder Machines",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Failure in Yaskawa T1000 drive 3kw",
+                  "Failure in Yaskawa T1000 drive 5.5kw",
+                  "Failure in Yaskawa T1000 drive 7.5kw Cotrust PLC",
+                  "Control system for operation – PC Based Softwere",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Fuji Mega drive 3kw",
+                  "Fuji Mega drive 5.5kw",
+                  "Fuji Mega drive 7.5kw",
+                  "Schneider/Haiwell PLC",
+                  "Samkoon HMI based system",
+                ],
+              },
+            },
+            {
+              title: "Teijin seiki winder machines",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Failure in old Yaskawa V7 3 to 7.5kw drive With built-in TMT software",
+                  "Purchasing new drive is not feasible due to high rate and unavailability.",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Replaced with Schneider 3 to 7.5kw Drives",
+                  "Provided system is more conventional and compatible with low failure rate",
+                ],
+              },
+            },
+            {
+              title: "Toray winding machine",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Failure in old drives.",
+                  "PLC Programming issues",
+                  "Not feasible to purchase same drive due to less availability and service support.",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Old drive replaced with Schneider drives up to 20hp",
+                  "Schneider Drive programming",
+                  "Provided system is more conventional and compatible with low failure rate",
+                ],
+              },
+            },
+            {
+              title: "TMT POY/FDY Winder",
+              imgList: ["", ""],
+              existingEq: {
+                title: "Existing Equipment and Issues",
+                data: [
+                  "Failure in old Yaskawa V7 and G5 drive With built-in TMT software",
+                  "Purchasing new drive is not feasible due to high rate and unavailability.",
+                ],
+              },
+              providedSys: {
+                title: "Provided System",
+                data: [
+                  "Fuji ACE drive",
+                  "Yaskawa V1000 drive",
+                  "Provided system is more conventional and compatible with low failure rate",
+                ],
+              },
+            },
+          ],
+        },
+      },
+      // Polyester Sizing & Beaming Machine : data done, img remains
+      {
+        title: "Polyester Sizing & Beaming Machine",
+        mainImg: "",
+        desc: "The weaver painted the size onto the warp as it lay on the loom, then fanned it dry before weaving the cloth. The sizing machine improved the process by sizing a warp before putting it into the loom. The warp threads are first wound onto a large beam, which is then placed at one end of the sizing machine. Beamers set up the specialized textile machinery according to production instructions. They work out the correct quantity of yarn needed for each job, load yarns onto ‘beams’, check the yarns for defects or knots, and record the number of yarn breaks. Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: {
+          title:
+            "Why we need retrofitting in Polyester Sizing & Beaming Machine",
+          reasons: [
+            "The old system is based on a DC motor",
+            "The DC system consumes more power",
+            "It requires regular maintenance and needs a highly skilled operator",
+            "Compare to the AC system it offers low accuracy and low production",
+            "The complex operating system compares to AC System",
+          ],
+        },
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "By use of suitable AC drive, PLC, HMI, encoder and other necessary material DC system has been converted in to AC System",
+            "Synchronize b/w numbers of drives",
+            "PLC Programming",
+            "AC system demands minimum maintenance",
+            "Offers easy operating system",
+            "Compare to DC more power saving",
+          ],
+        },
+        scope: {
+          title:
+            "Our scope of work in various Polyester Sizing & Beaming Machine",
+          videos: null,
+          images: [
+            {
+              title: "Trishul Fabrication",
+              imgList: ["", ""],
+              existingEq: {
+                title: "For Sizing Machine",
+                data: [
+                  "Yaskawa A1000 AC drive capacity varying 1hp to 5hp",
+                  "Veichi AC10 1hp",
+                  "ABB ACS560 1hp",
+                  "Xinje, XD series PLC Model 32PRT-C",
+                  "Xinje PLC Module XD4DA for analog output",
+                  "Xinje PLC 6PT Module for temperature measurement",
+                  "Xinje HMI TG765-XT",
+                  "Encoders feedback card Model Yaskawa PGB3",
+                  "Encoder 1024PPR Kubler make",
+                ],
+              },
+              providedSys: {
+                title: "For Beamer Machine",
+                data: [
+                  "Yaskawa A1000 25hp",
+                  "Yaskawa A1000 40 hp",
+                  "Xinje, XD series PLC Model 32PRT-C",
+                  "Xinje PLC Module XD4DA for analog output",
+                  "Xinje HMI TG765-XT",
+                  "Encoders feedback card Model Yaskawa PGB3",
+                  "Encoder 1024PPR Kubler make",
+                ],
+              },
+            },
+            {
+              title: "Tsudakoma Corp",
+              imgList: ["", ""],
+              existingEq: {
+                title: "For Sizing Machine",
+                data: [
+                  "Yaskawa A1000 AC drive capacity varying 1hp to 5hp",
+                  "ABB ACS560 1hp",
+                  "Xinje, XD series PLC Model 32PRT-C",
+                  "Xinje PLC Module XD4DA for analog output",
+                  "Xinje PLC 6PT Module for temperature measurement",
+                  "Xinje HMI TG765-XT",
+                  "Encoders feedback card Model Yaskawa PGB3",
+                  "Encoder 1024PPR Kubler make",
+                ],
+              },
+              providedSys: {
+                title: "For Beamer Machine",
+                data: [
+                  "Yaskawa A1000 25hp",
+                  "Yaskawa A1000 40 hp",
+                  "Xinje, XD series PLC Model 32PRT-C",
+                  "Xinje PLC Module XD4DA for analog output",
+                  "Xinje HMI TG765-XT",
+                  "Encoders feedback card Model Yaskawa PGB3",
+                  "Encoder 1024PPR Kubler make",
+                ],
+              },
+            },
+          ],
+        },
+      },
+      // Coating Machine : data done, img remains
+      {
+        title: "Coating Machine",
+        mainImg: "",
+        desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: {
+          title: "Why we need Retrofitting in POY/FDY Winder ?",
+          reasons: [
+            "Tension variation problem in winder section caused by the old control card",
+            "Issues in the drive in an existing panel",
+            "Various faults detected in an existing panel",
+            "Machine service-related issue",
+            "Unavailability of electronic spares",
+            "High repairing cost of electronic spares",
+          ],
+        },
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Modification in the panel by manse of suitable drive for the application both in Winding and unwinding section",
+            "Easy operation system",
+            "Programming in PLC and HMI",
+            "Synchronization between drives used at different sections such as winder, unwinder, coater, guide roll, nip roll, etc.",
+            "Material used in our panel is easily available in market",
+            "All new Systems consisting of brand-new drives, PLC, HMI, etc.",
+          ],
+        },
+        systCompo: {
+          title: "Various POY/FDY machines in our scope of work",
+          comps: [
+            {
+              label: "AC Inverter Drive",
+              info: ["Yaskawa electric corporation"],
+            },
+            {
+              label: "PLC system",
+              info: ["Xinje PLC", "Xinje PLC 4DA module"],
+            },
+            {
+              label: "HMI system",
+              info: ["Schneider electric", "TouchWIn HMI"],
+            },
+            {
+              label: "Feedback card",
+              info: [], // No specific information provided for this category
+            },
+            {
+              label: "Power supply and relay card",
+              info: ["Phoenix"],
+            },
+            {
+              label: "Encoder",
+              info: ["Fenac encoders and sensors"],
+            },
+            {
+              label: "MCB",
+              info: ["Schneider electric"],
+            },
+            {
+              label: "Cabling",
+              info: ["Lapp Groupe", "RR Cabel Limited", "Terminal & Connector"],
+            },
+          ],
+        },
+      },
+      // Fire Extinguisher Vehicle Projects : data done, img remains
+      {
+        title: "Fire Extinguisher Vehicle Projects",
+        mainImg: "",
+        desc: "Development of a new system for fire extinguisher vehicles.",
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Such a project needs a deep study of application before initiating the work.",
+            "We provided an entire panel of a particular fire extinguisher vehicle along with a pressure transmitter.",
+            "Performed all necessary tests for the vehicle’s electrical system.",
+          ],
+        },
+        systCompo: {
+          title: "System Components",
+          comps: [
+            {
+              label: "",
+              info: [
+                "Five Pressure Transmitter",
+                "Xinje XD3-32RT-C PLC",
+                "Two Xinje Analog module XD-EA4AD",
+                "TouchWin 10” HMI (For Operation)",
+                "TouchWin 7” HMI (Only for display at the cabin)",
+              ],
+            },
+          ],
+        },
+        scope: {
+          title: "Various Winder make Machine",
+          videos: null,
+          images: ["", ""],
+        },
+      },
+      // Paper Coating Machine : data done, img remains
+      {
+        title: "Paper Coating Machine",
+        mainImg: "",
+        desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Provided AC drive as per the system configuration",
+            "Calibration with the system.",
+            "Installation of Powder Brake by means of calibration between PLC, HMI & Brake card.",
+            "Brand new panel for the machine",
+          ],
+        },
+        systCompo: {
+          title: "System Components",
+          comps: [
+            {
+              label: "AC Inverter Drive",
+              info: ["Yaskawa AC Drive"],
+            },
+            {
+              label: "PLC system",
+              info: ["Schneider electric", "Xinje PLC"],
+            },
+            {
+              label: "HMI system",
+              info: ["Schneider electric"],
+            },
+            {
+              label: "Cabling",
+              info: ["Lapp Groupe", "RR Cabel Limited"],
+            },
+            {
+              label: "Powder Brake",
+              info: null,
+            },
+            {
+              label: "Brake card",
+              info: null,
+            },
+            {
+              label: "Emergency Switch",
+              info: null,
+            },
+          ],
+        },
         scope: {
           title: "Our scope of work in various Rapier Machine",
           videos: null,
+          images: ["", ""],
         },
-        types: [
+      },
+      // Roof Cutting Machine : data done, img remains
+      {
+        title: "Roof Cutting Machine",
+        mainImg: "",
+        desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: [
+          "Issues in the drive in an existing panel",
+          "The existing panel is not in working condition",
+          "Various faults detected in an existing panel",
+          "Unavailability of electronic spares",
+        ],
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "Provided a brand new panel for the machine. Programming in PLC, configure with Drive & HMI. Made it ready to use.",
+          ],
+        },
+        systCompo: {
+          title: "System Components",
+          comps: [
+            {
+              label: "AC Inverter Drive",
+              info: ["Larsen & Toubro Ltd."],
+            },
+            {
+              label: "PLC system",
+              info: ["Schneider electric", "Xinje PLC"],
+            },
+            {
+              label: "HMI system",
+              info: ["Touchwin HMI"],
+            },
+            {
+              label: "Cabling",
+              info: ["Lapp Groupe", "RR Cabel Limited"],
+            },
+            {
+              label: "Encoder",
+              info: null,
+            },
+          ],
+        },
+        scope: {
+          title: "Our scope of work in various Rapier Machine",
+          videos: null,
+          images: ["", ""],
+        },
+      },
+      // Cotton Sizing Machine Panel : data done, img remains
+      {
+        title: "Cotton Sizing Machine Panel",
+        mainImg: "",
+        desc: "Content Coming Soon!",
+      },
+      // Stanter Machine Panel : data done, img remains
+      {
+        title: "Stanter Machine Panel",
+        mainImg: "",
+        desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
+        whyWeNeed: {
+          title: "Functions of Stenter Machines",
+          reasons: [
+            "Heat setting is done by the stenter for lycra fabric, synthetic and blended fabric.",
+            "Width of the fabric is controlled by the stenter.",
+            "Finishing chemical apply on fabric by the stenter.",
+            "Loop of the knit fabric is controlled.",
+            "Moisture of the fabric is controlled by the stenter.",
+            "Spirility controlled by the stenter.",
+            "GSM of the fabric is controlled by stenter.",
+            "Fabric is dried by the stentering process.",
+            "Shrinkage property of the fabric is controlled.",
+            "Curing treatment for resin, water repellent fabric is done by the stenter.",
+          ],
+        },
+        offeredSol: {
+          title: "Components of Stenter Machine",
+          solutions: [
+            "Paders",
+            "Weft straightner (Mahlo)",
+            "Burners 10",
+            "Heat recovery",
+            "Attraction rollers",
+            "Circulating fans 10,8",
+            "Exhaust fans 2",
+            "Winder 2",
+            "Clips",
+            "Pins",
+            "I.R.",
+            "Cooling drums 2",
+          ],
+        },
+        scope: {
+          title: "System Feature & Benefits",
+          videos: null,
+          images: [
+            {
+              title: "Tsudakoma Corp",
+              imgList: ["", ""],
+              existingEq: {
+                title: "System Benefit to Customer",
+                data: [
+                  "Reliable System Which Can Work for Removal of existing Hardware to Final Machine trail",
+                  "Easy to Configure Complex Control, Reliable in case of power failure",
+                  "Selection for different Products and Integration of existing machine feature maximum flexibility.",
+                  "Utilization of existing Electrical Control Panel and Motors",
+                  "100 % Availability for machine",
+                  "High Speed High Accuracy Processing for a precise bobbin build and high flyer speeds",
+                ],
+              },
+              providedSys: {
+                title: "System Feature",
+                data: [
+                  "Control system can Handle Complete Machine Automation. Proven Hardware & Software",
+                  "Thanks to Schneider’s Engineering Tools – Standard Block for Speed Control, Ramp Function,…etc",
+                  "Speedy communication in Electrical VFD and PLC with HMIs.",
+                  "Our Electrical team makes it happen.",
+                  "Latest Industrial standards adopted while selection of VFD and Automation system.",
+                  "CANOPEN Based Communication, High Speed Latest Controller, High Resolution Analogue Cards.",
+                ],
+              },
+            },
+          ],
+        },
+      },
+      // Yarn Dyeing Machine Panel : data done, img remains || last section nathi nakhyo data no
+      {
+        title: "Yarn Dyeing Machine Panel",
+        mainImg: "",
+        desc: "Dye House Automation System consists of dyestuff and chemical dispensing, weighing, dissolving and dispensing lines, salt and soda mixing storage and dispensing systems.",
+        whyWeNeed: {
+          title: "Machine Requirement - Revamping of Electrical System",
+          reasons: [
+            "Powder dye storage and weighing system",
+            "Powder dye dissolving and distribution system",
+            "Liquid chemical distribution system",
+            "Powder chemical dissolving & dispensing but ion system",
+          ],
+        },
+        offeredSol: {
+          title: "Advantages of a Dye House Automation System",
+          solutions: [
+            "Exact dosing",
+            "Simplified operations",
+            "Flexibility and openness",
+            "Total integration of systems",
+            "Savings in time",
+            "Compare to DC more power saving",
+          ],
+        },
+        scope: {
+          title: "System Feature & Benefits",
+          videos: null,
+          images: [
+            {
+              title: "",
+              imgList: ["", ""],
+              existingEq: {
+                title: "System Benefit to Customer",
+                data: [
+                  "Reliable System Which Can Work for Removal of existing Hardware to Final Machine trail",
+                  "Easy to Configure Complex Control, Reliable in case of power failure",
+                  "Selection for different Products and Integration of existing machine feature maximum flexibility.",
+                  "Utilization of existing Electrical Control Panel and Motors",
+                  "100 % Availability for machine",
+                  "High Speed High Accuracy Processing for a precise bobbin build and high flyer speeds",
+                ],
+              },
+              providedSys: {
+                title: "System Feature",
+                data: [
+                  "Control system can Handle Complete Machine Automation. Proven Hardware & Software",
+                  "Thanks to Schneider’s Engineering Tools – Standard Block for Speed Control, Ramp Function,…etc",
+                  "Speedy communication in Electrical VFD and PLC with HMIs.",
+                  "Our Electrical team makes it happen.",
+                  "Latest Industrial standards adopted while selection of VFD and Automation system.",
+                  "CANOPEN Based Communication, High Speed Latest Controller, High Resolution Analogue Cards.",
+                ],
+              },
+            },
+          ],
+        },
+      },
+      // Winder Machine Panel : data done, img remains || last section nathi nakhyo data no
+      {
+        title: "Winder Machine Panel",
+        mainImg: "",
+        desc: "The automation in winding increase the winding efficiency. Huge amount of yarn are winded than conventional system of winding for using automation. Labour cost also decrease by the using automation in winding. In another article, automation in weaving has discussed details.",
+        leftSec: [
           {
-            typeName: "Karl Mayer",
-            imgList: ["", "", ""],
+            label: "Drum Traverse System",
+            info: [
+              "The precise slit stainless drum guides the threads to wind up.",
+              "Drum with special hardened polish treatment is good for high-speed running and it can also lower the noise.",
+            ],
           },
           {
-            typeName: "Kakinoki Core",
-            imgList: ["", "", ""],
+            label: "Automatic bobbin magazine device",
+            info: [
+              "With non-bobbin detector and auto-stop system, the cone winder machine will shutdown when it stops bobbing.",
+            ],
+          },
+          {
+            label: "Auto-Doffing and control system",
+            info: [
+              "Mechanical doffing system, precise and durable.",
+              "Doffing time 7~10 seconds.",
+            ],
+          },
+          {
+            label: "Auto circulating lube system and tank (Optional)",
+            info: [
+              "Auto circulating lube system filters the floss to ensure the lubricant quality given to lube with threads.",
+              "One lube tank can connect 20 spindles of 4 machines.",
+              "Hot lube system with heater control panel are available with option.",
+              "Density adjusting device, precise, stable and reliable.",
+              "With our yarn broke sensor, the automatic cone winder will stop automatically when the yarn is broken.",
+              "Computer auto-detect trouble happened and then display the reasons by caption, it’s easy to maintain the condition of the machine.",
+            ],
           },
         ],
+        rightSec: [
+          {
+            label: "Touch Panel Control System",
+            info: [
+              "Preset the yarn length on the touch panel of the cross cone winder, then the computer will measure it with compensates length adjustment. It’s accurate and reliable.",
+              "Preset the yarn deliver speed from 400~1400 meters per minute on the touch panel and then run the constant yarn speed.",
+              "Preset the lube roller speed from 0~50 RPM for the lubricant percentages of the threads. The uniform lubricant throughout the packages of threads lubricated due to the constant yarn deliver speed.",
+              "Preset the product quantity; make it easy to manage the production efficiently.",
+            ],
+          },
+          {
+            label: "Electronic magnetic tension device",
+            info: [
+              "Electronic magnetic tension controls the tension throughout the cycle of winding process to get the good quality of packages.",
+            ],
+          },
+          {
+            label: "Auto circulating lube system and tank (Optional)",
+            info: [
+              "Suitable for all sewing thread winding and available from 20/6 to 60/2 yarn counts. Nylon thread and viscose rayon thread…etc.",
+              "We can control the motor speed as its rpm.",
+              "We can control package size automatically.",
+              "We can control yarn clearing as thick, thin places, or slubs through yarn diameter.",
+              "We can splice automatically if yarn breaks.",
+              "We can change empty cones in cone magazine automatically.",
+            ],
+          },
+        ],
+
+        scope: {
+          title: "System Feature & Benefits",
+          videos: null,
+          images: [
+            {
+              title: "System Feature & Benefits",
+              imgList: ["", ""],
+              existingEq: {
+                title: "System Benefit to Customer",
+                data: [
+                  "Reliable System Which Can Work for Removal of existing Hardware to Final Machine trail",
+                  "Easy to Configure Complex Control, Reliable in case of power failure",
+                  "Selection for different Products and Integration of existing machine feature maximum flexibility.",
+                  "Utilization of existing Electrical Control Panel and Motors",
+                  "100 % Availability for machine",
+                  "High Speed High Accuracy Processing for a precise bobbin build and high flyer speeds",
+                ],
+              },
+              providedSys: {
+                title: "System Feature",
+                data: [
+                  "Control system can Handle Complete Machine Automation. Proven Hardware & Software",
+                  "Thanks to Schneider’s Engineering Tools – Standard Block for Speed Control, Ramp Function,…etc",
+                  "Speedy communication in Electrical VFD and PLC with HMIs.",
+                  "Our Electrical team makes it happen.",
+                  "Latest Industrial standards adopted while selection of VFD and Automation system.",
+                  "CANOPEN Based Communication, High Speed Latest Controller, High Resolution Analogue Cards.",
+                ],
+              },
+            },
+          ],
+        },
       },
     ],
   },
