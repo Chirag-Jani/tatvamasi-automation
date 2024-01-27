@@ -19,9 +19,10 @@ export const data = [
     image: AutomationSolution,
     path: "automation-solution",
     machines: [
-      // rapier : data done, img remains
+      // rapier : data done, img remains || RENDERED
       {
         title: "Rapier Machine",
+        path: "rapier-machine",
         mainImg: "",
         desc: "The rapier loom is a shuttleless weaving loom in which the filling yarn is carried through the shed of warp yarns to the other side of the loom by finger-like carriers called Rapiers.A rapier loom uses a rapier to pull the weft yarn across the loom. It can be single or double rapier.Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
@@ -110,38 +111,67 @@ export const data = [
         types: [
           {
             typeName: "Wanli Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Somet Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Orange Weaving Pvt. Ltd.",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "SMIT Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Vamatex Leonardo Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Amar Jacquard Pvt. Ltd.",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Shin Kwang Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
         ],
       },
-      // sectional warping : data done, img remains
+      // sectional warping : data done, img remains || RENDERED
       {
         title: "Sectional Warping Machine",
         mainImg: "",
+        path: "sectional-warping-machine",
         desc: "A sectional warping machine consists of three basic units, which are the creel, winding drum, and beaming unit. In section warping, warp yarns are organized into yarn bands, each having the same warp density as for the weaver’s beam. Then, the yarn sheet is transferred from the drum onto the weaver’s beams. Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
           title: "Why we need retrofitting in Sectional Warping Machine",
@@ -202,109 +232,175 @@ export const data = [
         },
         scope: {
           title: "Our scope of work in various Rapier Machine",
-          videos: null,
           images: [
             {
               title: "Karl Mayer",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
             },
             {
               title: "Kakinoki Core",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
             },
           ],
         },
         types: [
           {
             typeName: "Wanli Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Somet Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Orange Weaving Pvt. Ltd.",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "SMIT Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Vamatex Leonardo Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Amar Jacquard Pvt. Ltd.",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
           {
             typeName: "Shin Kwang Rapier Machines",
-            imgList: ["", "", ""],
+            imgList: [
+              AutomationSolution,
+              AutomationSolution,
+              AutomationSolution,
+            ],
           },
         ],
       },
-      // Speed frame warping : data done, img remains
+      // Speed frame  : data done, img remains || RENDERED
       {
         title: "Speed Frame Machine",
         mainImg: "",
+        path: "speed-frame-machine",
         desc: "The Function of the Speed Frame machine is the output from the draw frame is fed into the speed frame (also known as simplex machine or flyer frame) where the linear density of sliver is reduced by drafting and the resultant product is called the roving. Whenever the main machine is not able to fulfill requirements, modification and changes in old or new machinery are the requirements of the current industry.",
-        whyWeNeed: [
-          "Malfunctioning in panel",
-          "Lack of availability of electronic spares",
-          "IPC and drive failure",
-          "AC drive failure",
-        ],
-        offeredSol: [
-          "By use of suitable drive and other necessary material, we do retrofit work.",
-          "Fulfilled the requirement of numbers of drives and did synchronization b/w all of them.",
-          "PLC Programming",
-          "Synchronize b/w numbers of drives and programming in PLC.",
-        ],
-        systCompo: [
-          [
-            "Integrated machine automation – Existing mechanics with the latest automation.",
-            "Engineering documentation",
-            "H/w & S/w Engineering & FAT",
-            "Coordination with the electrical contractor and mechanical team for data exchange & machine calculation.",
-            "Industrial PC Programming",
-            "Energy monitoring system",
-            "Commissioning support",
-            "System training",
-            "AMC for repairing and maintenance",
+        whyWeNeed: {
+          title: "Why we need retrofitting in speed frame machines?",
+          reasons: [
+            "Malfunctioning in panel",
+            "Lack of availability of electronic spares",
+            "IPC and drive failure",
+            "AC drive failure",
           ],
-        ],
+        },
+        offeredSol: {
+          title: "Our offered solution",
+          solutions: [
+            "By use of suitable drive and other necessary material, we do retrofit work.",
+            "Fulfilled the requirement of numbers of drives and did synchronization b/w all of them.",
+            "PLC Programming",
+            "Synchronize b/w numbers of drives and programming in PLC.",
+          ],
+        },
+        systCompo: {
+          title: "System requirements of machine",
+          comps: [
+            {
+              label:
+                "Integrated machine automation – Existing mechanics with the latest automation.",
+            },
+
+            {
+              label: "Engineering documentation",
+            },
+
+            {
+              label: "H/w & S/w Engineering & FAT",
+            },
+
+            {
+              label:
+                "Coordination with the electrical contractor and mechanical team for data exchange & machine calculation.",
+            },
+
+            {
+              label: "Industrial PC Programming",
+            },
+
+            {
+              label: "Energy monitoring system",
+            },
+
+            {
+              label: "Commissioning support",
+            },
+
+            {
+              label: "System training",
+            },
+
+            {
+              label: "AMC for repairing and maintenance",
+            },
+          ],
+        },
         scope: {
           title: "Our scope of work in various Rapier Machine",
-          videos: null,
           images: [
             {
               title: "Rieter Speed Frame Machine",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Malfunctioning in the existing panel",
-                  "Display issues in Reel make AC Drive",
-                  "Lack of availability of electronic spares",
-                  "lack of availability of AC drive",
-                ],
+                data: {
+                  info: [
+                    "Malfunctioning in the existing panel",
+                    "Display issues in Reel make AC Drive",
+                    "Lack of availability of electronic spares",
+                    "lack of availability of AC drive",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Retrofitting by use of suitable materials for the application",
-                  "Featured Fuji Mega AC Drive",
-                  "Featured Schnieder PLC",
-                  "Featured Schneider HMI",
-                  "Programming in PLC+HMI as per client’s requirement",
-                ],
+                data: {
+                  info: [
+                    "Retrofitting by use of suitable materials for the application",
+                    "Featured Fuji Mega AC Drive",
+                    "Featured Schnieder PLC",
+                    "Featured Schneider HMI",
+                    "Programming in PLC+HMI as per client’s requirement",
+                  ],
+                },
               },
             },
             {
               title: "Electrojet Speed Frame Machine",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -327,69 +423,62 @@ export const data = [
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  {
-                    item: "Fulfilled the requirement of numbers of drive and did synchronization b/w all of them",
-                    sys: [
-                      "Flyer drive : 22 kw",
-                      "Spindle drive : 30 kw",
-                      "Drafting drive : 11 kw",
-                      "Lifting Servo drive : 9 kw",
-                      "PLC : Schneider make (LMC058)",
-                      "Interface : HMI(IPC) 12”",
-                    ],
-                    info: [
-                      "Programming in Schnieder PLC+HMI as per client’s requirement",
-                      "Kept drive with bigger capacities to prevent overheating.",
-                      "Layer by tension system for better bobbin filling without tension sensors.",
-                      "Removed all drive control wiring make system maintenance easy.",
-                      "All drive has separate remote for parameter changes, monitoring and also for copy, paste.",
-                    ],
-                  },
-                ],
+                data: {
+                  item: "Fulfilled the requirement of numbers of drive and did synchronization b/w all of them",
+                  sys: [
+                    "Flyer drive : 22 kw",
+                    "Spindle drive : 30 kw",
+                    "Drafting drive : 11 kw",
+                    "Lifting Servo drive : 9 kw",
+                    "PLC : Schneider make (LMC058)",
+                    "Interface : HMI(IPC) 12”",
+                  ],
+                  info: [
+                    "Programming in Schnieder PLC+HMI as per client’s requirement",
+                    "Kept drive with bigger capacities to prevent overheating.",
+                    "Layer by tension system for better bobbin filling without tension sensors.",
+                    "Removed all drive control wiring make system maintenance easy.",
+                    "All drive has separate remote for parameter changes, monitoring and also for copy, paste.",
+                  ],
+                },
               },
             },
             {
               title: "Zinser Speed Frame Machine",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Malfunctioning in existing panel containing Vectron AC Drive 22kw & Phoenix PLC",
-                  "AC Drive failure",
-                  "Unavailability of Vectron AC Drive",
-                  "Lack of availability of electronic spares",
-                ],
+                data: {
+                  info: [
+                    "Malfunctioning in existing panel containing Vectron AC Drive 22kw & Phoenix PLC",
+                    "AC Drive failure",
+                    "Unavailability of Vectron AC Drive",
+                    "Lack of availability of electronic spares",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Replaced Vectron AC Drive with suitable Schneider Drives.",
-                  "Fulfilled the requirement of numbers of drive and did synchronization b/w all of them",
-                  "Programming in Schnieder PLC+HMI as per client’s requirement",
-                  "Featured Schneider ATV71 ATV340 drives of different capacities",
-                  "Featured Schneider LMC258 PLC",
-                  "Featured Schneider GXU350 HMI",
-                ],
+                data: {
+                  info: [
+                    "Replaced Vectron AC Drive with suitable Schneider Drives.",
+                    "Fulfilled the requirement of numbers of drive and did synchronization b/w all of them",
+                    "Programming in Schnieder PLC+HMI as per client’s requirement",
+                    "Featured Schneider ATV71 ATV340 drives of different capacities",
+                    "Featured Schneider LMC258 PLC",
+                    "Featured Schneider GXU350 HMI",
+                  ],
+                },
               },
             },
           ],
         },
-        types: [
-          {
-            typeName: "Karl Mayer",
-            imgList: ["", "", ""],
-          },
-          {
-            typeName: "Kakinoki Core",
-            imgList: ["", "", ""],
-          },
-        ],
       },
-      // POY/FDY Winder Machines : data done, img remains
+      // POY/FDY Winder Machines : data done, img remains || RENDERED
       {
         title: "POY/FDY Winder Machines",
         mainImg: "",
+        path: "poy-foy-machine",
         desc: "Modern age machine offers various function to operate on. As a result, it is compatible for operator.Machine is labeled with different names such as Textile automatic yarn doffing winder machine, POY FDY polyester yarn winder etc.Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
           title: "Why we need Retrofitting in POY/FDY Winder ?",
@@ -419,7 +508,7 @@ export const data = [
           title: "Various POY/FDY machines in our scope of work",
           comps: [
             {
-              label: "",
+              label: "Our Scope",
               info: [
                 "Barmag Winder Machines",
                 "Jwell Machinery Winder Machines",
@@ -432,106 +521,129 @@ export const data = [
         },
         scope: {
           title: "Various Winder make Machine",
-          videos: null,
           images: [
             {
               title: "Barmag Winder Machines",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Failure in old Barmag drive card",
-                  "High cost for repairing",
-                  "Low availability of suitable drive and other electric components",
-                  "Service related issues due to less numbers of service centers.",
-                ],
+                data: {
+                  info: [
+                    "Failure in old Barmag drive card",
+                    "High cost for repairing",
+                    "Low availability of suitable drive and other electric components",
+                    "Service related issues due to less numbers of service centers.",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Drive card replaced with Yaskawa A1000 drive varying up to 20hp",
-                  "Service issue solved due to good service support form company side",
-                ],
+                data: {
+                  info: [
+                    "Drive card replaced with Yaskawa A1000 drive varying up to 20hp",
+                    "Service issue solved due to good service support form company side",
+                  ],
+                },
               },
             },
             {
               title: "Jwell Machinery Winder Machines",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Failure in Yaskawa T1000 drive 3kw",
-                  "Failure in Yaskawa T1000 drive 5.5kw",
-                  "Failure in Yaskawa T1000 drive 7.5kw Cotrust PLC",
-                  "Control system for operation – PC Based Softwere",
-                ],
+                data: {
+                  info: [
+                    "Failure in Yaskawa T1000 drive 3kw",
+                    "Failure in Yaskawa T1000 drive 5.5kw",
+                    "Failure in Yaskawa T1000 drive 7.5kw Cotrust PLC",
+                    "Control system for operation – PC Based Softwere",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Fuji Mega drive 3kw",
-                  "Fuji Mega drive 5.5kw",
-                  "Fuji Mega drive 7.5kw",
-                  "Schneider/Haiwell PLC",
-                  "Samkoon HMI based system",
-                ],
+                data: {
+                  info: [
+                    "Fuji Mega drive 3kw",
+                    "Fuji Mega drive 5.5kw",
+                    "Fuji Mega drive 7.5kw",
+                    "Schneider/Haiwell PLC",
+                    "Samkoon HMI based system",
+                  ],
+                },
               },
             },
             {
               title: "Teijin seiki winder machines",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Failure in old Yaskawa V7 3 to 7.5kw drive With built-in TMT software",
-                  "Purchasing new drive is not feasible due to high rate and unavailability.",
-                ],
+                data: {
+                  info: [
+                    "Failure in old Yaskawa V7 3 to 7.5kw drive With built-in TMT software",
+                    "Purchasing new drive is not feasible due to high rate and unavailability.",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Replaced with Schneider 3 to 7.5kw Drives",
-                  "Provided system is more conventional and compatible with low failure rate",
-                ],
+                data: {
+                  info: [
+                    "Replaced with Schneider 3 to 7.5kw Drives",
+                    "Provided system is more conventional and compatible with low failure rate",
+                  ],
+                },
               },
             },
             {
               title: "Toray winding machine",
-              imgList: ["", ""],
+              imgList: [AutomationSolution, AutomationSolution],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Failure in old drives.",
-                  "PLC Programming issues",
-                  "Not feasible to purchase same drive due to less availability and service support.",
-                ],
+                data: {
+                  info: [
+                    "Failure in old drives.",
+                    "PLC Programming issues",
+                    "Not feasible to purchase same drive due to less availability and service support.",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Old drive replaced with Schneider drives up to 20hp",
-                  "Schneider Drive programming",
-                  "Provided system is more conventional and compatible with low failure rate",
-                ],
+                data: {
+                  info: [
+                    "Old drive replaced with Schneider drives up to 20hp",
+                    "Schneider Drive programming",
+                    "Provided system is more conventional and compatible with low failure rate",
+                  ],
+                },
               },
             },
             {
               title: "TMT POY/FDY Winder",
-              imgList: ["", ""],
+              imgList: [
+                AutomationSolution,
+                AutomationSolution,
+                AutomationSolution,
+              ],
               existingEq: {
                 title: "Existing Equipment and Issues",
-                data: [
-                  "Failure in old Yaskawa V7 and G5 drive With built-in TMT software",
-                  "Purchasing new drive is not feasible due to high rate and unavailability.",
-                ],
+                data: {
+                  info: [
+                    "Failure in old Yaskawa V7 and G5 drive With built-in TMT software",
+                    "Purchasing new drive is not feasible due to high rate and unavailability.",
+                  ],
+                },
               },
               providedSys: {
                 title: "Provided System",
-                data: [
-                  "Fuji ACE drive",
-                  "Yaskawa V1000 drive",
-                  "Provided system is more conventional and compatible with low failure rate",
-                ],
+                data: {
+                  info: [
+                    "Fuji ACE drive",
+                    "Yaskawa V1000 drive",
+                    "Provided system is more conventional and compatible with low failure rate",
+                  ],
+                },
               },
             },
           ],
@@ -567,7 +679,6 @@ export const data = [
         scope: {
           title:
             "Our scope of work in various Polyester Sizing & Beaming Machine",
-          videos: null,
           images: [
             {
               title: "Trishul Fabrication",
@@ -726,7 +837,6 @@ export const data = [
         },
         scope: {
           title: "Various Winder make Machine",
-          videos: null,
           images: ["", ""],
         },
       },
@@ -779,7 +889,6 @@ export const data = [
         },
         scope: {
           title: "Our scope of work in various Rapier Machine",
-          videos: null,
           images: ["", ""],
         },
       },
@@ -827,7 +936,6 @@ export const data = [
         },
         scope: {
           title: "Our scope of work in various Rapier Machine",
-          videos: null,
           images: ["", ""],
         },
       },
@@ -876,7 +984,6 @@ export const data = [
         },
         scope: {
           title: "System Feature & Benefits",
-          videos: null,
           images: [
             {
               title: "Tsudakoma Corp",
@@ -934,7 +1041,6 @@ export const data = [
         },
         scope: {
           title: "System Feature & Benefits",
-          videos: null,
           images: [
             {
               title: "",
@@ -1034,7 +1140,6 @@ export const data = [
 
         scope: {
           title: "System Feature & Benefits",
-          videos: null,
           images: [
             {
               title: "System Feature & Benefits",

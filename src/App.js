@@ -16,6 +16,7 @@ import TenderClient from "./components/tenders/TenderClient";
 import AboutUs from "./pages/AboutUs";
 import FabricationSolution from "./pages/FabricationSolution";
 import AutomationSolution from "./pages/AutomationSolution";
+import Machine from "./components/automationsolution/Machine";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           />
           <Route path="/psu-and-govt" element={<Tenders />} />
           <Route path="/automation-solution" element={<AutomationSolution />} />
+          <Route path="/automation-solution/:machine" element={<Machine />} />
           <Route path="/psu-and-govt" element={<Tenders />} />
           <Route path="/psu-and-govt/:client" element={<TenderClient />} />
         </Routes>

@@ -107,8 +107,6 @@ function Navbar() {
         <Toolbar
           sx={{
             height: "100%",
-            justifyContent: "space-evenly",
-            display: "flex", // Make sure it's a flex container
           }}
         >
           <IconButton
@@ -162,6 +160,7 @@ function Navbar() {
                 to={item.path}
                 style={{
                   textDecoration: "none",
+                  margin: "0 25px",
                 }}
                 key={item.label}
               >
