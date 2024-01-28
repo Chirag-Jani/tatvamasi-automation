@@ -209,6 +209,98 @@ const Panel = () => {
             </Box>
           )}
 
+          {machineData.leftSec && machineData.rightSec && (
+            <Grid
+              container
+              spacing={5}
+              sx={{
+                padding: "15px",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: {
+                    xl: "30px",
+                    lg: "30px",
+                    md: "20px",
+                  },
+                  fontFamily: "Montserrat-Bold",
+                  color: "#162966",
+                  margin: "30px auto",
+                  textAlign: "center",
+                }}
+              >
+                Machine Requirement – Revamping of Electrical System
+              </Typography>
+              <Grid item xs={12} md={6}>
+                {machineData?.leftSec?.map((item) => {
+                  return (
+                    <Box>
+                      <Box
+                        sx={{
+                          display: "flex",
+                        }}
+                      >
+                        <LabelImportantIcon sx={{ marginRight: "10px" }} />
+                        <Typography>{item.label}</Typography>
+                      </Box>
+                      {item.info?.map((itm) => {
+                        return (
+                          <Box
+                            key={itm}
+                            sx={{
+                              display: "flex",
+                              margin: "10px 0",
+                              marginLeft: "50px",
+                            }}
+                          >
+                            <RadioButtonCheckedTwoToneIcon
+                              sx={{ marginRight: "10px" }}
+                            />
+                            <Typography>{itm}</Typography>
+                          </Box>
+                        );
+                      })}
+                    </Box>
+                  );
+                })}
+              </Grid>
+              <Grid item xs={12} md={6}>
+                {machineData?.rightSec?.map((item) => {
+                  return (
+                    <Box>
+                      <Box
+                        sx={{
+                          display: "flex",
+                        }}
+                      >
+                        <LabelImportantIcon sx={{ marginRight: "10px" }} />
+                        <Typography>{item.label}</Typography>
+                      </Box>
+                      {item.info?.map((itm) => {
+                        return (
+                          <Box
+                            key={itm}
+                            sx={{
+                              display: "flex",
+                              margin: "10px 0",
+                              marginLeft: "50px",
+                            }}
+                          >
+                            <RadioButtonCheckedTwoToneIcon
+                              sx={{ marginRight: "10px" }}
+                            />
+                            <Typography>{itm}</Typography>
+                          </Box>
+                        );
+                      })}
+                    </Box>
+                  );
+                })}
+              </Grid>
+            </Grid>
+          )}
+
           {machineData.benefits && (
             <Box
               sx={{
