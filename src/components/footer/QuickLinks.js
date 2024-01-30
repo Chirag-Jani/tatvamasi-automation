@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 const QuickLinks = () => {
   const links = [
     { label: "About Us", path: "about-us" },
-    { label: "Events", path: "events" },
-    { label: "Appointment", path: "appointment" },
-    { label: "Automation Solutions", path: "automation-solutions" },
+    // { label: "Events", path: "events" },
+    // { label: "Appointment", path: "appointment" },
+    { label: "Automation Solutions", path: "automation-solution" },
     { label: "Electrical Solutions", path: "electrical-solution" },
-    { label: "Fabrication Solutions", path: "fabrication-solutions" },
-    { label: "Tenders", path: "tenders" },
-    { label: "Used Machine Buy/Sell", path: "used-machine-buy/sell" },
-    { label: "Equipment Store", path: "equipment-store" },
-    { label: "AMC", path: "amc" },
-    { label: "Career", path: "career" },
-    { label: "Contact Us", path: "contact-us" },
+    { label: "Fabrication Solutions", path: "fabrication-solution" },
+    { label: "PSU & Govt. Sectors", path: "psu-and-govt" },
+    // { label: "Used Machine Buy/Sell", path: "used-machine-buy/sell" },
+    // { label: "Equipment Store", path: "equipment-store" },
+    // { label: "AMC", path: "amc" },
+    // { label: "Career", path: "career" },
+    // { label: "Contact Us", path: "contact-us" },
   ];
 
   return (

@@ -114,6 +114,7 @@ const FabricationSolution = () => {
     <Box
       sx={{
         backgroundColor: "rgb(239,239,239)",
+        fontFamily: "Montserrat",
       }}
     >
       <Box>
@@ -221,13 +222,13 @@ const FabricationSolution = () => {
                   fontFamily: "Montserrat",
                   color: "#414141",
                   textAlign: "justify",
-                  textTransform: "capitalize",
                   margin: "40px 0",
                 }}
               >
                 <strong
                   style={{
                     fontFamily: "Montserrat-Bold",
+                    textTransform: "capitalize",
                   }}
                 >
                   {itm.label}&nbsp;:&nbsp;
@@ -324,11 +325,11 @@ const FabricationSolution = () => {
                               fontFamily: "Montserrat",
                               color: "#414141",
                               textAlign: "justify",
-                              textTransform: "capitalize",
                             }}
                           >
                             <strong
                               style={{
+                                textTransform: "capitalize",
                                 fontFamily: "Montserrat-Bold",
                               }}
                             >
@@ -366,7 +367,7 @@ const FabricationSolution = () => {
                     textAlign: "left",
                   }}
                 >
-                  Thikness
+                  Thickness
                 </Typography>
 
                 {spec.thikness?.map((item) => {
@@ -403,11 +404,11 @@ const FabricationSolution = () => {
                               fontFamily: "Montserrat",
                               color: "#414141",
                               textAlign: "justify",
-                              textTransform: "capitalize",
                             }}
                           >
                             <strong
                               style={{
+                                textTransform: "capitalize",
                                 fontFamily: "Montserrat-Bold",
                               }}
                             >

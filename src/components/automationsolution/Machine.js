@@ -75,7 +75,12 @@ const Panel = () => {
           >
             <Box
               sx={{
-                height: "500px",
+                height: {
+                  xl: "700px",
+                  lg: "700px",
+                  md: "500px",
+                  sm: "auto",
+                },
                 width: "100%",
                 marginBottom: "50px",
                 backgroundColor: "#162966",
@@ -87,10 +92,12 @@ const Panel = () => {
             >
               <img
                 data-aos="zoom-in"
-                src={DemoPanel}
+                src={machineData.mainImg || DemoPanel}
                 alt="Tatvamasi Automation"
                 style={{
                   width: "50%",
+                  maxWidth: "80%",
+                  margin: "30px auto",
                 }}
               />
             </Box>
@@ -154,7 +161,13 @@ const Panel = () => {
                     <RadioButtonCheckedTwoToneIcon
                       sx={{ marginRight: "10px" }}
                     />
-                    <Typography>{reason}</Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat",
+                      }}
+                    >
+                      {reason}
+                    </Typography>
                   </Box>
                 );
               })}
@@ -202,7 +215,13 @@ const Panel = () => {
                     <RadioButtonCheckedTwoToneIcon
                       sx={{ marginRight: "10px" }}
                     />
-                    <Typography>{solution}</Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat",
+                      }}
+                    >
+                      {solution}
+                    </Typography>
                   </Box>
                 );
               })}
@@ -242,7 +261,13 @@ const Panel = () => {
                         }}
                       >
                         <LabelImportantIcon sx={{ marginRight: "10px" }} />
-                        <Typography>{item.label}</Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "Montserrat",
+                          }}
+                        >
+                          {item.label}
+                        </Typography>
                       </Box>
                       {item.info?.map((itm) => {
                         return (
@@ -257,7 +282,13 @@ const Panel = () => {
                             <RadioButtonCheckedTwoToneIcon
                               sx={{ marginRight: "10px" }}
                             />
-                            <Typography>{itm}</Typography>
+                            <Typography
+                              sx={{
+                                fontFamily: "Montserrat",
+                              }}
+                            >
+                              {itm}
+                            </Typography>
                           </Box>
                         );
                       })}
@@ -275,7 +306,13 @@ const Panel = () => {
                         }}
                       >
                         <LabelImportantIcon sx={{ marginRight: "10px" }} />
-                        <Typography>{item.label}</Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "Montserrat",
+                          }}
+                        >
+                          {item.label}
+                        </Typography>
                       </Box>
                       {item.info?.map((itm) => {
                         return (
@@ -290,7 +327,13 @@ const Panel = () => {
                             <RadioButtonCheckedTwoToneIcon
                               sx={{ marginRight: "10px" }}
                             />
-                            <Typography>{itm}</Typography>
+                            <Typography
+                              sx={{
+                                fontFamily: "Montserrat",
+                              }}
+                            >
+                              {itm}
+                            </Typography>
                           </Box>
                         );
                       })}
@@ -342,7 +385,13 @@ const Panel = () => {
                     <RadioButtonCheckedTwoToneIcon
                       sx={{ marginRight: "10px" }}
                     />
-                    <Typography>{reason}</Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat",
+                      }}
+                    >
+                      {reason}
+                    </Typography>
                   </Box>
                 );
               })}
@@ -384,7 +433,7 @@ const Panel = () => {
                     <Box
                       data-aos="zoom-in"
                       sx={{
-                        display: "flex",
+                        display: `${comp.label !== "" ? "flex" : "none"}`,
                         width: {
                           xl: "45%",
                           lg: "45%",
@@ -404,7 +453,13 @@ const Panel = () => {
                         }}
                       >
                         <LabelImportantIcon sx={{ marginRight: "10px" }} />
-                        <Typography>{comp.label}</Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "Montserrat",
+                          }}
+                        >
+                          {comp.label}
+                        </Typography>
                       </Box>
                       {comp?.info?.map((itm) => {
                         return (
@@ -419,13 +474,74 @@ const Panel = () => {
                             <RadioButtonCheckedTwoToneIcon
                               sx={{ marginRight: "10px" }}
                             />
-                            <Typography>{itm}</Typography>
+                            <Typography
+                              sx={{
+                                fontFamily: "Montserrat",
+                              }}
+                            >
+                              {itm}
+                            </Typography>
                           </Box>
                         );
                       })}
                     </Box>
                   );
                 })}
+
+                {machineData?.systCompo?.comps.length % 2 === 1 && (
+                  <Box
+                    data-aos="zoom-in"
+                    sx={{
+                      display: "flex",
+                      width: {
+                        xl: "45%",
+                        lg: "45%",
+                        m: "45%",
+                        sm: "45%",
+                        xs: "100%",
+                      },
+                      margin: "10px",
+                      color: "#162966",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                      }}
+                    >
+                      {/* <LabelImportantIcon sx={{ marginRight: "10px" }} /> */}
+                      <Typography
+                        sx={{
+                          fontFamily: "Montserrat",
+                        }}
+                      ></Typography>
+                    </Box>
+                    {/* {comp?.info?.map((itm) => {
+                    return (
+                      <Box
+                        key={itm}
+                        sx={{
+                          display: "flex",
+                          margin: "10px 0",
+                          marginLeft: "20px",
+                        }}
+                      >
+                        <RadioButtonCheckedTwoToneIcon
+                          sx={{ marginRight: "10px" }}
+                        />
+                        <Typography
+                          sx={{
+                            fontFamily: "Montserrat",
+                          }}
+                        >
+                          {itm}
+                        </Typography>
+                      </Box>
+                    );
+                  })} */}
+                  </Box>
+                )}
               </Box>
             </Box>
           )}
@@ -472,7 +588,7 @@ const Panel = () => {
                             lg: "100%",
                             xl: "100%",
                           },
-                          margin: "auto",
+                          margin: "10px auto",
                           height: {
                             xs: "325px",
                             sm: "325px",
@@ -562,15 +678,18 @@ const Panel = () => {
                                 src={img}
                                 alt=""
                                 style={{
+                                  height: "350px",
                                   width: "95%",
-                                  height: {
-                                    xs: "auto",
-                                    sm: "auto",
-                                    md: "325px",
-                                    lg: "325px",
-                                    xl: "325px",
-                                  },
+                                  // width: "95%",
+                                  // height: {
+                                  //   xs: "auto",
+                                  //   sm: "auto",
+                                  //   md: "325px",
+                                  //   lg: "325px",
+                                  //   xl: "325px",
+                                  // },
                                   borderRadius: "10px",
+                                  // border: "1px solid red",
                                 }}
                                 onClick={() => handleImageClick(img)}
                               />
@@ -602,7 +721,11 @@ const Panel = () => {
                               alignItems: "center",
                             }}
                           >
-                            <LabelImportantIcon sx={{ marginRight: "10px" }} />
+                            {item?.existingEq?.title && (
+                              <LabelImportantIcon
+                                sx={{ marginRight: "10px" }}
+                              />
+                            )}
                             <Typography
                               sx={{
                                 fontFamily: "Montserrat",
@@ -644,7 +767,13 @@ const Panel = () => {
                                 <RadioButtonCheckedTwoToneIcon
                                   sx={{ marginRight: "10px" }}
                                 />
-                                <Typography>{itm}</Typography>
+                                <Typography
+                                  sx={{
+                                    fontFamily: "Montserrat",
+                                  }}
+                                >
+                                  {itm}
+                                </Typography>
                               </Box>
                             );
                           })}
@@ -661,7 +790,13 @@ const Panel = () => {
                                 <RadioButtonCheckedTwoToneIcon
                                   sx={{ marginRight: "10px" }}
                                 />
-                                <Typography>{itm}</Typography>
+                                <Typography
+                                  sx={{
+                                    fontFamily: "Montserrat",
+                                  }}
+                                >
+                                  {itm}
+                                </Typography>
                               </Box>
                             );
                           })}
@@ -677,7 +812,11 @@ const Panel = () => {
                               alignItems: "center",
                             }}
                           >
-                            <LabelImportantIcon sx={{ marginRight: "10px" }} />
+                            {item?.providedSys?.title && (
+                              <LabelImportantIcon
+                                sx={{ marginRight: "10px" }}
+                              />
+                            )}
                             <Typography
                               sx={{
                                 fontFamily: "Montserrat",
@@ -719,7 +858,13 @@ const Panel = () => {
                                 <RadioButtonCheckedTwoToneIcon
                                   sx={{ marginRight: "10px" }}
                                 />
-                                <Typography>{itm}</Typography>
+                                <Typography
+                                  sx={{
+                                    fontFamily: "Montserrat",
+                                  }}
+                                >
+                                  {itm}
+                                </Typography>
                               </Box>
                             );
                           })}
@@ -736,7 +881,13 @@ const Panel = () => {
                                 <RadioButtonCheckedTwoToneIcon
                                   sx={{ marginRight: "10px" }}
                                 />
-                                <Typography>{itm}</Typography>
+                                <Typography
+                                  sx={{
+                                    fontFamily: "Montserrat",
+                                  }}
+                                >
+                                  {itm}
+                                </Typography>
                               </Box>
                             );
                           })}
@@ -764,7 +915,7 @@ const Panel = () => {
                   }}
                 >
                   {machineData?.types?.map((type, i) => {
-                    return (
+                    return type.imgList.length > 0 ? (
                       <Box
                         sx={{
                           display: "flex",
@@ -782,13 +933,21 @@ const Panel = () => {
                           sx={{
                             fontFamily: "Montserrat-Bold",
                             fontSize: "20px",
-                            margin: "20px",
+                            margin: "20px 0",
+                            display: "flex",
+                            // justifyContent: "center",
+                            alignItems: "center",
                           }}
                         >
-                          {i + 1}. {type.typeName}
+                          <LabelImportantIcon />
+                          {type.typeName}
                         </Typography>
                         <Box>
-                          <Carousel animation="slide" duration={"700"}>
+                          <Carousel
+                            animation="slide"
+                            duration={"700"}
+                            // autoPlay={false}
+                          >
                             {type?.imgList?.map((item, i) => (
                               <img
                                 key={i}
@@ -796,15 +955,18 @@ const Panel = () => {
                                 src={item}
                                 alt=""
                                 style={{
+                                  height: "350px",
                                   width: "95%",
-                                  height: {
-                                    xs: "auto",
-                                    sm: "auto",
-                                    md: "325px",
-                                    lg: "325px",
-                                    xl: "325px",
-                                  },
+                                  // width: "95%",
+                                  // height: {
+                                  //   xs: "auto",
+                                  //   sm: "auto",
+                                  //   md: "325px",
+                                  //   lg: "325px",
+                                  //   xl: "325px",
+                                  // },
                                   borderRadius: "10px",
+                                  // border: "1px solid red",
                                 }}
                                 onClick={() => handleImageClick(item)}
                               />
@@ -819,6 +981,8 @@ const Panel = () => {
                           {/* Image Component */}
                         </Box>
                       </Box>
+                    ) : (
+                      <></>
                     );
                   })}
                 </Box>

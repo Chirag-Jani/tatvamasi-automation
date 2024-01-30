@@ -12,6 +12,86 @@ import MD from "../../resources/tenderLogos/MD.svg";
 import NC from "../../resources/tenderLogos/NC.svg";
 import UD from "../../resources/tenderLogos/UD.svg";
 
+// Images for Automation Solution
+// rapier
+import rapier from "../automationSolutionImages/rapier/rapier.png";
+import rapierwanli1 from "../automationSolutionImages/rapier/rapier-wanli-rapier1.jpg";
+import rapierwanli3 from "../automationSolutionImages/rapier/rapier-wanli-rapier3.jpg";
+import rapierwanli4 from "../automationSolutionImages/rapier/rapier-wanli-rapier4.jpg";
+import rapierOrangeWeaving1 from "../automationSolutionImages/rapier/rapier-orange-weaving1.jpg";
+import rapierOrangeWeaving2 from "../automationSolutionImages/rapier/rapier-orange-weaving2.jpg";
+import rapierAmarJecard1 from "../automationSolutionImages/rapier/rapier-amar-jecard1.jpg";
+import rapierAmarJecard2 from "../automationSolutionImages/rapier/rapier-amar-jecard2.jpg";
+
+// sectional warping
+import sectionalWarpingMain1 from "../automationSolutionImages/sectionalWarping/sectionalWarpingMain1.png";
+import sectionalWarpingKarlMayer1 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKarlMayer1.jpg";
+import sectionalWarpingKarlMayer3 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKarlMayer3.jpg";
+import sectionalWarpingKarlMayer4 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKarlMayer4.jpg";
+import sectionalWarpingKakinoki2 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKakinoki2.jpg";
+import sectionalWarpingKakinoki3 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKakinoki3.jpg";
+import sectionalWarpingKakinoki4 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKakinoki4.jpg";
+import sectionalWarpingKakinoki5 from "../automationSolutionImages/sectionalWarping/sectionalWarpingKakinoki5.jpg";
+
+import speedFrame1 from "../automationSolutionImages/speedFrame/speedFrame1.jpg";
+import speedFrameRieter1 from "../automationSolutionImages/speedFrame/speedFrameRieter1.jpg";
+import speedFrameRieter2 from "../automationSolutionImages/speedFrame/speedFrameRieter2.jpg";
+import speedFrameRieter3 from "../automationSolutionImages/speedFrame/speedFrameRieter3.jpg";
+import speedFrameZinser1 from "../automationSolutionImages/speedFrame/speedFrameZinser1.jpg";
+import speedFrameElectrojet01 from "../automationSolutionImages/speedFrame/speedFrameElectrojet01.jpg";
+import speedFrameElectrojet02 from "../automationSolutionImages/speedFrame/speedFrameElectrojet02.jpg";
+import speedFrameElectrojet03 from "../automationSolutionImages/speedFrame/speedFrameElectrojet03.jpg";
+import speedFrameElectrojet04 from "../automationSolutionImages/speedFrame/speedFrameElectrojet04.jpg";
+import speedFrameElectrojet05 from "../automationSolutionImages/speedFrame/speedFrameElectrojet05.jpg";
+import speedFrameElectrojet06 from "../automationSolutionImages/speedFrame/speedFrameElectrojet06.jpg";
+import speedFrameElectrojet07 from "../automationSolutionImages/speedFrame/speedFrameElectrojet07.jpg";
+import speedFrameElectrojet08 from "../automationSolutionImages/speedFrame/speedFrameElectrojet08.jpg";
+import speedFrameElectrojet09 from "../automationSolutionImages/speedFrame/speedFrameElectrojet09.jpg";
+import speedFrameElectrojet10 from "../automationSolutionImages/speedFrame/speedFrameElectrojet10.jpg";
+
+import poyFdy1 from "../automationSolutionImages/poyFdy/poyFdy1.png";
+import poyFdyToray from "../automationSolutionImages/poyFdy/poyFdyToray1.jpg";
+import poyFdyTmt1 from "../automationSolutionImages/poyFdy/poyFdyTmt1.jpg";
+import poyFdyTmt2 from "../automationSolutionImages/poyFdy/poyFdyTmt2.jpg";
+import poyFdyBarmag1 from "../automationSolutionImages/poyFdy/poyFdyBarmag1.jpg";
+import poyFdyBarmag2 from "../automationSolutionImages/poyFdy/poyFdyBarmag2.jpg";
+import poyFdyJwell1 from "../automationSolutionImages/poyFdy/poyFdyJwell1.jpg";
+import poyFdyJwell2 from "../automationSolutionImages/poyFdy/poyFdyJwell2.jpg";
+import poyFdyTeijin1 from "../automationSolutionImages/poyFdy/poyFdyTeijin1.jpg";
+import poyFdyTeijin2 from "../automationSolutionImages/poyFdy/poyFdyTeijin2.jpg";
+
+import polyesterSizing1 from "../automationSolutionImages/polyesterSizing/polyesterSizing1.png";
+import polyesterSizingImg1 from "../automationSolutionImages/polyesterSizing/polyesterSizingImg1.jpg";
+import polyesterSizingImg2 from "../automationSolutionImages/polyesterSizing/polyesterSizingImg2.jpg";
+import polyesterSizingImg3 from "../automationSolutionImages/polyesterSizing/polyesterSizingImg3.jpg";
+
+import cottonSizing1 from "../automationSolutionImages/cottonSizing/cottonSizing1.jpg";
+
+import winder1 from "../automationSolutionImages/winder/winder1.jpg";
+
+import coatingMachine1 from "../automationSolutionImages/coatingMachine/coatingMachine1.png";
+
+import fireExtinguisher1 from "../automationSolutionImages/fireExtinguisher/fireExtinguisher1.png";
+import fireExtinguisher2 from "../automationSolutionImages/fireExtinguisher/fireExtinguisher2.jpg";
+import fireExtinguisher3 from "../automationSolutionImages/fireExtinguisher/fireExtinguisher3.jpg";
+
+import paperCoating1 from "../automationSolutionImages/paperCoating/paperCoating1.png";
+
+import roofCutting1 from "../automationSolutionImages/roofCutting/roofCutting1.png";
+import roofCutting2 from "../automationSolutionImages/roofCutting/roofCutting2.jpg";
+
+import stanter1 from "../automationSolutionImages/stanter/stanter1.png";
+import stanter2 from "../automationSolutionImages/stanter/stanter2.jpg";
+import stanter3 from "../automationSolutionImages/stanter/stanter3.jpg";
+import stanter4 from "../automationSolutionImages/stanter/stanter4.jpg";
+import stanter5 from "../automationSolutionImages/stanter/stanter5.jpg";
+
+import yarnDyeing1 from "../automationSolutionImages/yarnDyeing/yarnDyeing1.png";
+import yarnDyeing2 from "../automationSolutionImages/yarnDyeing/yarnDyeing2.jpg";
+import yarnDyeing3 from "../automationSolutionImages/yarnDyeing/yarnDyeing3.jpg";
+import yarnDyeing4 from "../automationSolutionImages/yarnDyeing/yarnDyeing4.jpg";
+import yarnDyeing5 from "../automationSolutionImages/yarnDyeing/yarnDyeing5.jpg";
+
 export const data = [
   // automation
   {
@@ -19,11 +99,11 @@ export const data = [
     image: AutomationSolution,
     path: "automation-solution",
     machines: [
-      // rapier : data done, img remains || RENDERED
+      // rapier : RENDERED
       {
         title: "Rapier Machine",
         path: "rapier-machine",
-        mainImg: "",
+        mainImg: rapier,
         desc: "The rapier loom is a shuttleless weaving loom in which the filling yarn is carried through the shed of warp yarns to the other side of the loom by finger-like carriers called Rapiers.A rapier loom uses a rapier to pull the weft yarn across the loom. It can be single or double rapier.Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
           title: "Why we need retrofitting in Rapier Machine",
@@ -111,66 +191,38 @@ export const data = [
         types: [
           {
             typeName: "Wanli Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [rapierwanli1, rapierwanli3, rapierwanli4],
           },
           {
             typeName: "Somet Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [],
           },
           {
             typeName: "Orange Weaving Pvt. Ltd.",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [rapierOrangeWeaving1, rapierOrangeWeaving2],
           },
           {
             typeName: "SMIT Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [],
           },
           {
             typeName: "Vamatex Leonardo Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [],
           },
           {
             typeName: "Amar Jacquard Pvt. Ltd.",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [rapierAmarJecard1, rapierAmarJecard2],
           },
           {
             typeName: "Shin Kwang Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
+            imgList: [],
           },
         ],
       },
-      // sectional warping : data done, img remains || RENDERED
+      // sectional warping : RENDERED
       {
         title: "Sectional Warping Machine",
-        mainImg: "",
+        mainImg: sectionalWarpingMain1,
         path: "sectional-warping-machine",
         desc: "A sectional warping machine consists of three basic units, which are the creel, winding drum, and beaming unit. In section warping, warp yarns are organized into yarn bands, each having the same warp density as for the weaver’s beam. Then, the yarn sheet is transferred from the drum onto the weaver’s beams. Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
@@ -235,77 +287,28 @@ export const data = [
           images: [
             {
               title: "Karl Mayer",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [
+                sectionalWarpingKarlMayer1,
+                sectionalWarpingKarlMayer3,
+                sectionalWarpingKarlMayer4,
+              ],
             },
             {
               title: "Kakinoki Core",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [
+                sectionalWarpingKakinoki2,
+                sectionalWarpingKakinoki3,
+                sectionalWarpingKakinoki4,
+                sectionalWarpingKakinoki5,
+              ],
             },
           ],
         },
-        types: [
-          {
-            typeName: "Wanli Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-          {
-            typeName: "Somet Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-          {
-            typeName: "Orange Weaving Pvt. Ltd.",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-          {
-            typeName: "SMIT Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-          {
-            typeName: "Vamatex Leonardo Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-          {
-            typeName: "Amar Jacquard Pvt. Ltd.",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-          {
-            typeName: "Shin Kwang Rapier Machines",
-            imgList: [
-              AutomationSolution,
-              AutomationSolution,
-              AutomationSolution,
-            ],
-          },
-        ],
       },
-      // Speed frame  : data done, img remains || RENDERED
+      // Speed frame : RENDERED
       {
         title: "Speed Frame Machine",
-        mainImg: "",
+        mainImg: speedFrame1,
         path: "speed-frame-machine",
         desc: "The Function of the Speed Frame machine is the output from the draw frame is fed into the speed frame (also known as simplex machine or flyer frame) where the linear density of sliver is reduced by drafting and the resultant product is called the roving. Whenever the main machine is not able to fulfill requirements, modification and changes in old or new machinery are the requirements of the current industry.",
         whyWeNeed: {
@@ -373,7 +376,11 @@ export const data = [
           images: [
             {
               title: "Rieter Speed Frame Machine",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [
+                speedFrameRieter1,
+                speedFrameRieter2,
+                speedFrameRieter3,
+              ],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -400,7 +407,18 @@ export const data = [
             },
             {
               title: "Electrojet Speed Frame Machine",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [
+                speedFrameElectrojet01,
+                speedFrameElectrojet02,
+                speedFrameElectrojet03,
+                speedFrameElectrojet04,
+                speedFrameElectrojet05,
+                speedFrameElectrojet06,
+                speedFrameElectrojet07,
+                speedFrameElectrojet08,
+                speedFrameElectrojet09,
+                speedFrameElectrojet10,
+              ],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -445,7 +463,7 @@ export const data = [
             },
             {
               title: "Zinser Speed Frame Machine",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [speedFrameZinser1],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -474,10 +492,10 @@ export const data = [
           ],
         },
       },
-      // POY/FDY Winder Machines : data done, img remains || RENDERED
+      // POY/FDY Winder Machines : RENDERED
       {
         title: "POY/FDY Winder Machines",
-        mainImg: "",
+        mainImg: poyFdy1,
         path: "poy-foy-machine",
         desc: "Modern age machine offers various function to operate on. As a result, it is compatible for operator.Machine is labeled with different names such as Textile automatic yarn doffing winder machine, POY FDY polyester yarn winder etc.Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
@@ -524,7 +542,7 @@ export const data = [
           images: [
             {
               title: "Barmag Winder Machines",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [poyFdyBarmag1, poyFdyBarmag2],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -548,7 +566,7 @@ export const data = [
             },
             {
               title: "Jwell Machinery Winder Machines",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [poyFdyJwell1, poyFdyJwell2],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -575,7 +593,7 @@ export const data = [
             },
             {
               title: "Teijin seiki winder machines",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [poyFdyTeijin1, poyFdyTeijin2],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -597,7 +615,7 @@ export const data = [
             },
             {
               title: "Toray winding machine",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [poyFdyToray],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -621,11 +639,7 @@ export const data = [
             },
             {
               title: "TMT POY/FDY Winder",
-              imgList: [
-                AutomationSolution,
-                AutomationSolution,
-                AutomationSolution,
-              ],
+              imgList: [poyFdyTmt1, poyFdyTmt2],
               existingEq: {
                 title: "Existing Equipment and Issues",
                 data: {
@@ -649,10 +663,10 @@ export const data = [
           ],
         },
       },
-      // Polyester Sizing & Beaming Machine : data done, img remains || RENDERED
+      // Polyester Sizing & Beaming Machine : RENDERED
       {
         title: "Polyester Sizing & Beaming Machine",
-        mainImg: "",
+        mainImg: polyesterSizing1,
         path: "polyester-sizing",
         desc: "The weaver painted the size onto the warp as it lay on the loom, then fanned it dry before weaving the cloth. The sizing machine improved the process by sizing a warp before putting it into the loom. The warp threads are first wound onto a large beam, which is then placed at one end of the sizing machine. Beamers set up the specialized textile machinery according to production instructions. They work out the correct quantity of yarn needed for each job, load yarns onto ‘beams’, check the yarns for defects or knots, and record the number of yarn breaks. Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
@@ -683,7 +697,11 @@ export const data = [
           images: [
             {
               title: "Trishul Fabrication",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [
+                polyesterSizingImg1,
+                polyesterSizingImg2,
+                polyesterSizingImg3,
+              ],
               existingEq: {
                 title: "For Sizing Machine",
                 data: {
@@ -717,7 +735,11 @@ export const data = [
             },
             {
               title: "Tsudakoma Corp",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [
+                polyesterSizingImg1,
+                polyesterSizingImg2,
+                polyesterSizingImg3,
+              ],
               existingEq: {
                 title: "For Sizing Machine",
                 data: {
@@ -751,17 +773,17 @@ export const data = [
           ],
         },
       },
-      // Cotton Sizing Machine Panel : data done, img remains || RENDERED
+      // Cotton Sizing Machine Panel : RENDERED
       {
         title: "Cotton Sizing Machine Panel",
-        mainImg: "",
+        mainImg: cottonSizing1,
         path: "cotton-sizing-machine",
         desc: "Content Coming Soon!",
       },
-      // Winder Machine Panel : data done, img remains || RENDERED
+      // Winder Machine Panel : RENDERED
       {
         title: "Winder Machine Panel",
-        mainImg: "",
+        mainImg: winder1,
         path: "winder-machine",
         desc: "The automation in winding increase the winding efficiency. Huge amount of yarn are winded than conventional system of winding for using automation. Labour cost also decrease by the using automation in winding. In another article, automation in weaving has discussed details.",
         leftSec: [
@@ -831,7 +853,7 @@ export const data = [
           images: [
             {
               title: "System Feature & Benefits",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [winder1],
               existingEq: {
                 title: "System Benefit to Customer",
                 data: {
@@ -862,10 +884,10 @@ export const data = [
           ],
         },
       },
-      // Coating Machine : data done, img remains || RENDERED
+      // Coating Machine : RENDERED
       {
         title: "Coating Machine",
-        mainImg: "",
+        mainImg: coatingMachine1,
         path: "coating-machine",
         desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
@@ -928,10 +950,10 @@ export const data = [
           ],
         },
       },
-      // Fire Extinguisher Vehicle Projects : data done, img remains || RENDERED
+      // Fire Extinguisher Vehicle Projects : RENDERED
       {
         title: "Fire Extinguisher Vehicle Projects",
-        mainImg: "",
+        mainImg: fireExtinguisher1,
         path: "fire-extinguisher-projects",
         desc: "Development of a new system for fire extinguisher vehicles.",
         offeredSol: {
@@ -962,15 +984,15 @@ export const data = [
           images: [
             {
               title: "Various Winder make Machine",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [fireExtinguisher2, fireExtinguisher3],
             },
           ],
         },
       },
-      // Paper Coating Machine : data done, img remains || RENDERED
+      // Paper Coating Machine : RENDERED
       {
         title: "Paper Coating Machine",
-        mainImg: "",
+        mainImg: paperCoating1,
         path: "paper-coating-machine",
         desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         offeredSol: {
@@ -1020,15 +1042,15 @@ export const data = [
           images: [
             {
               title: "Our scope of work in various Rapier Machine",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [paperCoating1],
             },
           ],
         },
       },
-      // Roof Cutting Machine : data done, img remains || RENDERED
+      // Roof Cutting Machine : RENDERED
       {
         title: "Roof Cutting Machine",
-        mainImg: "",
+        mainImg: roofCutting1,
         path: "roof-cutting-machine",
         desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: [
@@ -1073,15 +1095,15 @@ export const data = [
           images: [
             {
               title: "Work",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [roofCutting2],
             },
           ],
         },
       },
-      // Stanter Machine Panel : data done, img remains || RENDERED
+      // Stanter Machine Panel : RENDERED
       {
         title: "Stanter Machine Panel",
-        mainImg: "",
+        mainImg: stanter1,
         path: "stanter-machine-panel",
         desc: "Our collaboration with machine manufacturers allows us to provide our standard system for their machines.",
         whyWeNeed: {
@@ -1121,7 +1143,7 @@ export const data = [
           images: [
             {
               title: "Tsudakoma Corp",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [stanter2, stanter3, stanter4, stanter5],
               existingEq: {
                 title: "System Benefit to Customer",
                 data: {
@@ -1152,10 +1174,10 @@ export const data = [
           ],
         },
       },
-      // Yarn Dyeing Machine Panel : data done, img remains || RENDERED
+      // Yarn Dyeing Machine Panel : RENDERED
       {
         title: "Yarn Dyeing Machine Panel",
-        mainImg: "",
+        mainImg: yarnDyeing1,
         path: "yarn-dyeing-machine-panel",
         desc: "Dye House Automation System consists of dyestuff and chemical dispensing, weighing, dissolving and dispensing lines, salt and soda mixing storage and dispensing systems.",
         whyWeNeed: {
@@ -1183,7 +1205,7 @@ export const data = [
           images: [
             {
               title: "",
-              imgList: [AutomationSolution, AutomationSolution],
+              imgList: [yarnDyeing2, yarnDyeing3, yarnDyeing4, yarnDyeing5],
               existingEq: {
                 title: "System Benefit to Customer",
                 data: {

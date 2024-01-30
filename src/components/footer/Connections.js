@@ -9,14 +9,7 @@ import YT from "../../resources/icons/YT.svg";
 
 const Connections = () => {
   const mailAndContact = {
-    mails: [
-      "a@tatvamasiautomation.com",
-      "b@tatvamasiautomation.com",
-      "c@tatvamasiautomation.com",
-      "d@tatvamasiautomation.com",
-      "e@tatvamasiautomation.com",
-      "f@tatvamasiautomation.com",
-    ],
+    mails: ["tatvamsiautomation@gmail.com", "info@tatvamasiautomation.com"],
     // contacts: ["+91 1234561234", "+91 9876543210"],
   };
 
@@ -85,10 +78,27 @@ const Connections = () => {
                 },
               }}
             >
-              {mail}
+              <a
+                style={{
+                  color: "white",
+                  cursor: "pointer", // Set cursor style to indicate it's clickable
+                }}
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent the default behavior of the anchor tag
+                  console.log("Email link clicked");
+                  console.log(mail);
+
+                  // Trigger the email action manually
+                  window.location.href = `mailto:${mail}`;
+                }}
+              >
+                {mail}
+              </a>
             </Typography>
           );
         })}
+
         {mailAndContact.contacts?.map((contact) => {
           return (
             <Typography
@@ -104,7 +114,7 @@ const Connections = () => {
                 },
               }}
             >
-              {contact}
+              <a href={`mailto: ${contact}`}>{contact}</a>
             </Typography>
           );
         })}
