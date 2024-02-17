@@ -4,7 +4,7 @@ import FabricationSolution from "../../resources/homepageImages/fabricationSolut
 import Tenders from "../../resources/homepageImages/tenders.svg";
 import UsedMachineBuySell from "../../resources/homepageImages/usedMachine.svg";
 import EqStore from "../../resources/homepageImages/eqStore.svg";
-import AMC from "../../resources/homepageImages/amc.svg";
+// import AMC from "../../resources/homepageImages/amc.svg";
 import Career from "../../resources/homepageImages/career.svg";
 import ContactUs from "../../resources/homepageImages/contactUs.svg";
 import GNFC from "../../resources/tenderLogos/GNFC.svg";
@@ -2036,11 +2036,11 @@ export const data = [
     path: "#",
   },
   // amc
-  {
-    name: "AMC",
-    image: AMC,
-    path: "#",
-  },
+  // {
+  //   name: "AMC",
+  //   image: AMC,
+  //   path: "#",
+  // },
   // career
   {
     name: "Career",

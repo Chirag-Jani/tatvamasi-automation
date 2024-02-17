@@ -41,7 +41,11 @@ const Map = () => {
         <Marker position={center} />
       </GoogleMap> */}
       {/* https://maps.app.goo.gl/zkW2FqhVQLWQ8jXNA */}
-      <a href="https://maps.app.goo.gl/zkW2FqhVQLWQ8jXNA" target="_blank">
+      <a
+        href="https://maps.app.goo.gl/zkW2FqhVQLWQ8jXNA"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
           src={mapImg}
           alt="Map img here"

@@ -1,11 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-import FB from "../../resources/icons/FB.svg";
-import INSTA from "../../resources/icons/INSTA.svg";
-import LINK from "../../resources/icons/LINK.svg";
-import WP from "../../resources/icons/WP.svg";
-import YT from "../../resources/icons/YT.svg";
+// import FB from "../../resources/icons/FB.svg";
+// import INSTA from "../../resources/icons/INSTA.svg";
+// import LINK from "../../resources/icons/LINK.svg";
+// import WP from "../../resources/icons/WP.svg";
+// import YT from "../../resources/icons/YT.svg";
 
 const Connections = () => {
   const mailAndContact = {
@@ -83,7 +83,7 @@ const Connections = () => {
                   color: "white",
                   cursor: "pointer", // Set cursor style to indicate it's clickable
                 }}
-                href="#"
+                href="/"
                 onClick={(e) => {
                   e.preventDefault(); // Prevent the default behavior of the anchor tag
                   console.log("Email link clicked");

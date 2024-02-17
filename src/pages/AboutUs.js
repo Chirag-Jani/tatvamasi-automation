@@ -38,41 +38,30 @@ const AboutUs = () => {
           }}
         />
       </Box>
+
       <Box
         sx={{
-          padding: "50px 0",
+          margin: "50px auto",
+          marginTop: 0,
+          width: "90%",
         }}
       >
         <Typography
           sx={{
+            fontSize: "40px",
+            textAlign: "justify",
             fontFamily: "Montserrat",
-            color: "#162866",
-            fontSize: {
-              xl: "39.58px",
-              lg: "39.58px",
-              m: "39.58px",
-              sm: "39.58px",
-              xs: "30px",
-            },
-            textAlign: "center",
-            margin: "20px",
-            textDecoration: "underline",
+            color: "rgba(22, 40, 102, 1)",
+            margin: "25px 0",
           }}
         >
           Overview
         </Typography>
         <Typography
           sx={{
-            fontSize: {
-              xl: "25px",
-              lg: "25px",
-              m: "25px",
-              sm: "25px",
-              xs: "15px",
-            },
+            fontSize: "18px",
             textAlign: "justify",
-            width: "90%",
-            margin: "auto",
+            fontFamily: "Montserrat",
           }}
         >
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tatvamasi
