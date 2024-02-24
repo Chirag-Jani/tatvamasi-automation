@@ -1,8 +1,21 @@
 import { Box, Typography } from "@mui/material";
 import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
-import aboutUs from "../resources/aboutUsPageImages/aboutUs.svg";
 import vision from "../resources/aboutUsPageImages/Vision.svg";
 import mission from "../resources/aboutUsPageImages/Mission.svg";
+import p1 from "../resources/aboutUsPageImages/roadmap/p1.webp";
+import p2 from "../resources/aboutUsPageImages/roadmap/p2.webp";
+import p3 from "../resources/aboutUsPageImages/roadmap/p3.webp";
+import p4 from "../resources/aboutUsPageImages/roadmap/p4.webp";
+import p5 from "../resources/aboutUsPageImages/roadmap/p5.webp";
+import p6 from "../resources/aboutUsPageImages/roadmap/p6.webp";
+import p7 from "../resources/aboutUsPageImages/roadmap/p7.webp";
+import p8 from "../resources/aboutUsPageImages/roadmap/p8.webp";
+import p9 from "../resources/aboutUsPageImages/roadmap/p9.webp";
+import p10 from "../resources/aboutUsPageImages/roadmap/p10.webp";
+import p11 from "../resources/aboutUsPageImages/roadmap/p11.webp";
+import p12 from "../resources/aboutUsPageImages/roadmap/p12.webp";
+
+const roadmapImages = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12];
 
 const AboutUs = () => {
   return (
@@ -119,19 +132,24 @@ const AboutUs = () => {
       <Box
         sx={{
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <img
-          style={{
-            width: "70%",
-            height: "auto",
-            margin: "auto",
-          }}
-          src={aboutUs}
-          alt=""
-        />
+        {roadmapImages.map((img, idx) => {
+          return (
+            <img
+              style={{
+                width: "70%",
+                height: "auto",
+                margin: "auto",
+              }}
+              src={img}
+              alt=""
+            />
+          );
+        })}
       </Box>
     </Box>
   );

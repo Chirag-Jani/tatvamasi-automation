@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1ee20b7d.css",
-    "main.js": "/static/js/main.a6235c1b.js",
-    "static/media/aboutUs.svg": "/static/media/aboutUs.e001f3bb38d60178742228b7fef0799a.svg",
+    "main.js": "/static/js/main.5c69260e.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.05e07fc2622e2a18e3663677aafecb58.svg",
     "static/media/aboutUsBanner.png": "/static/media/aboutUsBanner.d7e1a0a35a5293c00f5c.png",
     "static/media/sectionalWarpingKarlMayer3.jpg": "/static/media/sectionalWarpingKarlMayer3.a7fff0dfdbaf37502343.jpg",
@@ -32,10 +31,12 @@
     "static/media/electrical-banner.jpg": "/static/media/electrical-banner.c101ef4f76d61aa08b29.jpg",
     "static/media/polyesterSizingImg2.jpg": "/static/media/polyesterSizingImg2.10cf2025b3096728b783.jpg",
     "static/media/rapier-amar-jecard2.jpg": "/static/media/rapier-amar-jecard2.fbadf0355a1513b17ae0.jpg",
+    "static/media/p11.webp": "/static/media/p11.088cec806cf9d29ceead.webp",
     "static/media/gnfc 5.jpg": "/static/media/gnfc 5.ab0a96fb93730f32f04e.jpg",
     "static/media/gnfc 0.jpg": "/static/media/gnfc 0.076ab025d4f89572decd.jpg",
     "static/media/rapier-wanli-rapier1.jpg": "/static/media/rapier-wanli-rapier1.2f74d64e7ea1f00c331e.jpg",
     "static/media/gnfc 4.jpg": "/static/media/gnfc 4.280abf6c412fe3c00959.jpg",
+    "static/media/p8.webp": "/static/media/p8.6af4453b7f65c6bc3271.webp",
     "static/media/gnfc 9.jpg": "/static/media/gnfc 9.7d9d25a02715f4db3b80.jpg",
     "static/media/yarnDyeing1.png": "/static/media/yarnDyeing1.588b645d10bb386aea37.png",
     "static/media/poyFdy1.png": "/static/media/poyFdy1.4d654588a6a15c23b860.png",
@@ -51,17 +52,25 @@
     "static/media/Montserrat-BoldItalic.ttf": "/static/media/Montserrat-BoldItalic.a169c71c1eb466896fe1.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/p7.webp": "/static/media/p7.d1432d08663bf8b5d382.webp",
+    "static/media/p2.webp": "/static/media/p2.cfa7e13b545bfcb3ffef.webp",
+    "static/media/p3.webp": "/static/media/p3.0150eceee2131c748b02.webp",
     "static/media/paperCoating1.png": "/static/media/paperCoating1.0ba7c5cec08da70fc9d6.png",
+    "static/media/p6.webp": "/static/media/p6.898e383ead7b1315d7f1.webp",
     "static/media/Mission.svg": "/static/media/Mission.a12f4f1fc085c7c3ca421b57d2adffa1.svg",
     "static/media/coatingMachine1.png": "/static/media/coatingMachine1.cf58d0bb800a28cc0530.png",
     "static/media/homepageBanner.svg": "/static/media/homepageBanner.c3ee1bcf8b5269f7dc00eb5076a219ca.svg",
+    "static/media/p4.webp": "/static/media/p4.17ed21ca313245098cca.webp",
     "static/media/TAPI.svg": "/static/media/TAPI.72ecbd4dda5d65409ae4d2345698fd71.svg",
     "static/media/SMC.svg": "/static/media/SMC.7d7e916e7fb48a6598aa9c3cebf70dba.svg",
     "static/media/roofCutting1.png": "/static/media/roofCutting1.6dcf535399929849f481.png",
     "static/media/stanter1.png": "/static/media/stanter1.b642244cc5f32d06bd41.png",
     "static/media/fabricationSolution.svg": "/static/media/fabricationSolution.2477ed2380a006a459d6e76eca2a8de2.svg",
+    "static/media/p5.webp": "/static/media/p5.c47b3de8fbe3d3ca42d5.webp",
     "static/media/fireExtinguisher3.jpg": "/static/media/fireExtinguisher3.e0a57fa034ce4ee39118.jpg",
+    "static/media/p1.webp": "/static/media/p1.944ce508e7d2b57a6bba.webp",
     "static/media/yarnDyeing3.jpg": "/static/media/yarnDyeing3.1ac51d5101a741ca0556.jpg",
+    "static/media/p10.webp": "/static/media/p10.5e2c92b0af82f1feae70.webp",
     "static/media/yarnDyeing2.jpg": "/static/media/yarnDyeing2.4c657d7aa9562b240570.jpg",
     "static/media/planAndDesign.svg": "/static/media/planAndDesign.2113e4446a279c3bab84c8ba6de0917d.svg",
     "static/media/neuropolitical rg.ttf": "/static/media/neuropolitical rg.4eac589d31d567458ea2.ttf",
@@ -69,6 +78,7 @@
     "static/media/yarnDyeing4.jpg": "/static/media/yarnDyeing4.fb872d4f621ceffe79d0.jpg",
     "static/media/tenders.svg": "/static/media/tenders.fde7e9d506c5f8b904b8eda8492496b5.svg",
     "static/media/speedFrame1.jpg": "/static/media/speedFrame1.7a35afec94929c3c55e9.jpg",
+    "static/media/p9.webp": "/static/media/p9.7ca90d55d9e54263a8cd.webp",
     "static/media/automationSolution.svg": "/static/media/automationSolution.73c91ba250bce859fd080e4d6669075d.svg",
     "static/media/polyesterSizing1.png": "/static/media/polyesterSizing1.004dd299e8586509752a.png",
     "static/media/yarnDyeing5.jpg": "/static/media/yarnDyeing5.d863a5b0e9ffaa76eed3.jpg",
@@ -103,13 +113,14 @@
     "static/media/BHEL.svg": "/static/media/BHEL.b6487f695c60cc6ff908192e2532e78c.svg",
     "static/media/TRIDENT.svg": "/static/media/TRIDENT.a3083ef483dbd76dd370f3120fceab64.svg",
     "static/media/google-maps_355980.svg": "/static/media/google-maps_355980.a56fe2907f65e2ec8bf2119045767c40.svg",
+    "static/media/p12.webp": "/static/media/p12.fb9622ffac936ef93c05.webp",
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.cc6149641ec1dc5646eb91a4e56ac7bd.svg",
     "index.html": "/index.html",
     "main.1ee20b7d.css.map": "/static/css/main.1ee20b7d.css.map",
-    "main.a6235c1b.js.map": "/static/js/main.a6235c1b.js.map"
+    "main.5c69260e.js.map": "/static/js/main.5c69260e.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee20b7d.css",
-    "static/js/main.a6235c1b.js"
+    "static/js/main.5c69260e.js"
   ]
 }

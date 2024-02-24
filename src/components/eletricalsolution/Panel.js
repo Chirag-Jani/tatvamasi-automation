@@ -400,7 +400,7 @@ const Panel = () => {
                 <Typography
                   sx={{
                     color: "rgba(22, 40, 102, 1)",
-                    fontFamily: "Montserrat",
+                    fontFamily: "Montserrat-Bold",
                     fontSize: {
                       xl: "1.5rem",
                       lg: "1.5rem",
