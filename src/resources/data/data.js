@@ -2027,7 +2027,7 @@ export const data = [
   {
     name: "Used Machine Buy/Sell",
     image: UsedMachineBuySell,
-    path: "#",
+    path: "used-machine-buysell",
   },
   // eq. store
   {

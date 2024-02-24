@@ -17,6 +17,7 @@ import AboutUs from "./pages/AboutUs";
 import FabricationSolution from "./pages/FabricationSolution";
 import AutomationSolution from "./pages/AutomationSolution";
 import Machine from "./components/automationsolution/Machine";
+import UsedMachine from "./pages/UsedMachine";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/automation-solution/:machine" element={<Machine />} />
           <Route path="/psu-and-govt" element={<Tenders />} />
           <Route path="/psu-and-govt/:client" element={<TenderClient />} />
+          <Route path="/used-machine-buysell" element={<UsedMachine />} />
         </Routes>
         <Footer />
       </ThemeProvider>
