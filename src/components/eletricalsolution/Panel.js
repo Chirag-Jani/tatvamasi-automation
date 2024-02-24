@@ -285,6 +285,7 @@ const Panel = () => {
                 sx={{
                   fontFamily: "Montserrat",
                   textAlign: "justify",
+                  marginBottom: "50px",
                 }}
               >
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -450,6 +451,7 @@ const Panel = () => {
                 sx={{
                   fontFamily: "Montserrat",
                   textAlign: "justify",
+                  marginBottom: "50px",
                 }}
               >
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -633,6 +635,7 @@ const Panel = () => {
                 sx={{
                   fontFamily: "Montserrat",
                   textAlign: "justify",
+                  marginBottom: "50px",
                 }}
               >
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

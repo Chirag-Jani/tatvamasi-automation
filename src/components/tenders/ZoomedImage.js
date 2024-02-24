@@ -8,19 +8,19 @@ const ZoomedImage = ({ open, handleClose, src }) => {
       <Fade in={open}>
         <div
           style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            backgroundColor: "rgba(255, 255, 255, 1)", // Adjust opacity here
+            // position: "absolute",
+            // top: "50%",
+            // left: "50%",
+            // transform: "translate(-50%, -50%)",
+            // backgroundColor: "rgba(255, 255, 255, 1)", // Adjust opacity here
             borderRadius: "10px",
             padding: "20px",
-            maxWidth: "100%",
-            maxHeight: "100%",
+            maxWidth: "85%",
+            maxHeight: "85%",
           }}
         >
           <IconButton
-            style={{ position: "absolute", top: "10px", right: "10px" }}
+            // style={{ position: "absolute", top: "10px", right: "10px" }}
             onClick={handleClose}
           >
             <CloseIcon />
@@ -28,7 +28,7 @@ const ZoomedImage = ({ open, handleClose, src }) => {
           <img
             src={src}
             alt=""
-            style={{ width: "100%", height: "100%", borderRadius: "10px" }}
+            style={{ width: "85%", height: "85%", borderRadius: "10px" }}
           />
         </div>
       </Fade>
