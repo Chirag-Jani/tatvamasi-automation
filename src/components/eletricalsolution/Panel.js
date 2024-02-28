@@ -1,15 +1,30 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React, { useEffect } from "react";
-import DemoPanel from "../../resources/Demo Panel.svg";
+import { Box, Grid, Skeleton, Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
 import "../../styles/PCCStyle.css";
 import { data } from "../../resources/data/data";
 import { useParams } from "react-router-dom";
 import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
+// import ReactPlayer from "react-player";
+import ZoomedImage from "../tenders/ZoomedImage";
+import Carousel from "react-material-ui-carousel";
 
 const Panel = () => {
   const PanelList = data[1].panels;
   let { panel } = useParams();
+
+  const [open, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [timeToLoad, setTimeToLoad] = useState(false);
+
+  const handleImageClick = (img) => {
+    setSelectedImage(img);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const Specs = PanelList.find((p) => p.path === panel);
   console.log(Specs);
@@ -21,6 +36,10 @@ const Panel = () => {
       easing: "ease", // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
     });
+
+    setTimeout(() => {
+      setTimeToLoad(true);
+    }, 3000);
   }, []);
   return (
     <>
@@ -56,7 +75,7 @@ const Panel = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {Specs.desc}
           </Typography>
-          <Box
+          {/* <Box
             sx={{
               display: "flex",
               justifyContent: "space-between",
@@ -83,7 +102,107 @@ const Panel = () => {
               className="panel-image"
               data-aos="fade-left"
             />
-          </Box>
+          </Box> */}
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "center",
+            }}
+          >
+            <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  width: {
+                    xs: "100%",
+                    sm: "80%",
+                    md: "100%",
+                    lg: "100%",
+                    xl: "100%",
+                  },
+                  margin: "auto",
+                }}
+              >
+                <Carousel animation="slide" duration={"700"}>
+                  {timeToLoad
+                    ? Specs?.images?.length > 0 &&
+                      Specs?.images?.map((item, i) => (
+                        <img
+                          key={i}
+                          data-aos="zoom-out"
+                          src={item}
+                          alt=""
+                          style={{
+                            width: "100%",
+                            height: {
+                              xs: "auto",
+                              sm: "auto",
+                              md: "325px",
+                              lg: "325px",
+                              xl: "325px",
+                            },
+                            borderRadius: "10px",
+                          }}
+                          onClick={() => handleImageClick(item)}
+                        />
+                      ))
+                    : Specs?.images?.length > 0 && (
+                        <Skeleton
+                          variant="rectangular"
+                          animation="wave"
+                          width={"100%"}
+                          height={"325px"}
+                          sx={{
+                            borderRadius: "10px",
+                          }}
+                        />
+                      )}
+                </Carousel>
+                <ZoomedImage
+                  open={open}
+                  handleClose={handleClose}
+                  src={selectedImage}
+                />
+
+                {/* Image Component */}
+              </Box>
+            </Grid>
+            {/* NONE videos as of now */}
+            {/* <Grid item xs={12} md={6}>
+              <Box
+                sx={{
+                  width: {
+                    xs: "100%",
+                    sm: "80%",
+                    md: "100%",
+                    lg: "100%",
+                    xl: "100%",
+                  },
+                  margin: "auto",
+                  height: {
+                    xs: "325px",
+                    sm: "325px",
+                    md: "325px",
+                    lg: "325px",
+                    xl: "325px",
+                  },
+                }}
+                data-aos="zoom-out"
+              >
+                <ReactPlayer
+                  url={Specs.youtube}
+                  controls={true}
+                  width={"100%"}
+                  height={"85%"}
+                  // style={{
+                  //   maxHeight: "325px",
+                  // }}
+                />
+              </Box>
+            </Grid> */}
+          </Grid>
         </Box>
         {Specs.specs && (
           <Box>

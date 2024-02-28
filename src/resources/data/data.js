@@ -92,6 +92,27 @@ import yarnDyeing3 from "../automationSolutionImages/yarnDyeing/yarnDyeing3.jpg"
 import yarnDyeing4 from "../automationSolutionImages/yarnDyeing/yarnDyeing4.jpg";
 import yarnDyeing5 from "../automationSolutionImages/yarnDyeing/yarnDyeing5.jpg";
 
+// imports for Electrical Solution
+// imports for pcc panel
+import pcc1 from "../pcc/pcc 1.webp";
+import pcc2 from "../pcc/pcc 2.webp";
+import pcc3 from "../pcc/pcc 3.webp";
+import pcc4 from "../pcc/pcc 4.webp";
+import pcc5 from "../pcc/pcc 5.webp";
+
+// imports for mcc panel
+import mcc1 from "../mcc/mcc 1.webp";
+import mcc2 from "../mcc/mcc 2.webp";
+import mcc3 from "../mcc/mcc 3.webp";
+import mcc4 from "../mcc/mcc 4.webp";
+
+// imports for pcc panel
+import vfd1 from "../vfd/vfd 1.webp";
+import vfd2 from "../vfd/vfd 2.webp";
+import vfd3 from "../vfd/vfd 3.webp";
+import vfd4 from "../vfd/vfd 4.webp";
+import vfd5 from "../vfd/vfd 5.webp";
+
 export const data = [
   // automation
   {
@@ -1249,6 +1270,8 @@ export const data = [
         name: "PCC Panel", // done rendering
         path: "pcc",
         desc: "At Tatwamasi Automation Pvt. Ltd.,we are your trusted partner for all your Power Control Center (PCC) panel needs. Our PCC panels are designed and built to meet the highest standards, ensuring efficient power distribution, motor control, and electrical protection. Here's what you can expect from our PCC panels:",
+        youtube: "", //
+        images: [pcc1, pcc2, pcc3, pcc4, pcc5],
         specs: [
           {
             label: "Rated Voltage",
@@ -1319,6 +1342,8 @@ export const data = [
         name: "MCC & IMCC Panel", // done rendering
         desc: "At Tatwamasi Automation Pvt. Ltd., we take pride in designing and manufacturing Motor Control Center (MCC) panels that provide a seamless solution for controlling motors and electrical equipment in diverse industrial settings. Our MCC panels are built to meet stringent industry standards, ensuring efficient motor control, protection, and automation. Here's what sets our MCC panels apart:",
         path: "mcc",
+        youtube: "", //
+        images: [mcc1, mcc2, mcc3, mcc4],
         specs: [
           {
             label: "Rated Voltage",
@@ -1486,6 +1511,8 @@ export const data = [
         name: "VFD Panel", // done rendering
         desc: "At TAPL, we're your trusted partner for manufacturing high-quality Variable Frequency Drive (VFD) Control Panels, designed to deliver precise motor control for a wide range of industrial applications. Our VFD panels are engineered to provide you with the flexibility and efficiency you need to optimize your motor-driven systems.",
         path: "vfd",
+        youtube: "", //
+        images: [vfd1, vfd2, vfd3, vfd4, vfd5],
         specs: [
           {
             label: "Rated Voltage",

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1ee20b7d.css",
-    "main.js": "/static/js/main.21b3ce04.js",
+    "main.js": "/static/js/main.359db7c5.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.05e07fc2622e2a18e3663677aafecb58.svg",
     "static/media/sectionalWarpingKarlMayer3.jpg": "/static/media/sectionalWarpingKarlMayer3.a7fff0dfdbaf37502343.jpg",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.fda4aea583e7f3fd81f3546b2c473f75.svg",
@@ -133,10 +133,10 @@
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.cc6149641ec1dc5646eb91a4e56ac7bd.svg",
     "index.html": "/index.html",
     "main.1ee20b7d.css.map": "/static/css/main.1ee20b7d.css.map",
-    "main.21b3ce04.js.map": "/static/js/main.21b3ce04.js.map"
+    "main.359db7c5.js.map": "/static/js/main.359db7c5.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee20b7d.css",
-    "static/js/main.21b3ce04.js"
+    "static/js/main.359db7c5.js"
   ]
 }

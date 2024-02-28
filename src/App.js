@@ -19,7 +19,10 @@ import AutomationSolution from "./pages/AutomationSolution";
 import Machine from "./components/automationsolution/Machine";
 import UsedMachine from "./pages/UsedMachine";
 
+import { data } from "./resources/data/data.js";
+
 function App() {
+  localStorage.setItem("data", JSON.stringify(data));
   return (
     <Router>
       <ScrollToTop />

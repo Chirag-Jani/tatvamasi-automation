@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
+import webBanner from "../resources/banners/webBanner.webp";
 
 const FabricationSolution = () => {
   const data = [
@@ -137,7 +137,7 @@ const FabricationSolution = () => {
         </Typography>
         <img
           data-aos="zoom-in"
-          src={aboutUsBanner}
+          src={webBanner}
           alt="Tatvamasi Automation"
           style={{
             width: "100%",

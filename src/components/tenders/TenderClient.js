@@ -7,19 +7,19 @@ import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
 import Carousel from "react-material-ui-carousel";
 
-import gnfc0 from "../../resources/gnfc/gnfc 0.jpg";
-import gnfc1 from "../../resources/gnfc/gnfc 1.jpg";
-import gnfc2 from "../../resources/gnfc/gnfc 2.jpg";
-import gnfc3 from "../../resources/gnfc/gnfc 3.jpg";
-import gnfc4 from "../../resources/gnfc/gnfc 4.jpg";
-import gnfc5 from "../../resources/gnfc/gnfc 5.jpg";
-import gnfc6 from "../../resources/gnfc/gnfc 6.jpg";
-import gnfc7 from "../../resources/gnfc/gnfc 7.jpg";
-import gnfc8 from "../../resources/gnfc/gnfc 8.jpg";
-import gnfc9 from "../../resources/gnfc/gnfc 9.jpg";
-import gnfc10 from "../../resources/gnfc/gnfc 10.jpg";
-import gnfc11 from "../../resources/gnfc/gnfc 11.jpg";
-import gnfc12 from "../../resources/gnfc/gnfc 12.jpg";
+import gnfc0 from "../../resources/gnfc/gnfc 0.webp";
+import gnfc1 from "../../resources/gnfc/gnfc 1.webp";
+import gnfc2 from "../../resources/gnfc/gnfc 2.webp";
+import gnfc3 from "../../resources/gnfc/gnfc 3.webp";
+import gnfc4 from "../../resources/gnfc/gnfc 4.webp";
+import gnfc5 from "../../resources/gnfc/gnfc 5.webp";
+import gnfc6 from "../../resources/gnfc/gnfc 6.webp";
+import gnfc7 from "../../resources/gnfc/gnfc 7.webp";
+import gnfc8 from "../../resources/gnfc/gnfc 8.webp";
+import gnfc9 from "../../resources/gnfc/gnfc 9.webp";
+import gnfc10 from "../../resources/gnfc/gnfc 10.webp";
+import gnfc11 from "../../resources/gnfc/gnfc 11.webp";
+import gnfc12 from "../../resources/gnfc/gnfc 12.webp";
 import ZoomedImage from "./ZoomedImage";
 
 var items = [

@@ -1,6 +1,6 @@
-import { Box, Typography } from "@mui/material";
-import React, { useEffect } from "react";
-import electricalBanner from "../resources/banners/electrical-banner.jpg";
+import { Box, Skeleton, Typography } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import electricalBanner from "../resources/banners/electrical-banner.webp";
 import PanelCard from "../components/eletricalsolution/PanelCard";
 import { data } from "../resources/data/data";
 import planAndDesign from "../resources/banners/planAndDesign.svg";
@@ -11,6 +11,8 @@ import "../../node_modules/aos/dist/aos.css";
 const PanelList = data[1].panels;
 
 const ElectricalSolution = () => {
+  const [timeToLoad, setTimeToLoad] = useState(false);
+
   useEffect(() => {
     Aos.init({
       // Global settings:
@@ -19,6 +21,10 @@ const ElectricalSolution = () => {
       easing: "ease", // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
     });
+
+    setTimeout(() => {
+      setTimeToLoad(true);
+    }, 2000);
   }, []);
   return (
     <>
@@ -45,14 +51,26 @@ const ElectricalSolution = () => {
           >
             Electrical Solutions
           </Typography>
-          <img
-            data-aos="zoom-in"
-            src={electricalBanner}
-            alt="Tatvamasi Automation"
-            style={{
-              width: "100%",
-            }}
-          />
+          {timeToLoad ? (
+            <img
+              data-aos="zoom-in"
+              src={electricalBanner}
+              alt="Tatvamasi Automation"
+              style={{
+                width: "100%",
+              }}
+            />
+          ) : (
+            <Skeleton
+              variant="rectangular"
+              animation="wave"
+              width={"100%"}
+              height={"300px"}
+              sx={{
+                borderRadius: "10px",
+              }}
+            />
+          )}
         </Box>
         <Box
           sx={{

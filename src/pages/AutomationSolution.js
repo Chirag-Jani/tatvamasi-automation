@@ -1,14 +1,19 @@
 import { Box, Typography } from "@mui/material";
-import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
+import automationBanner from "../resources/banners/automation-banner.webp";
 import { data } from "../resources/data/data";
 import PanelCard from "../components/eletricalsolution/PanelCard";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const automationData = data[0];
 const automationMachines = automationData.machines;
-console.log(automationMachines);
 
 const AutomationSolution = () => {
+  useEffect(() => {
+    let data = JSON.parse(localStorage.getItem("data"));
+    console.log(data);
+  }, []);
+
   return (
     <Box>
       <Box>
@@ -31,7 +36,7 @@ const AutomationSolution = () => {
         </Typography>
         <img
           data-aos="zoom-in"
-          src={aboutUsBanner}
+          src={automationBanner}
           alt="Tatvamasi Automation"
           style={{
             width: "100%",

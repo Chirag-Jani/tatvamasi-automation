@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import RadioButtonCheckedTwoToneIcon from "@mui/icons-material/RadioButtonCheckedTwoTone";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
+import webBanner from "../resources/banners/webBanner.webp";
 
 const UsedMachine = () => {
   return (
@@ -27,7 +27,7 @@ const UsedMachine = () => {
         </Typography>
         <img
           data-aos="zoom-in"
-          src={aboutUsBanner}
+          src={webBanner}
           alt="Tatvamasi Automation"
           style={{
             width: "100%",

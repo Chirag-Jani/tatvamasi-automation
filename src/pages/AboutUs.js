@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import aboutUsBanner from "../resources/banners/aboutUsBanner.png";
-import vision from "../resources/aboutUsPageImages/Vision.svg";
-import mission from "../resources/aboutUsPageImages/Mission.svg";
+import aboutUsBanner from "../resources/banners/aboutUsBanner.webp";
+import vision from "../resources/aboutUsPageImages/Vision.webp";
+import mission from "../resources/aboutUsPageImages/Mission.webp";
 import p1 from "../resources/aboutUsPageImages/roadmap/p1.webp";
 import p2 from "../resources/aboutUsPageImages/roadmap/p2.webp";
 import p3 from "../resources/aboutUsPageImages/roadmap/p3.webp";
@@ -115,7 +115,7 @@ const AboutUs = () => {
           alt=""
           style={{
             width: "fit-content",
-            maxWidth: "80%",
+            maxWidth: "35%",
             margin: "10px",
           }}
         />
@@ -124,7 +124,7 @@ const AboutUs = () => {
           alt=""
           style={{
             width: "fit-content",
-            maxWidth: "80%",
+            maxWidth: "35%",
             margin: "10px",
           }}
         />
