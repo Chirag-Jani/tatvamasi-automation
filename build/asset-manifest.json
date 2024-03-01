@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1ee20b7d.css",
-    "main.js": "/static/js/main.359db7c5.js",
+    "main.js": "/static/js/main.12a52a5b.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.05e07fc2622e2a18e3663677aafecb58.svg",
     "static/media/sectionalWarpingKarlMayer3.jpg": "/static/media/sectionalWarpingKarlMayer3.a7fff0dfdbaf37502343.jpg",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.fda4aea583e7f3fd81f3546b2c473f75.svg",
@@ -65,10 +65,12 @@
     "static/media/aboutUsBanner.webp": "/static/media/aboutUsBanner.efdb156d27c418bb535e.webp",
     "static/media/vfd 4.webp": "/static/media/vfd 4.fc5bcaf7513dfa5e371c.webp",
     "static/media/yarnDyeing2.jpg": "/static/media/yarnDyeing2.4c657d7aa9562b240570.jpg",
+    "static/media/apfc 2.webp": "/static/media/apfc 2.0e844b423d5520f8b16a.webp",
     "static/media/planAndDesign.svg": "/static/media/planAndDesign.2113e4446a279c3bab84c8ba6de0917d.svg",
     "static/media/vfd 3.webp": "/static/media/vfd 3.ab353dae3dc8bafe7579.webp",
     "static/media/neuropolitical rg.ttf": "/static/media/neuropolitical rg.4eac589d31d567458ea2.ttf",
     "static/media/stanter4.jpg": "/static/media/stanter4.c05b622a8aa83c83511d.jpg",
+    "static/media/soft starter 3.webp": "/static/media/soft starter 3.b39e8d6dca096b428343.webp",
     "static/media/yarnDyeing4.jpg": "/static/media/yarnDyeing4.fb872d4f621ceffe79d0.jpg",
     "static/media/tenders.svg": "/static/media/tenders.fde7e9d506c5f8b904b8eda8492496b5.svg",
     "static/media/speedFrame1.jpg": "/static/media/speedFrame1.7a35afec94929c3c55e9.jpg",
@@ -81,19 +83,28 @@
     "static/media/career.svg": "/static/media/career.5acc09028c54f2452a3a3ed341bf668f.svg",
     "static/media/gnfc 6.webp": "/static/media/gnfc 6.de3911d29c755bbff0ed.webp",
     "static/media/vfd 1.webp": "/static/media/vfd 1.836bd1ac13f1054c5495.webp",
+    "static/media/apfc 1.webp": "/static/media/apfc 1.fe6b69d6c64da775b879.webp",
     "static/media/gnfc 3.webp": "/static/media/gnfc 3.d9869dc9adb2e1102c60.webp",
     "static/media/mcc 4.webp": "/static/media/mcc 4.51e7041d61c0fae99a66.webp",
+    "static/media/soft starter 1.webp": "/static/media/soft starter 1.5bc314653a9839005535.webp",
+    "static/media/soft starter 2.webp": "/static/media/soft starter 2.7b372f1c499fd21ee68d.webp",
     "static/media/vfd 2.webp": "/static/media/vfd 2.7a050717ab56ecff85fe.webp",
     "static/media/gnfc 2.webp": "/static/media/gnfc 2.80f2ede9eeb170a777b3.webp",
     "static/media/roofCutting2.jpg": "/static/media/roofCutting2.2173284de74876f9ac54.jpg",
+    "static/media/apfc 4.webp": "/static/media/apfc 4.13a0cc70dda141ef9a45.webp",
     "static/media/stanter2.jpg": "/static/media/stanter2.7229bfdd23b5485f0b59.jpg",
     "static/media/mcc 2.webp": "/static/media/mcc 2.364d28190c5bf49dcd52.webp",
+    "static/media/apfc 3.webp": "/static/media/apfc 3.438fd68b764fa8175109.webp",
     "static/media/mcc 1.webp": "/static/media/mcc 1.a736c666aab5cb427e1d.webp",
     "static/media/gnfc 1.webp": "/static/media/gnfc 1.d3a5d8af79d24a571665.webp",
+    "static/media/db 2.webp": "/static/media/db 2.732c528b9658453a4405.webp",
     "static/media/electrical-banner.webp": "/static/media/electrical-banner.4cd2d9de0a6eb52f4b35.webp",
+    "static/media/db 3.webp": "/static/media/db 3.5603f1db0fa6fded0e83.webp",
     "static/media/pcc 2.webp": "/static/media/pcc 2.0d3f7ed3e3df8d3fea70.webp",
     "static/media/pcc 5.webp": "/static/media/pcc 5.6d7532a9d37b2f3576c2.webp",
     "static/media/pcc 4.webp": "/static/media/pcc 4.34922cc967f9a793e01a.webp",
+    "static/media/pdp 1.webp": "/static/media/pdp 1.34922cc967f9a793e01a.webp",
+    "static/media/db 1.webp": "/static/media/db 1.9118ca9d5cb750c4638f.webp",
     "static/media/pcc 3.webp": "/static/media/pcc 3.9118ca9d5cb750c4638f.webp",
     "static/media/Vision.webp": "/static/media/Vision.fb62f53b7b67224124cc.webp",
     "static/media/pcc 1.webp": "/static/media/pcc 1.83da765b2d88afa98b2b.webp",
@@ -103,6 +114,7 @@
     "static/media/cottonSizing1.jpg": "/static/media/cottonSizing1.be52986e65d27dd878ba.jpg",
     "static/media/stanter3.jpg": "/static/media/stanter3.4e44f6c56f772f2d6cfe.jpg",
     "static/media/vfd 5.webp": "/static/media/vfd 5.40f801c9e2249b03497f.webp",
+    "static/media/pdp 2.webp": "/static/media/pdp 2.acf9243b4180bb45f1b9.webp",
     "static/media/eqStore.svg": "/static/media/eqStore.85f8899ac6a79529b27b732c259581e6.svg",
     "static/media/RELIANCE.svg": "/static/media/RELIANCE.82157f04ece1740acfa5b99f884973ec.svg",
     "static/media/winder1.jpg": "/static/media/winder1.ff5727927b9f897eccc6.jpg",
@@ -133,10 +145,10 @@
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.cc6149641ec1dc5646eb91a4e56ac7bd.svg",
     "index.html": "/index.html",
     "main.1ee20b7d.css.map": "/static/css/main.1ee20b7d.css.map",
-    "main.359db7c5.js.map": "/static/js/main.359db7c5.js.map"
+    "main.12a52a5b.js.map": "/static/js/main.12a52a5b.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee20b7d.css",
-    "static/js/main.359db7c5.js"
+    "static/js/main.12a52a5b.js"
   ]
 }

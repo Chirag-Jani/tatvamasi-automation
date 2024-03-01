@@ -110,23 +110,21 @@ const AboutUs = () => {
           },
         }}
       >
-        <img
+        <Box
+          component="img"
+          sx={{
+            maxWidth: { xl: "35%", lg: "35%", md: "35%", sm: "80%", xs: "80%" },
+          }}
+          alt="Vision"
           src={vision}
-          alt=""
-          style={{
-            width: "fit-content",
-            maxWidth: "35%",
-            margin: "10px",
-          }}
         />
-        <img
-          src={mission}
-          alt=""
-          style={{
-            width: "fit-content",
-            maxWidth: "35%",
-            margin: "10px",
+        <Box
+          component="img"
+          sx={{
+            maxWidth: { xl: "35%", lg: "35%", md: "35%", sm: "80%", xs: "80%" },
           }}
+          alt="Mision"
+          src={mission}
         />
       </Box>
       <Box

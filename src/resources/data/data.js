@@ -113,6 +113,26 @@ import vfd3 from "../vfd/vfd 3.webp";
 import vfd4 from "../vfd/vfd 4.webp";
 import vfd5 from "../vfd/vfd 5.webp";
 
+// imports for apfc panel
+import apfc1 from "../apfc/apfc 1.webp";
+import apfc2 from "../apfc/apfc 2.webp";
+import apfc3 from "../apfc/apfc 3.webp";
+import apfc4 from "../apfc/apfc 4.webp";
+
+// imports for apfc panel
+import pdp1 from "../pdp/pdp 1.webp";
+import pdp2 from "../pdp/pdp 2.webp";
+
+// imports for apfc panel
+import softStarter1 from "../soft starter/soft starter 1.webp";
+import softStarter2 from "../soft starter/soft starter 2.webp";
+import softStarter3 from "../soft starter/soft starter 3.webp";
+
+// imports for apfc panel
+import dbPanel1 from "../db panel/db 1.webp";
+import dbPanel2 from "../db panel/db 2.webp";
+import dbPanel3 from "../db panel/db 3.webp";
+
 export const data = [
   // automation
   {
@@ -1438,6 +1458,8 @@ export const data = [
         name: "APFC Panel", // done rendering
         desc: "At TAPL, we are your trusted source for high-quality Automatic Power Factor Correction (APFC) Control Panels, including Reactor-Type APFC panels. Our comprehensive APFC solutions are designed to enhance power efficiency, reduce energy wastage, and maintain a near-unity power factor for your electrical system.",
         path: "apfc",
+        youtube: "", //
+        images: [apfc1, apfc2, apfc3, apfc4],
         specs: [
           {
             label: "Rated Voltage",
@@ -1583,6 +1605,8 @@ export const data = [
         name: "Soft Starter Panel", // done rendering
         desc: "At TAPL, we're at the forefront of manufacturing high-quality Soft Starter Control Panels, designed to provide smooth and efficient motor control for a variety of industrial applications. Our Soft Starter panels are engineered for precision and reliability, ensuring that your equipment operates seamlessly and without unnecessary wear and tear.",
         path: "soft-starter",
+        youtube: "", //
+        images: [softStarter1, softStarter2, softStarter3],
         specs: [
           {
             label: "Rated Voltage",
@@ -1718,6 +1742,8 @@ export const data = [
         name: "PDP Panels", // done rendering
         desc: "At TAPL, we specialize in designing and manufacturing Power Distribution Panels (PDP) that serve as the backbone of efficient electrical distribution systems. Our PDP panels are engineered for precision and performance, delivering seamless power distribution to various loads within industrial and commercial settings. Here's what you can expect from our PDP panels:",
         path: "pdp-panels",
+        youtube: "", //
+        images: [pdp1, pdp2],
         specs: [
           {
             label: "Rated Voltage",
@@ -1807,6 +1833,8 @@ export const data = [
             info: "Our DB panels can be tailored to fit your available space.",
           },
         ],
+        youtube: "", //
+        images: [dbPanel1, dbPanel2, dbPanel3],
         application: {
           description:
             "Our DB panels are the ideal choice for a variety of applications, including:",
