@@ -1,5 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import webBanner from "../resources/banners/webBanner.webp";
+import Fabrication_MS from "../resources/fabrication/Fabrication_MS.webp";
+import Fabrication_SS from "../resources/fabrication/Fabrication_SS.webp";
 
 const FabricationSolution = () => {
   const data = [
@@ -28,6 +30,7 @@ const FabricationSolution = () => {
   const specs = [
     {
       title: "Control & Power Enclosures",
+      image: Fabrication_MS,
       material: [
         {
           label: "Enclosure",
@@ -71,6 +74,7 @@ const FabricationSolution = () => {
     },
     {
       title: "SS Enclosures",
+      image: Fabrication_SS,
       material: [
         {
           label: "Enclosure",
@@ -265,6 +269,19 @@ const FabricationSolution = () => {
             >
               {spec.title}
             </Typography>
+            <Box
+              component="img"
+              sx={{
+                maxWidth: {
+                  xl: "100%",
+                  lg: "100%",
+                  md: "100%",
+                  sm: "100%",
+                  xs: "100%",
+                },
+              }}
+              src={spec.image}
+            />
             <Box
               sx={{
                 fontFamily: "Montserrat-Bold",

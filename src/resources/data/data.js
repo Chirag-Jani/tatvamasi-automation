@@ -96,9 +96,10 @@ import yarnDyeing5 from "../automationSolutionImages/yarnDyeing/yarnDyeing5.jpg"
 // imports for pcc panel
 import pcc1 from "../pcc/pcc 1.webp";
 import pcc2 from "../pcc/pcc 2.webp";
-import pcc3 from "../pcc/pcc 3.webp";
-import pcc4 from "../pcc/pcc 4.webp";
+// import pcc3 from "../pcc/pcc 3.webp";
+// import pcc4 from "../pcc/pcc 4.webp";
 import pcc5 from "../pcc/pcc 5.webp";
+import pcc6 from "../pcc/pcc 6.webp";
 
 // imports for mcc panel
 import mcc1 from "../mcc/mcc 1.webp";
@@ -1291,7 +1292,7 @@ export const data = [
         path: "pcc",
         desc: "At Tatwamasi Automation Pvt. Ltd.,we are your trusted partner for all your Power Control Center (PCC) panel needs. Our PCC panels are designed and built to meet the highest standards, ensuring efficient power distribution, motor control, and electrical protection. Here's what you can expect from our PCC panels:",
         youtube: "", //
-        images: [pcc1, pcc2, pcc3, pcc4, pcc5],
+        images: [pcc1, pcc2, pcc5, pcc6],
         specs: [
           {
             label: "Rated Voltage",
