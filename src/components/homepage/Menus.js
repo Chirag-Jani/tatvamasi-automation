@@ -29,7 +29,7 @@ const Menus = () => {
       {data.map((card) => {
         return (
           <Link
-            data-aos="flip-right"
+            // data-aos="flip-right"
             to={card.path}
             style={{
               textDecoration: "none",

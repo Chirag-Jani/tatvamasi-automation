@@ -15,7 +15,6 @@ import Carousel from "react-material-ui-carousel";
 const Panel = () => {
   let { machine } = useParams();
   const Machines = data[0]?.machines;
-  console.log(machine);
 
   const machineData = Machines.find((p) => p.path === machine);
 

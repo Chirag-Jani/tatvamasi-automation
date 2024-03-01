@@ -59,7 +59,7 @@ const Tenders = () => {
           Tenders
         </Typography>
         <img
-          data-aos="zoom-in"
+          // data-aos="zoom-in"
           src={tendersBanner}
           alt="Tatvamasi Automation"
           style={{
@@ -99,7 +99,7 @@ const Tenders = () => {
           {tenderContracts?.map((contract) => {
             return (
               <Box
-                data-aos="zoom-in"
+                // data-aos="zoom-in"
                 sx={{
                   display: "flex",
                   width: {

@@ -18,7 +18,7 @@ const TenderCard = (props) => {
 
   return (
     <Box
-      data-aos="flip-down"
+      // data-aos="flip-down"
       sx={{
         display: "flex",
         justifyContent: "center",

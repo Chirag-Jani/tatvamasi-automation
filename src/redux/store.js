@@ -1,18 +1,29 @@
-import { createStore } from "redux";
-import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
-
-import rootReducer from "./reducers";
+import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "./slices/dataSlice";
+import storage from "redux-persist/lib/storage";
+import { persistReducer, persistStore } from "redux-persist";
+import { thunk } from "redux-thunk";
+// import storageSession from "redux-persist/lib/storage/session";
 
 const persistConfig = {
   key: "root",
   storage,
 };
 
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+// const persistConfig = {
+//   key: "root",
+//   storageSession,
+// };
 
-export default () => {
-  let store = createStore(persistedReducer);
-  let persistor = persistStore(store);
-  return { store, persistor };
-};
+const persistedReducer = persistReducer(persistConfig, userReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  devTools: process.env.NODE_ENV !== "production",
+  // middleware: [thunk],
+  middleware: () => {
+    return [thunk];
+  },
+});
+
+export const persistor = persistStore(store);

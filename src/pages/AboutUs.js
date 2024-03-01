@@ -43,7 +43,7 @@ const AboutUs = () => {
           About Us
         </Typography>
         <img
-          data-aos="zoom-in"
+          // data-aos="zoom-in"
           src={aboutUsBanner}
           alt="Tatvamasi Automation"
           style={{

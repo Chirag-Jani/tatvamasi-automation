@@ -86,8 +86,6 @@ const Connections = () => {
                 href="/"
                 onClick={(e) => {
                   e.preventDefault(); // Prevent the default behavior of the anchor tag
-                  console.log("Email link clicked");
-                  console.log(mail);
 
                   // Trigger the email action manually
                   window.location.href = `mailto:${mail}`;

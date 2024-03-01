@@ -53,7 +53,7 @@ const ElectricalSolution = () => {
           </Typography>
           {timeToLoad ? (
             <img
-              data-aos="zoom-in"
+              // data-aos="zoom-in"
               src={electricalBanner}
               alt="Tatvamasi Automation"
               style={{
@@ -128,7 +128,7 @@ const ElectricalSolution = () => {
             }}
           >
             <img
-              data-aos="fade-right"
+              // data-aos="fade-right"
               src={planAndDesign}
               alt=""
               style={{
@@ -136,7 +136,7 @@ const ElectricalSolution = () => {
               }}
             />
             <Typography
-              data-aos="fade-left"
+              // data-aos="fade-left"
               sx={{
                 textAlign: "justify",
                 fontFamily: "Montserrat",
@@ -227,7 +227,7 @@ const ElectricalSolution = () => {
             {PanelList.map((panel) => {
               return (
                 <Link
-                  data-aos="flip-up"
+                  // data-aos="flip-up"
                   to={panel.path}
                   style={{
                     textDecoration: "none",

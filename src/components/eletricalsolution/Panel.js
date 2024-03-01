@@ -27,7 +27,7 @@ const Panel = () => {
   };
 
   const Specs = PanelList.find((p) => p.path === panel);
-  console.log(Specs);
+
   useEffect(() => {
     Aos.init({
       // Global settings:

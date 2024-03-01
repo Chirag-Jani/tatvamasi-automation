@@ -269,7 +269,7 @@ const TenderClient = () => {
                   {items.map((item, i) => (
                     <img
                       key={item.name}
-                      data-aos="zoom-out"
+                      // data-aos="zoom-out"
                       src={item.img}
                       alt=""
                       style={{
@@ -315,7 +315,7 @@ const TenderClient = () => {
                     xl: "325px",
                   },
                 }}
-                data-aos="zoom-out"
+                // data-aos="zoom-out"
               >
                 {/* ReactPlayer Component */}
                 <ReactPlayer

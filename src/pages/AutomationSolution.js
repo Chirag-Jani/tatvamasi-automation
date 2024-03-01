@@ -1,18 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import automationBanner from "../resources/banners/automation-banner.webp";
-import { data } from "../resources/data/data";
+// import { data } from "../resources/data/data";
 import PanelCard from "../components/eletricalsolution/PanelCard";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-
-const automationData = data[0];
-const automationMachines = automationData.machines;
+import { useSelector } from "react-redux";
 
 const AutomationSolution = () => {
-  useEffect(() => {
-    let data = JSON.parse(localStorage.getItem("data"));
-    console.log(data);
-  }, []);
+  const data = useSelector((state) => {
+    return state.data;
+  });
 
   return (
     <Box>
@@ -35,7 +31,7 @@ const AutomationSolution = () => {
           Automation Solutions
         </Typography>
         <img
-          data-aos="zoom-in"
+          // data-aos="zoom-in"
           src={automationBanner}
           alt="Tatvamasi Automation"
           style={{
@@ -127,10 +123,10 @@ const AutomationSolution = () => {
             flexWrap: "wrap",
           }}
         >
-          {automationMachines.map((machine) => {
+          {data[0]?.machines?.map((machine) => {
             return (
               <Link
-                data-aos="flip-up"
+                // data-aos="flip-up"
                 to={machine.path}
                 style={{
                   textDecoration: "none",

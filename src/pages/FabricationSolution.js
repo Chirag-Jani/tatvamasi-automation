@@ -140,7 +140,7 @@ const FabricationSolution = () => {
           Fabrication Solution
         </Typography>
         <img
-          data-aos="zoom-in"
+          // data-aos="zoom-in"
           src={webBanner}
           alt="Tatvamasi Automation"
           style={{
@@ -213,7 +213,10 @@ const FabricationSolution = () => {
         </Typography>
         {data?.map((itm) => {
           return (
-            <Box key={itm.label} data-aos="flip-up">
+            <Box
+              key={itm.label}
+              // data-aos="flip-up"
+            >
               <Typography
                 sx={{
                   fontSize: {
@@ -251,6 +254,7 @@ const FabricationSolution = () => {
               width: "90%",
               margin: "auto",
             }}
+            key={spec.title}
           >
             <Typography
               sx={{
@@ -326,7 +330,7 @@ const FabricationSolution = () => {
                         backgroundColor: "#D9D9D9",
                         marginBottom: "15px",
                       }}
-                      data-aos="flip-up"
+                      // data-aos="flip-up"
                     >
                       {item.label !== null && (
                         <>
@@ -405,7 +409,7 @@ const FabricationSolution = () => {
                         backgroundColor: "#D9D9D9",
                         marginBottom: "15px",
                       }}
-                      data-aos="flip-up"
+                      // data-aos="flip-up"
                     >
                       {item.label !== null && (
                         <>
