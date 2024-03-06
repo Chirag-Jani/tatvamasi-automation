@@ -20,6 +20,7 @@ import Machine from "./components/automationsolution/Machine";
 import UsedMachine from "./pages/UsedMachine";
 
 import { data } from "./resources/data/data.js";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   localStorage.setItem("data", JSON.stringify(data));
@@ -44,6 +45,13 @@ function App() {
           <Route path="/psu-and-govt/:client" element={<TenderClient />} />
           <Route path="/used-machine-buysell" element={<UsedMachine />} />
         </Routes>
+        <FloatingWhatsApp
+          accountName="Tatvamasi Automation"
+          phoneNumber="+918980149230"
+          // chatMessage="Chat massage here!!"
+          allowClickAway
+        />
+
         <Footer />
       </ThemeProvider>
     </Router>
