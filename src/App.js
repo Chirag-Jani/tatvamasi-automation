@@ -18,6 +18,7 @@ import FabricationSolution from "./pages/FabricationSolution";
 import AutomationSolution from "./pages/AutomationSolution";
 import Machine from "./components/automationsolution/Machine";
 import UsedMachine from "./pages/UsedMachine";
+import Appointment from "./pages/Appointment.js";
 
 import { data } from "./resources/data/data.js";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/psu-and-govt" element={<Tenders />} />
           <Route path="/psu-and-govt/:client" element={<TenderClient />} />
           <Route path="/used-machine-buysell" element={<UsedMachine />} />
+          <Route path="/appointment" element={<Appointment />} />
         </Routes>
         <FloatingWhatsApp
           accountName="Tatvamasi Automation"

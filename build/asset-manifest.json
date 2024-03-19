@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.1ee20b7d.css",
-    "main.js": "/static/js/main.a9c886f0.js",
+    "main.js": "/static/js/main.6f63d550.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.05e07fc2622e2a18e3663677aafecb58.svg",
+    "static/media/appointmentHeader.png": "/static/media/appointmentHeader.63ca9dd0dc7149aff3e5.png",
     "static/media/sectionalWarpingKarlMayer3.jpg": "/static/media/sectionalWarpingKarlMayer3.a7fff0dfdbaf37502343.jpg",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.fda4aea583e7f3fd81f3546b2c473f75.svg",
     "static/media/sectionalWarpingKakinoki4.jpg": "/static/media/sectionalWarpingKakinoki4.addde83a7af67d2f8960.jpg",
@@ -44,6 +45,7 @@
     "static/media/p2.webp": "/static/media/p2.cfa7e13b545bfcb3ffef.webp",
     "static/media/p3.webp": "/static/media/p3.0150eceee2131c748b02.webp",
     "static/media/paperCoating1.png": "/static/media/paperCoating1.0ba7c5cec08da70fc9d6.png",
+    "static/media/appLeft.png": "/static/media/appLeft.46adfb7f90b5eadc0367.png",
     "static/media/p6.webp": "/static/media/p6.898e383ead7b1315d7f1.webp",
     "static/media/coatingMachine1.png": "/static/media/coatingMachine1.cf58d0bb800a28cc0530.png",
     "static/media/homepageBanner.svg": "/static/media/homepageBanner.c3ee1bcf8b5269f7dc00eb5076a219ca.svg",
@@ -146,10 +148,10 @@
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.cc6149641ec1dc5646eb91a4e56ac7bd.svg",
     "index.html": "/index.html",
     "main.1ee20b7d.css.map": "/static/css/main.1ee20b7d.css.map",
-    "main.a9c886f0.js.map": "/static/js/main.a9c886f0.js.map"
+    "main.6f63d550.js.map": "/static/js/main.6f63d550.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee20b7d.css",
-    "static/js/main.a9c886f0.js"
+    "static/js/main.6f63d550.js"
   ]
 }
