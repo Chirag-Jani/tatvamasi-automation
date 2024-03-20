@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { ThemeProvider } from "@mui/material";
-
+import FloatingWhatsAppButton from "./components/utilities/FloatingWhatsAppButton.js";
 import "./App.css";
 import theme from "./theme/theme";
 
@@ -21,7 +21,7 @@ import UsedMachine from "./pages/UsedMachine";
 import Appointment from "./pages/Appointment.js";
 
 import { data } from "./resources/data/data.js";
-import { FloatingWhatsApp } from "react-floating-whatsapp";
+// import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   localStorage.setItem("data", JSON.stringify(data));
@@ -47,12 +47,13 @@ function App() {
           <Route path="/used-machine-buysell" element={<UsedMachine />} />
           <Route path="/appointment" element={<Appointment />} />
         </Routes>
-        <FloatingWhatsApp
+        {/* <FloatingWhatsApp
           accountName="Tatvamasi Automation"
           phoneNumber="+918980149230"
           // chatMessage="Chat massage here!!"
           allowClickAway
-        />
+        /> */}
+        <FloatingWhatsAppButton />
 
         <Footer />
       </ThemeProvider>
