@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ee20b7d.css",
-    "main.js": "/static/js/main.0d78bdb8.js",
+    "main.css": "/static/css/main.76c194d7.css",
+    "main.js": "/static/js/main.ea84a3bc.js",
     "static/media/tendersBanner.svg": "/static/media/tendersBanner.05e07fc2622e2a18e3663677aafecb58.svg",
+    "static/media/ContactUsBanner.png": "/static/media/ContactUsBanner.1c63477fee0321f6f046.png",
     "static/media/appointmentHeader.png": "/static/media/appointmentHeader.63ca9dd0dc7149aff3e5.png",
     "static/media/sectionalWarpingKarlMayer3.jpg": "/static/media/sectionalWarpingKarlMayer3.a7fff0dfdbaf37502343.jpg",
     "static/media/Demo Panel.svg": "/static/media/Demo Panel.fda4aea583e7f3fd81f3546b2c473f75.svg",
@@ -38,6 +39,7 @@
     "static/media/Montserrat-BoldItalic.ttf": "/static/media/Montserrat-BoldItalic.a169c71c1eb466896fe1.ttf",
     "static/media/gnfc 12.webp": "/static/media/gnfc 12.5f2f6fffee4e7f0e5e0e.webp",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
     "static/media/gnfc 8.webp": "/static/media/gnfc 8.fc5802fbed78399a5c5a.webp",
     "static/media/gnfc 11.webp": "/static/media/gnfc 11.2e1c874aa55612c946fb.webp",
@@ -147,11 +149,11 @@
     "static/media/p12.webp": "/static/media/p12.fb9622ffac936ef93c05.webp",
     "static/media/searchIconYellow.svg": "/static/media/searchIconYellow.cc6149641ec1dc5646eb91a4e56ac7bd.svg",
     "index.html": "/index.html",
-    "main.1ee20b7d.css.map": "/static/css/main.1ee20b7d.css.map",
-    "main.0d78bdb8.js.map": "/static/js/main.0d78bdb8.js.map"
+    "main.76c194d7.css.map": "/static/css/main.76c194d7.css.map",
+    "main.ea84a3bc.js.map": "/static/js/main.ea84a3bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ee20b7d.css",
-    "static/js/main.0d78bdb8.js"
+    "static/css/main.76c194d7.css",
+    "static/js/main.ea84a3bc.js"
   ]
 }

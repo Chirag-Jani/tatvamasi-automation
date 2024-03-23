@@ -16,8 +16,8 @@ const whatsappTheme = createTheme({
 });
 
 const contacts = [
-  { number: "123456789", name: "Alpeshbhai" },
-  { number: "987654321", name: "Admin Staff" },
+  { number: "+919558971777", name: "Electrical Inquiry" },
+  { number: "+919898041644", name: "Automation Inquiry" },
 ];
 
 const FloatingWhatsAppButton = () => {

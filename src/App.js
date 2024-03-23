@@ -21,6 +21,7 @@ import UsedMachine from "./pages/UsedMachine";
 import Appointment from "./pages/Appointment.js";
 
 import { data } from "./resources/data/data.js";
+import ContactUs from "./pages/ContactUs.js";
 // import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/psu-and-govt/:client" element={<TenderClient />} />
           <Route path="/used-machine-buysell" element={<UsedMachine />} />
           <Route path="/appointment" element={<Appointment />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
         {/* <FloatingWhatsApp
           accountName="Tatvamasi Automation"

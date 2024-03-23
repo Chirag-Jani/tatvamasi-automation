@@ -2107,6 +2107,6 @@ export const data = [
   {
     name: "Contact Us",
     image: ContactUs,
-    path: "#",
+    path: "/contact",
   },
 ];
