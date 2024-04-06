@@ -3,10 +3,12 @@ import appointmentHeader from "../resources/appointment/appointmentHeader.png";
 import appLeft from "../resources/appointment/appLeft.png";
 import { Box, Button, Skeleton, TextField, Typography } from "@mui/material";
 import Aos from "aos";
+import { Calendar } from "primereact/calendar";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 const Appointment = () => {
   const [timeToLoad, setTimeToLoad] = useState(false);
-
+  const [datetime12h, setDateTime12h] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,6 +28,7 @@ const Appointment = () => {
     e.preventDefault();
     // Handle form submission here
     console.log(formData); // For demonstration, logging form data
+    console.log(datetime12h);
     handleCancel();
   };
 
@@ -37,6 +40,7 @@ const Appointment = () => {
       contactNumber: "",
       purposeOfMeeting: "",
     });
+    setDateTime12h(null);
   };
 
   useEffect(() => {
@@ -57,6 +61,7 @@ const Appointment = () => {
     <Box
       sx={{
         width: "100%",
+        marginBottom: "40px",
       }}
     >
       <Box>
@@ -188,19 +193,24 @@ const Appointment = () => {
               value={formData.purposeOfMeeting}
               onChange={handleChange}
             />
-            {/* Typography for meeting timing note */}
-            <Typography
-              variant="body2"
+            <Box
+              className="card flex flex-wrap gap-3 p-fluid"
               sx={{
-                textAlign: "center",
-                color: "#333", // Darken the text color
-                padding: 2, // Add padding around the text
-                borderRadius: 4, // Add rounded corners
-                fontSize: "15px",
+                margin: "10px 0",
+                marginBottom: "20px",
               }}
             >
-              We're available from Monday to Friday, 9:00 AM to 6:00 PM.
-            </Typography>
+              <Box className="flex-auto">
+                <Calendar
+                  placeholder="Select Date & Time"
+                  id="calendar-12h"
+                  value={datetime12h}
+                  onChange={(e) => setDateTime12h(e.value)}
+                  showTime
+                  hourFormat="12"
+                />
+              </Box>
+            </Box>
             <Box
               sx={{
                 display: "flex",
