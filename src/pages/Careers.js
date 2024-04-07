@@ -62,12 +62,15 @@ const Careers = () => {
       </Box>
       <iframe
         title="Apply Here"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSczW0Aj3iJU3-kY5Yy98GxjkAsDr5EZOZY8QLct1kWN1EKh1w/viewform?embedded=true"
-        width="50%"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSftsHor2qd8E0QMV7kRo2ZLP_AkRT8ISmAiijlJh2RA5k9K0g/viewform?embedded=true"
+        width="100%"
         height="1000px"
         frameborder="0"
         marginheight="0"
         marginwidth="0"
+        style={{
+          margin: "40px auto"
+        }}
       >
         Loading…
       </iframe>
