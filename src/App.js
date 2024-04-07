@@ -1,65 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import React from "react";
 import { ThemeProvider } from "@mui/material";
-import FloatingWhatsAppButton from "./components/utilities/FloatingWhatsAppButton.js";
-import "./App.css";
+import Loader from "./components/utilities/Loader";
 import theme from "./theme/theme";
-
-import Navbar from "./layout/Navbar";
-import Homepage from "./pages/Homepage";
-import ElectricalSolution from "./pages/ElectricalSolution";
-import Tenders from "./pages/Tenders";
-import Footer from "./layout/Footer";
-import Panel from "./components/eletricalsolution/Panel";
 import ScrollToTop from "./components/utilities/ScrollToTop";
-import TenderClient from "./components/tenders/TenderClient";
-import AboutUs from "./pages/AboutUs";
-import FabricationSolution from "./pages/FabricationSolution";
-import AutomationSolution from "./pages/AutomationSolution";
-import Machine from "./components/automationsolution/Machine";
-import UsedMachine from "./pages/UsedMachine";
-import Appointment from "./pages/Appointment.js";
-
-import { data } from "./resources/data/data.js";
-import ContactUs from "./pages/ContactUs.js";
-// import { FloatingWhatsApp } from "react-floating-whatsapp";
+import FloatingWhatsAppButton from "./components/utilities/FloatingWhatsAppButton";
+import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
+import AppRoutes from "./Routes";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  localStorage.setItem("data", JSON.stringify(data));
   return (
-    <Router>
+    <BrowserRouter>
       <ScrollToTop />
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/electrical-solution" element={<ElectricalSolution />} />
-          <Route path="/electrical-solution/:panel" element={<Panel />} />
-          <Route
-            path="/fabrication-solution"
-            element={<FabricationSolution />}
-          />
-          <Route path="/psu-and-govt" element={<Tenders />} />
-          <Route path="/automation-solution" element={<AutomationSolution />} />
-          <Route path="/automation-solution/:machine" element={<Machine />} />
-          <Route path="/psu-and-govt" element={<Tenders />} />
-          <Route path="/psu-and-govt/:client" element={<TenderClient />} />
-          <Route path="/used-machine-buysell" element={<UsedMachine />} />
-          <Route path="/appointment" element={<Appointment />} />
-          <Route path="/contact" element={<ContactUs />} />
-        </Routes>
-        {/* <FloatingWhatsApp
-          accountName="Tatvamasi Automation"
-          phoneNumber="+918980149230"
-          // chatMessage="Chat massage here!!"
-          allowClickAway
-        /> */}
+        <React.Suspense fallback={<Loader />}>
+          <AppRoutes />
+        </React.Suspense>
         <FloatingWhatsAppButton />
-
         <Footer />
       </ThemeProvider>
-    </Router>
+    </BrowserRouter>
   );
 }
 

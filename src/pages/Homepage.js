@@ -3,12 +3,14 @@ import React, { useEffect } from "react";
 import { Stack } from "@mui/material";
 
 import homepageBanner from "../resources/banners/homepageBanner.svg";
-import certificates from "../resources/banners/certificates.jpg";
+// import certificates from "../resources/banners/certificates.jpg";
+import certificates from "../resources/banners/certificates_resized.jpg";
 import Menus from "../components/homepage/Menus";
 import Companies from "../components/homepage/Companies";
 import Aos from "aos";
 import "../../node_modules/aos/dist/aos.css";
 import Carousel from "react-material-ui-carousel";
+import CounterComponent from "../components/utilities/CounterComponent";
 
 const Homepage = () => {
   useEffect(() => {
@@ -31,7 +33,6 @@ const Homepage = () => {
           src={homepageBanner}
           alt="Tatvamasi Automation"
           style={{
-            maxHeight: "100%",
             width: "100%",
           }}
         />
@@ -39,12 +40,12 @@ const Homepage = () => {
           src={certificates}
           alt="Tatvamasi Automation"
           style={{
-            maxHeight: "682px",
             width: "100%",
           }}
         />
       </Carousel>
       <Menus />
+      <CounterComponent />
       <Companies />
     </Stack>
   );
