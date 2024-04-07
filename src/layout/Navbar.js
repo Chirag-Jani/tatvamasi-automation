@@ -186,7 +186,12 @@ function Navbar() {
           </Box>
           <Box
             sx={{
-              display: { xs: "none", sm: "block", m: "block", lg: "block" },
+              display: {
+                xs: "none",
+                sm: "block",
+                m: "block",
+                lg: "block",
+              },
             }}
           >
             <SearchField />

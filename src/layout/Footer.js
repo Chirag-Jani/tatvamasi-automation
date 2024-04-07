@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import SearchField from "../components/utilities/SearchField";
+// import SearchField from "../components/utilities/SearchField";
 import QuickLinks from "../components/footer/QuickLinks";
 import Address from "../components/footer/Address";
 import Connections from "../components/footer/Connections";
@@ -21,14 +21,14 @@ const Footer = () => {
         // marginTop: "50px",
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           width: "75%",
           margin: "50px auto",
         }}
       >
         <SearchField />
-      </Box>
+      </Box> */}
       <Box
         sx={{
           display: "flex",

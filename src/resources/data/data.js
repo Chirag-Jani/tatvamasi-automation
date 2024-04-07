@@ -1742,7 +1742,7 @@ export const data = [
       {
         name: "PDP Panels", // done rendering
         desc: "At TAPL, we specialize in designing and manufacturing Power Distribution Panels (PDP) that serve as the backbone of efficient electrical distribution systems. Our PDP panels are engineered for precision and performance, delivering seamless power distribution to various loads within industrial and commercial settings. Here's what you can expect from our PDP panels:",
-        path: "pdp-panels",
+        path: "pdp",
         youtube: "", //
         images: [pdp1, pdp2],
         specs: [
@@ -2101,7 +2101,7 @@ export const data = [
   {
     name: "Career",
     image: Career,
-    path: "#",
+    path: "/careers",
   },
   // contact us
   {

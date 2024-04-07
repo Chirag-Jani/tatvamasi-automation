@@ -28,6 +28,7 @@ const Machine = lazy(() =>
 const UsedMachine = lazy(() => retry(() => import("./pages/UsedMachine")));
 const Appointment = lazy(() => retry(() => import("./pages/Appointment")));
 const ContactUs = lazy(() => retry(() => import("./pages/ContactUs")));
+const Careers = lazy(() => retry(() => import("./pages/Careers")));
 const FourOhFour = lazy(() => retry(() => import("./pages/FourOhFour")));
 
 const AppRoutes = () => {
@@ -44,6 +45,7 @@ const AppRoutes = () => {
     { path: "/used-machine-buysell", element: <UsedMachine /> },
     { path: "/appointment", element: <Appointment /> },
     { path: "/contact", element: <ContactUs /> },
+    { path: "/careers", element: <Careers /> },
     // If no other route matches, show 404 page
     { path: "*", element: <FourOhFour /> },
   ]);
