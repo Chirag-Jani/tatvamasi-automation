@@ -1,11 +1,9 @@
-import { Box, Skeleton, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import Aos from "aos";
-import React, { useEffect, useState } from "react";
-import contactUsBanner from "../resources/banners/ContactUsBanner.png";
+import React, { useEffect } from "react";
+import formBanner from "../resources/banners/form banner.png";
 
 const Careers = () => {
-  const [timeToLoad, setTimeToLoad] = useState(false);
-
   useEffect(() => {
     Aos.init({
       // Global settings:
@@ -14,66 +12,57 @@ const Careers = () => {
       easing: "ease", // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
     });
-
-    setTimeout(() => {
-      setTimeToLoad(true);
-    }, 2000);
   }, []);
   return (
     <Box>
       <Box>
         <Typography
           sx={{
-            fontFamily: "Montserrat-ExtraBoldItalic",
+            fontFamily: "Montserrat-BoldItalic",
             color: "#484848",
             fontSize: {
-              xl: "39.58px",
-              lg: "39.58px",
-              m: "39.58px",
-              sm: "39.58px",
-              xs: "30px",
+              xl: "45px",
+              lg: "45px",
+              m: "45px",
+              sm: "45px",
+              xs: "40px",
             },
             textAlign: "center",
             margin: "20px",
           }}
         >
-          Careers
+          We Are <u>Hiring</u>
         </Typography>
-        {timeToLoad ? (
-          <img
-            // data-aos="zoom-in"
-            src={contactUsBanner}
-            alt="Tatvamasi Automation"
-            style={{
-              width: "100%",
-            }}
-          />
-        ) : (
-          <Skeleton
-            variant="rectangular"
-            animation="wave"
-            width={"100%"}
-            height={"300px"}
-            sx={{
-              borderRadius: "10px",
-            }}
-          />
-        )}
+
+        <img
+          data-aos="zoom-in"
+          src={formBanner}
+          alt="Tatvamasi Automation"
+          style={{
+            width: "100%",
+          }}
+        />
       </Box>
-      <iframe
-        title="Apply Here"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSftsHor2qd8E0QMV7kRo2ZLP_AkRT8ISmAiijlJh2RA5k9K0g/viewform?embedded=true"
-        width="100%"
-        height="1000px"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        style={{
-          margin: "40px auto"
-        }}
-      >
-        Loading…
-      </iframe>
+
+      <Box m={5} textAlign="center">
+        <Button
+          variant="contained"
+          color="primary"
+          component={"a"}
+          target="_blank"
+          href="https://docs.google.com/forms/d/1MUNryXImiC182O1hQgjRW_dV1DiPqs5mXcnf_tEN6GE/viewform?edit_requested=true"
+          sx={{
+            textTransform: "none",
+            fontWeight: "bold",
+            borderRadius: "10px",
+            fontSize: "18px",
+            px: 4,
+            py: 2,
+          }}
+        >
+          Apply Now for a Job
+        </Button>
+      </Box>
     </Box>
   );
 };
