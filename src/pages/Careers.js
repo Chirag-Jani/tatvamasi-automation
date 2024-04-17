@@ -1,7 +1,7 @@
 import { Box, Typography, Button } from "@mui/material";
 import Aos from "aos";
 import React, { useEffect } from "react";
-import formBanner from "../resources/banners/form banner.png";
+import formBanner from "../resources/banners/form banner 2.png";
 
 const Careers = () => {
   useEffect(() => {
@@ -50,7 +50,7 @@ const Careers = () => {
           color="primary"
           component={"a"}
           target="_blank"
-          href="https://docs.google.com/forms/d/1MUNryXImiC182O1hQgjRW_dV1DiPqs5mXcnf_tEN6GE/viewform?edit_requested=true"
+          href="https://forms.gle/RP8ESGMzPJo5TPHQ8"
           sx={{
             textTransform: "none",
             fontWeight: "bold",
