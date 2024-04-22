@@ -32,6 +32,12 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Server running successfully :)",
+  });
+});
+
 // API endpoint to send email
 app.post("/sendmail", upload.single("file"), (req, res) => {
   const { subject, body } = req.body;
@@ -80,3 +86,5 @@ app.post("/sendmail", upload.single("file"), (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+module.exports = app;
