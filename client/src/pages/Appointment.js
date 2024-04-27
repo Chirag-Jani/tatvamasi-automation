@@ -10,6 +10,7 @@ const Appointment = () => {
   const [timeToLoad, setTimeToLoad] = useState(false);
   const [datetime12h, setDateTime12h] = useState(null);
   const [formData, setFormData] = useState({
+    subject: "Appointment Request",
     name: "",
     email: "",
     contactNumber: "",
@@ -26,9 +27,32 @@ const Appointment = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData); // For demonstration, logging form data
-    console.log(datetime12h);
+
+    let mailData = formData;
+
+    mailData.purposeOfMeeting = `${mailData.purposeOfMeeting} - ${datetime12h}`;
+
+    fetch("https://tatvamasi-server.vercel.app/sendmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(mailData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text(); // Get the text response
+      })
+      .then((data) => {
+        console.log(data); // "Email sent successfully"
+        alert("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Error sending email. Please try again later.");
+      });
     handleCancel();
   };
 
@@ -205,7 +229,9 @@ const Appointment = () => {
                   placeholder="Select Date & Time"
                   id="calendar-12h"
                   value={datetime12h}
-                  onChange={(e) => setDateTime12h(e.value)}
+                  onChange={(e) => {
+                    setDateTime12h(e.value);
+                  }}
                   showTime
                   hourFormat="12"
                 />

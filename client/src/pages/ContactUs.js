@@ -17,6 +17,7 @@ const ContactUs = () => {
   const [timeToLoad, setTimeToLoad] = useState(false);
 
   const [formData, setFormData] = useState({
+    subject: "Contact Request",
     name: "",
     email: "",
     contactNumber: "",
@@ -33,8 +34,27 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData); // For demonstration, logging form data
+    fetch("https://tatvamasi-server.vercel.app/sendmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text(); // Get the text response
+      })
+      .then((data) => {
+        console.log(data); // "Email sent successfully"
+        alert("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Error sending email. Please try again later.");
+      });
     handleCancel();
   };
 
